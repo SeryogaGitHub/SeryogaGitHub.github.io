@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+
+  <script src="js/libs.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+    
+</head>
+<body>
+  <header>
+    <div class="center clear text-center">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+
+      <div class="location">
+        Ваше местонахождение: <a href="#location-city" class="open-city">Москва</a>
+
+        <div id="location-city">
+          <div class="close">+</div>
+          <ul>
+            <li>Москва</li>
+            <li>Не Москва</li>
+            <li>Другой город</li>
+          </ul>
+        </div>
+      </div> <!-- .location -->
+
+      <div class="network">
+        <a href="#" class="ico vb"></a>
+        <a href="#" class="ico tl"></a>
+        <a href="#" class="ico ph"></a>
+      </div>
+      <button class="button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="line-betwen"></div>
+      <a href="tel:+74959972416" class="phone-number">+7 (495) 997-24-16</a>
+      <a href="#feedback-popup2" class="popup feedback"><span>Перезвоните мне!</span></a>
+
+      <!-- popup feedback -->
+      <div id="feedback-popup2" class="zoom-anim-dialog mfp-hide">
+        <h3 class="text-center">Перезвоните мне!</h3>
+        <form action="#">
+          <input type="email" name="mail" placeholder="E-mail">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="tel" name="tel" placeholder="Телефон" class="mask">
+          <input type="text" name="brand" placeholder="Марка авто, катера, мотоцикла и др.*">
+          <input type="hidden" name="grade" id="feedback-grade">
+
+          <textarea placeholder="Отзывы"></textarea>
+
+          <div class="file-block">
+            <input type="file" name="" id="file-feedback">
+            <label for="file-feedback">Виберите файл</label>
+            <button class="btn gold popup" type="submit" href="#feedback-popup-success">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- popup feedback -->
+      <div id="feedback-popup" class="zoom-anim-dialog mfp-hide">
+        <h3 class="text-center">Пожалуста,<br> оставте отзыв!</h3>
+        <form action="#">
+          <input type="email" name="mail" placeholder="E-mail">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="text" name="brand" placeholder="Марка авто, катера, мотоцикла и др.*">
+          <input type="hidden" name="grade" id="feedback-grade">
+
+          <textarea placeholder="Отзывы"></textarea>
+
+          <div class="wrap-rating">Оценка: <div class="rating"></div></div>
+          <div class="file-block">
+            <input type="file" name="" id="file-feedback">
+            <label for="file-feedback">Виберите файл</label>
+            <button class="btn gold popup" type="submit" href="#feedback-popup-success">Отправить</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- popup hide -->
+      <div id="feedback-popup-hide" class="zoom-anim-dialog mfp-hide">
+        <h3 class="text-center">Поздравляем, <br> <span>ви получили скидку 5%</span></h3>
+
+        <div class="discount-block">
+          <div class="logo-number">
+            <div class="logo">
+              <img src="img/logo.png" alt="">
+            </div>
+            <a href="tel:+74959972416" class="number-phone">+7(495) 997-24-16</a>
+          </div>
+          
+          <div class="number-discount clear"><strong># 1001</strong></div>
+
+          <div class="discount-img"><strong><p>5%</p> <span>скидка</span></strong></div>
+        </div>
+
+
+        <p class="information">
+          Для получений скидки по купону необходимо сообщить оператору номер купона при оформлении заказа на вызов эвакуатора. <br>
+          После этого распечатать или сфотографировать купон на сайте и предъявить его эвакуаторщику. 
+        </p>
+        <div class="text-center">
+          <a href="tel:+74959972416" class="black-link">+7(495) 997-24-16</a><br>
+          <a href="mailto:info@site.ru?subject=Вопрос по HTML" class="black-link">info@site.ru</a>
+          <div class="date">20/06/17</div>
+        </div>
+      </div>
+
+      <!-- popup feedback success-->
+      <div id="feedback-popup-success" class="zoom-anim-dialog mfp-hide success bottom-right">
+        <h3 class="text-center">Большое спасибо<br> вам за отзыв!</h3>
+      </div>
+
+      <!-- popup feedback success-->
+      <div id="popup-success-all" class="zoom-anim-dialog mfp-hide success top-left">
+        <h3 class="text-center">Спасибо</h3>
+        <p>Наш специалист свяжется <br>с Вами через 20 секунд!</p>
+      </div>
+
+      <nav id="main-menu">
+        <button class="close"></button>
+        <ul>
+          <li><a href="#a1" class="anchor-run">Заказ эвакуатора</a></li>
+          <li><a href="#a2" class="anchor-run">О компании</a></li>
+          <li><a href="#a3" class="anchor-run">Наши услуги</a></li>
+          <li><a href="#a4" class="anchor-run">Преимущества</a></li>
+          <li><a href="#a5" class="anchor-run">География обсуживания</a></li>
+          <li><a href="#a6" class="anchor-run">Частые вопросы</a></li>
+          <li><a href="#a7" class="anchor-run">Акции</a></li>
+          <li><a href="#a8" class="anchor-run">Расчеты стоимости</a></li>
+          <li><a href="#a9" class="anchor-run">Отзывы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="video-block">
+      <div class="wrap-form" id="a1">
+        <div class="center">
+          <form action="#">
+            <h1>Вызовите эвакуатор по Москве и области <span class="text-gold">дешевле и быстрее</span></h1>
+            <div class="from-to">
+              <div class="row">
+                <span class="col"><input type="text" placeholder="Откуда"></span>
+                <span class="col"><input type="text" placeholder="Куда"></span>
+              </div>
+              <div class="row">
+                <span class="col">
+                  <select class="selectmenu">
+                    <option disabled selected>Что перевезти?</option>
+                    <option value="100">Тип 1</option>
+                    <option value="200">Тип 2</option>
+                  </select>
+                </span>
+                <span class="col">
+                  <select class="selectmenu">
+                    <option disabled selected>Блокировано колес</option>
+                    <option value="0">0</option>
+                    <option value="300">1</option>
+                    <option value="1400">2</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div class="clear wrap-textarea">
+              <div class="steering-locked">
+                <p>Руль заблокирован?</p>
+                
+                <div class="clear">
+                  <div class="radio-input">
+                    <input type="radio" name='locked' id="locked-1">
+                    <label for="locked-1" data-price='11' class="agree-that-price">да</label>
+                  </div>
+
+                  <div class="radio-input">
+                    <input type="radio" name='locked' id="locked-2" checked>
+                    <label for="locked-2" data-price='0' class="agree-that-price active">нет</label>
+                  </div>
+                </div>
+
+              </div>
+              <textarea placeholder="Оставить комментарий водителю" class="from-to-textarea"></textarea>
+            </div>
+            
+            <div id="total-price">
+              <h3>Итоговая цена: <span class="text-gold"><span class="total-price" data-price='1200'>1200</span>р*</span></h3>
+              <h6>* в рамках района</h6>
+            </div>
+
+            <h5>Согласны, что это недорого?</h5>
+            
+            <div class="agree-that"> 
+              <div class="clear">
+                <div class="radio-input">
+                  <input type="radio" name='agree' id="agree-1" checked>
+                  <label for="agree-1">да</label>
+                </div>
+
+                <div class="radio-input">
+                  <input type="radio" name='agree' id="agree-2" >
+                  <label for="agree-2">нет</label>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div> <!-- .video-block -->
+
+    <div class="evacuator-moscow black-block" id="a2">
+      <div id="alerts">
+        <div class="alert-1 alert"></div>
+        <div class="alert-2 alert"></div>
+        <div class="alert-3 alert"></div>
+      </div>
+      <div class="center">
+        <h3 class="wow bounceInLeft" data-wow-delay="0.5s" data-wow-duration="1s">Эвакуатор в Москве</h3>
+        <p class="wow bounceInLeft" data-wow-delay="1s" data-wow-duration="1s">
+          Наша компания вот уже более 10 лет предоставляет услуги эвакуации наивысшего качества в Москве и Московской области вне зависимости от погодных условий и времени суток.
+          Каждый день мы стремимся помогать людям в сложных ситуациях! Как правило, стоимость перевозки на эвакуаторе для наших клиентов выходит на 15% дешевле. Не верите? Попробуйте и убедитесь в этом прямо сейчас!
+        </p>
+        <a href="tel:+74959972416" class="text-gold wow bounceInLeft phone" data-wow-delay="1.5s" data-wow-duration="1s">+ 7 (495) 997-24-16</a>
+        <div class="wrap-more-ten">
+          <div class="more-ten"></div>
+        </div>
+      </div>
+    </div> <!-- .evacuator-moscow -->
+
+    <div class="lower-cost">
+      <div class="center">
+        <h3 class="wow bounceInUp" data-wow-delay="0.5s" data-wow-duration="1s">Хотите снизить стоимость? </h3> <h6 class="wow bounceInUp" data-wow-delay="1s" data-wow-duration="1s">Ищите скидки на сайте, и складывайте их. </h6>
+      </div>
+    </div> <!-- .lower-cost -->
+
+    <div class="advantages-clients">
+      <div class="center">
+        <h3 id="a4">Преимущества, <br> которые так ценят <br> наши клиенты</h3>
+
+        <div class="triangle-1 triangle"></div>
+        <div class="triangle-2 triangle"></div>
+        <div class="triangle-3 triangle"></div>
+        <div class="triangle-4 triangle"></div>
+
+        <div class="line"></div>
+        
+        <div class="low-price-guarantee">
+          <h4>Гарантия низкой цены</h4>
+          <p>Если Вы найдете услуги эвакуатора в Москве дешевле, чем у нас, то мы готовы предложить Вам еще более выгодные условия.</p>
+        </div>
+      </div>
+    </div> <!-- .advantages-clients -->
+
+    <div class="form-number gold-block">
+      <div class="center">
+        <div class="display-flex">
+          <div class="phone-number">
+            <a href="tel:+74959972416"><strong class="phone">+7 (495) 997-24-16</strong></a> <span>или перезвоним вам за 20 секунд</span>
+          </div>
+          <div>
+            <form action="#" class="to-order">
+              <input type="tel" placeholder="Номер телефона" class="mask" required>
+              <button type="submit" class="btn black popup" href="#popup-success-all">Заказать!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .form-numbe -->
+
+    <div class="evacuation-process">
+      <div class="center">
+
+        <h3>Фотографии процесса эвакуации</h3>
+
+        <div class="evacuation-slider">
+          <div><img src="img/evacuation/1.jpg" alt=""><p class="text">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iusto quaerat quas molestias molestias, repellat sit</p></div>
+          <div><img src="img/evacuation/2.jpg" alt=""><p class="text">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error  quas molestias, repellat sit</p></div>
+          <div><img src="img/evacuation/1.jpg" alt=""><p class="text">3  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error  iusto quaerat quasiusto quaerat quas molestias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error  iusto quaerat quasiusto quaerat quas molestias, repellat sit</p></div>
+          <div><img src="img/evacuation/2.jpg" alt=""><p class="text">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error iusto quaerat molestias, repellat sit</p></div>
+        </div>
+
+        <div class="count-evacuation-slide">
+          <div class="index">1</div><span>/</span><div class="all">1</div>
+        </div>
+
+      </div> <!-- .center -->
+    </div> <!-- .evacuation-process -->
+
+    <div class="subscribe-network">
+      <div class="center">
+      
+        <div class="subscribe-five"></div>
+        <div class="subscribe-five-mobile">5%</div>
+        
+        <div class="title-network">
+          <div>
+            <h3>Подпишись на нас <br> в социальных сетях <br> и получи подарок! </h3>
+            <div class="network">
+              <a href="#" class="ico gp"></a>
+              <a href="#" class="ico tw"></a>
+              <a href="#" class="ico vk"></a>
+              <a href="#" class="ico fc"></a>
+              <a href="#" class="ico od"></a>
+            </div>
+            <div class="discounts-summed">* все наши скидки суммируются</div>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- .subscribe-network -->
+
+    <div class="wrap-map">
+
+      <div class="center">
+        <div class="black-block location-block">
+          <h4>Мы уже рядом с Вами!</h4>
+          
+          <ul>
+            <li>Ближайший эвакуатор: <span>5 КМ</span></li>
+            <li>Время ожидания: <span>20 минут</span></li>
+            <li>Стоимость: <span>1200 рублей</span></li>
+          </ul>
+
+          <form action="#" class="send-application" data-label-text="Отправьте заявку на звонок:">
+            <input type="text" placeholder="Номер телефона" class="mask" required>
+            <button type="submit" class="btn gold popup" href="#popup-success-all">Отправить!</button>
+          </form>
+
+          <a href="tel:+74959972416" class="phone-number">+7 (495) 997-24-16</a>
+        </div>
+      </div>
+
+      <div id="map"></div>
+
+    </div> <!-- .wrap-map -->
+
+    <div class="we-choose">
+      <div class="center">
+        <h3>Нас выбирают <span class="fast-number">18250</span> клиентов в год потому, что мы:</h3>
+        <div class="choose-block">
+          <div class="item">
+            <div class="image-block">
+              <img src="img/choose/1.png" alt="">
+            </div>
+            <p class="text">Принимаем наличные <br>и карты</p>
+          </div>
+
+          <div class="item car car-1">
+            <div class="image-block">
+              <img src="img/choose/2.png" alt="">
+            </div>
+            <p class="text">Заботимся о вашем<br>авто как о своем</p>
+          </div>
+
+          <div class="item car">
+            <div class="image-block">
+              <img src="img/choose/3.png" alt="">
+            </div>
+            <p class="text">Вытащим ваше авто<br>из любого места</p>
+          </div>
+
+          <div class="item">
+            <div class="image-block">
+              <img src="img/choose/4.png" alt="">
+            </div>
+            <p class="text">Помогаем и за пределами<br>Москвы</p>
+          </div>
+
+          <div class="item">
+            <div class="image-block">
+              <img src="img/choose/5.png" alt="">
+            </div>
+            <p class="text">Работаем с профи<br>своего дела</p>
+          </div>
+
+          <div class="item">
+            <div class="image-block">
+              <img src="img/choose/6.png" alt="">
+            </div>
+            <p class="text">Предлагаем большие<br>скидки и акции</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .we-choose -->
+
+    <div class="discount-timer">
+      <div class="center">
+        <div class="discount gold-block">
+          <h3>Скидка 10%</h3>
+          <h5>на предварительный заказ или перевозку <br>двух едениц транспорта</h5>
+          <form action="#" class="to-order">
+            <input type="tel" placeholder="Номер телефона" class="mask" required>
+            <button class="btn black popup" href="#popup-success-all" type="submit">Заказать!</button>
+          </form>
+        </div>
+
+        <div class="timer black-block">
+          <h5>Спешите! До конца акции осталось:</h5>
+          <div id="pageTimer"><strong></strong></div>
+        </div>
+      </div>
+    </div> <!-- .discount-timer -->
+
+    <div class="price-evacuator" id="a3">
+      <div class="center">
+        <h3>Цены на услуги эвакуатора в Москве и области</h3>
+        <h5>Все услуги сертифицированы и застрахованы</h5>
+      </div>
+
+      <div class="price-evacuator-blocks">
+        <a href="#">
+          <img src="img/price-block/1.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/2.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/3.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/4.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/5.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/6.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/7.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/8.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/9.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/10.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/11.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+
+        <a href="#">
+          <img src="img/price-block/12.jpg" alt="">
+          <span class="text"><h5>Легковое авто <br>от <span>1200р</span> </h5></span>
+        </a>
+      </div>
+    </div> <!-- .price-evacuator -->
+    
+    <div class="center">
+      <div class="we-figures">
+        <h3>Мы в цифрах</h3>
+
+        <p>
+          Мы съели собаку в сфере эвакуации, Вы можете <br>
+          спокойно доверить нам свой автомобиль
+        </p>
+
+        <div class="figures-line">
+          <div class="line">
+            <h2>07</h2>
+            <h3>лет успешной работы</h3>
+          </div>
+          <div class="figures">
+
+            <div class="block">
+              <div class="circle">
+                <h4>20</h4>
+              </div>
+              <p>минут среднее время подачи</p>
+            </div>
+
+            <div class="block">
+              <div class="circle">
+                <h4>50</h4>
+              </div>
+              <p>минут среднее время подачи</p>
+            </div>
+
+            <div class="block hide">
+              <div class="circle">
+                <h4>20</h4>
+              </div>
+              <p>минут среднее время подачи</p>
+            </div>
+
+            <div class="block hide">
+              <div class="circle">
+                <h4>12750</h4>
+              </div>
+              <p>минут среднее время подачи</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="figures-line mobile">
+          <div class="line">
+          </div>
+          <div class="figures">
+            <div class="block">
+              <div class="circle">
+                <h4>20</h4>
+              </div>
+              <p>минут среднее время подачи</p>
+            </div>
+
+            <div class="block">
+              <div class="circle">
+                <h4>12750</h4>
+              </div>
+              <p>минут среднее время подачи</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .we-figures -->
+
+      <div class="service-geography" id="a5">
+        <h3 class="title-min">География обслуживания</h3> 
+        <div class="display-flex">
+          <div class="location">
+            <div class="district">
+              <h5>Москва</h5>
+              <p>Выберите свой округ</p>
+              
+              <div class="blocks">
+                <div class="block" data-lat='55.52062' data-lng='37.35295'>САО</div>
+                <div class="block" data-lat='55.757695' data-lng='37.548780'>СВАО</div>
+                <div class="block" data-lat='55.727695' data-lng='37.648780'>ВАО</div>
+                <div class="block" data-lat='55.52062' data-lng='37.35295'>СЗАО</div>
+                <div class="block" data-lat='55.757695' data-lng='37.548780'>ЦАО</div>
+                <div class="block" data-lat='55.727695' data-lng='37.648780'>ЮВАО</div>
+                <div class="block" data-lat='55.52062' data-lng='37.35295'>ЗАО</div>
+                <div class="block" data-lat='55.757695' data-lng='37.548780'>ЮЗАО</div>
+                <div class="block" data-lat='55.727695' data-lng='37.648780'>ЮАО</div>
+              </div>
+            </div>
+
+            <div class="region">
+
+              <h5>Район</h5>
+              
+              <table class="blocks">
+                <tr>
+                  <td class="block" data-lat='55.747695' data-lng='37.648780'>Район</td>
+                  <td class="block" data-lat='55.52062' data-lng='37.35295'>Район</td>
+                  <td class="block" data-lat='55.727695' data-lng='37.648780'>Район</td>
+                </tr>
+                <tr>
+                  <td class="block" data-lat='55.52062' data-lng='37.35295'>Район</td>
+                  <td class="block" data-lat='55.727695' data-lng='37.648780'>Район</td>
+                  <td class="block" data-lat='55.757695' data-lng='37.548780'>Район</td>
+                </tr>
+                <tr>
+                  <td class="block" data-lat='55.727695' data-lng='37.648780'>Район</td>
+                  <td class="block" data-lat='55.757695' data-lng='37.548780'>Район</td>
+                  <td class="block" data-lat='55.727695' data-lng='37.648780'>Район</td>
+                </tr>
+                <tr>
+                  <td class="block" data-lat='55.52062' data-lng='37.35295'>Район</td>
+                  <td class="block" data-lat='55.757695' data-lng='37.548780'>Район</td>
+                  <td class="block" data-lat='55.747695' data-lng='37.648780'>Район</td>
+                </tr>
+              </table>
+
+              <form class="evacuators-nearby" action="#">
+                <div class="close">свернуть</div>
+                <p>Эвакуаторов поблизости: <strong>7</strong></p>
+
+                <div class="wrap-input">
+                  <input type="tel" placeholder="Ваш телефон" required class="mask">
+                  <button type="submit" class="btn gold">Заказать эвакуатор!</button>
+                </div>
+
+                <p>Позвоните нам и мы заберем Вас в нужное<br> время, из нужного места!</p>
+                <a href="tel:+74959972416" class="phone-number">+7 (495) 997-24-16</a>
+              </form>
+            </div>
+          </div>
+
+          
+          <div>
+            <h3 class="title">География обслуживания</h3>
+            <div id="map2"></div>
+          </div>
+          <script>
+            var map, map2;
+
+            function initMap() {
+              map2 = new google.maps.Map(document.getElementById('map2'), {
+                center: {lat: 55.737695, lng: 37.648780},
+                zoom: 11
+              });
+
+              var image = 'img/icons/map.png';
+              var beachMarker = new google.maps.Marker({
+                position: {lat: 55.727695, lng: 37.648780},
+                map: map2,
+                icon: image
+              });
+
+              var beachMarker2 = new google.maps.Marker({
+                position: {lat: 55.747695, lng: 37.648780},
+                map: map2,
+                icon: image
+              });
+
+              var beachMarker3 = new google.maps.Marker({
+                position: {lat: 55.757695, lng: 37.548780},
+                map: map2,
+                icon: image
+              });
+
+              var beachMarker4 = new google.maps.Marker({
+                position: {lat: 55.52062, lng: 37.35295},
+                map: map2,
+                icon: image
+              });
+
+              $('.location .block').on('click', function(){
+
+                  var lat = Number($(this).data('lat')),
+                      lng = Number($(this).data('lng'));
+
+                      console.log(lat + '-' + lng)
+                  if(lat > 0 || lng > 0){
+                    map2.setCenter({lat: lat, lng: lng})
+                  }
+              });
+
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 55.747695, lng: 37.558780},
+                zoom: 11
+              });
+
+              var beachMarker5 = new google.maps.Marker({
+                position: {lat: 55.727695, lng: 37.648780},
+                map: map,
+                icon: image
+              });
+
+              var beachMarker6 = new google.maps.Marker({
+                position: {lat: 55.747695, lng: 37.648780},
+                map: map,
+                icon: image
+              });
+
+              var beachMarker7 = new google.maps.Marker({
+                position: {lat: 55.757695, lng: 37.548780},
+                map: map,
+                icon: image
+              });
+            }
+
+          </script>
+        </div>
+      </div> <!-- .service-geography -->
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5bd3x2SHQhT7wj1vLr9PQVrEOmylDe_8&callback=initMap" async defer></script>
+
+      <div class="questions-blocks" id="a6">
+        <h3>Перед эвакуацией нам часто задают такие вопросы</h3>
+
+        <div class="accordion">
+          <h3>Предоставляется ли спецификация по материалам?</h3>
+          <div>
+            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+          </div>
+
+          <h3>Сколько вариантов планировки у меня будет? Можно ли вносить правки?</h3>
+          <div>
+            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+          </div>
+
+          <h3>Какие документы мне необходимо иметь с собой, чтобы можно было эвакуировать мой мотоцикл?</h3>
+          <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+            </ul>
+          </div>
+
+          <h3>Если у меня есть какие-то идеи по будущему интерьеру, будете ли вы их учитывать?</h3>
+          <div>
+            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+
+          <h3>Можете ли вы выслать примеры работ на почту?</h3>
+          <div>
+            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+        </div>
+      </div> <!-- .questions-block -->
+
+      <div class="say-thank-you">
+        <h3>Наши клиенты говорят "Спасибо"!</h3>
+
+        <div class="say-thank-you-slider">
+          <div>
+            <img src="img/thank-you/1.jpg" alt="">
+            <p>
+              1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus hic, iure aperiam quaerat maxime impedit unde voluptas. Repellendus ea nesciunt dolorem quidem pariatur a perspiciatis deleniti tenetur dicta, maiores praesentium.
+            </p>
+          </div>
+
+          <div>
+            <img src="img/thank-you/2.jpg" alt="">
+
+            <p>
+              2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus hic, iure aperiam quaerat maxime impedit unde voluptas. Repellendus ea nesciunt dolorem quidem pariatur a perspiciatis deleniti tenetur dicta, maiores praesentium.
+            </p>
+          </div>
+
+          <div>
+            <img src="img/thank-you/3.jpg" alt="">
+
+            <p>
+              3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus hic, iure aperiam quaerat maxime impedit unde voluptas. Repellendus ea nesciunt dolorem quidem pariatur a perspiciatis deleniti tenetur dicta, maiores praesentium.
+            </p>
+          </div>
+        </div>
+        <div class="count-say-thank-you">
+          <div class="index">1</div><span>/</span><div class="all">4</div>
+        </div>
+      </div> <!-- .say-thank-you -->
+    </div> <!-- .center -->
+  
+    <div class="center">
+      <div class="puzzle-block">
+        <div class="puzzle-block__all">
+          <div class="box-modal" id="puzzle-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title"></div>
+                <div class="modal-close_btn arcticmodal-close"></div>
+              </div>
+            
+              <div class="modal-body">
+                <iframe src="puzzle.html" frameborder="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="puzzle-block__preview" id="a7">
+          <h6>
+            Акция собери себе<br>
+            скидку 5%*!
+          </h6>
+          <p>* все скидки суммируются</p>
+          <img src="img/discount-puzzzle-preview.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="calculate-cost black-block">
+      <div class="center clear">
+        <p class="text-position">
+          Здравствуйте, 
+          меня зовут
+          Виктория Благова.
+          Младший менеджер
+          компании 
+          "Московский эвакуатор"
+        </p>
+        <div class="information">
+          <h2 id="a8">Помогу рассчитать стоимость <div>за 10 секунд!</div></h2>
+          <form action="#" class="from-to">
+            <img src="img/woman.png" alt="" class="image">
+
+            <span class="col"><input type="text" placeholder="Имя"></span>
+            <span class="col"><input type="tel" placeholder="Телефон" class="mask"></span>
+            <button class="btn gold popup" type="submit" href="#popup-success-all">Перезвоните мне!</button>
+          </form>
+
+          <p>
+            Наши цены ниже чем у конкурентов как минимум на 15%
+          </p>
+          <p>
+            Наша система скидок позволит сделать заказ еще дешевле!
+          </p>
+          <p>
+            Убедитесь в этом сами!
+          </p>
+        </div>
+      </div>
+    </div> <!-- .calculate-cost -->
+    
+    <div class="feedback-customers">
+      <div class="center">
+        <h3 id="a9">Отзывы наших клиентов</h3>
+        <div class="clients display-flex">
+          <div class="client">
+            <div class="image">
+              <img src="img/ava.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Попал в аварию, машина на стоянке была. Вот понадобилось ее отвезти, позвонил ребятам и договорился на определенный день и час. Молодцы были во время и не подвели.</p>
+              <div class="date-reting">
+                <div class="date">6.17 Lada, Евгений</div>
+                <div class="rating"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="client">
+            <div class="image">
+              <img src="img/ava.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Попал в аварию, машина на стоянке была. Вот понадобилось ее отвезти, позвонил ребятам и договорился на определенный день и час. Молодцы были во время и не подвели.</p>
+              <div class="date-reting">
+                <div class="date">6.17 Lada, Евгений</div>
+                <div class="rating"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="client">
+            <div class="image">
+              <img src="img/ava.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Попал в аварию, машина на стоянке была. Вот понадобилось ее отвезти, позвонил ребятам и договорился на определенный день и час. Молодцы были во время и не подвели.</p>
+              <div class="date-reting">
+                <div class="date">6.17 Lada, Евгений</div>
+                <div class="rating"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="client">
+            <div class="image">
+              <img src="img/ava.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Попал в аварию, машина на стоянке была. Вот понадобилось ее отвезти, позвонил ребятам и договорился на определенный день и час. Молодцы были во время и не подвели.</p>
+              <div class="date-reting">
+                <div class="date">6.17 Lada, Евгений</div>
+                <div class="rating"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="give-feedback">
+          <a href="#feedback-popup" class="popup">Оставить отзыв! </a>
+        </div>
+      </div>
+    </div> <!-- .feedback-customers -->
+
+  </main>
+  <footer>
+    <div class="form-number gold-block">
+      <div class="center">
+        <div class="display-flex">
+          <div class="phone-number">
+            <a href="tel:+74959972416"><strong class="phone">+7 (495) 997-24-16</strong></a> <span>или перезвоним вам за 20 секунд</span>
+          </div>
+          <div>
+            <form action="#" class="to-order">
+              <input type="tel" placeholder="Номер телефона" class="mask" required>
+              <button type="submit" class="btn black popup" href="#popup-success-all">Заказать!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .form-numbe -->
+
+    <div class="bottom-footer center clear">
+      <div class="logo-copyright">
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="copyright">
+          &copy; 2008 - 2012 CopyRight
+        </div>
+      </div>
+
+      <div class="contact-information">
+        <div><strong>E-mail:</strong><a href="mailto:info@evacuator-moskva.ru"> info@evacuator-moskva.ru</a></div>
+        <div><strong>Наш адрес:</strong> Москва, Егорьевский проезд, д.2а</div>
+        <div>
+          <strong>Наш телефон:</strong>
+          <a href="tel:+74959972416"><strong class="phone-number">+7 (495) 997-24-16</strong></a>
+        </div>
+      </div>
+
+      <div class="network">
+        <p>
+          <strong>Мы доступны в мессенджерах:</strong>
+        </p>
+        <a href="#" class="ico vb"></a>
+        <a href="#" class="ico tl"></a>
+        <a href="#" class="ico ph"></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="congrat-modal">
+    <div class="overlay"></div>
+    <div id="congrat">
+      <div class="close-btn">×</div>
+      <h1>Поздравляем,</h1>
+      <h2>вы получили скидку 5%</h2>
+      <h3 style="display: none"><span id="time"></span></h3>
+      <form method="post" class="hide" action="" target="save-score" onsubmit="jigsaw.UI.close_lightbox();" style="display: none;">
+        <label>
+          Su nombre: <input type="text" name="name" />
+        </label>
+        <input type="submit" value="Save score" />
+        <input type="hidden" id="time-input" name="time"/>
+      </form>
+      <div class="img-coupon">
+        <img src="img/discount-puzzzle-preview.png" alt="">
+        <input type="text" value="#0101" disabled>
+      </div>
+      <p class="mod-text">
+        Для получения скидки по купону необходимо
+        сообщить оператору номер купона при оформлении
+        заказа на вызов евакуатора.
+        После этого распечатать или сфотографировать
+        купон на сайте и предьявить его эвакуаторщику.
+      </p>
+      <a href='tel:+74959972416' class="mod-number">
+        +7 (495) 997-24-16
+      </a>
+      <a href="mailto:info@site.ru" class="mod-mail">
+          info@site.ru
+      </a>
+      <div class="coupon-date">
+        20/09/2017
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
