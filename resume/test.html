@@ -1,8 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114440108-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114440108-1');
+  </script>
+
   <meta charset="UTF-8">
-  <title>Портфоліо</title>
+  <title>Контакти</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-rim-auto-match" content="none">
@@ -20,10 +30,10 @@
             <a href="/resume/">Головна</a>
           </li>
           <li>
-            <a href="#" class="active">Портфоліо</a>
+            <a href="/resume/portfolio.html">Портфоліо</a>
           </li>
           <li>
-            <a href="/resume/contacts.html">Контакти</a>
+            <a href="#" class="active">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -33,153 +43,92 @@
     <div class="center">
 
       <h1 class="text-center title-page">
-        Портфоліо
+        Контакти
       </h1>
+      
+      <div class="pane wow flipInX ">
+        <h4>
+          <span class="gold-text">Місто проживання:</span>
+          Житомир
+        </h4>
 
-      <div class="pane">
-        Дані роботи виконані мною. Нажаль більшість робіт втражено по різним причинам :(
+        <h4>
+          <span class="gold-text">Skype:</span>
+          serg_uk_zt
+        </h4>
+
+        <h4>
+          <span class="gold-text">Телефон:</span>
+          +380 98 96 96 952
+        </h4>
+
+        <h4>
+          <span class="gold-text">Email:</span>
+          main.email.seryoga@gmail.com
+        </h4>
+
+        <h4>
+          <span class="gold-text">Робочі години:</span>
+          Пн-Пт: 10:00 - 19:00 <br>
+          <span class="gold-text">Для пропозицій від яких не зможу відмовитися, на зв`язку цілодобово :)</span>
+        </h4>
       </div>
 
-      <div class="grid">        
-        <div class="item wow bounceInLeft" data-wow-delay="100ms" data-wow-duration="1s">
-          <a href="https://seryogagithub.github.io/projects/bestplitka/" target="_blank">
-            <img src="img/portfolio/1.jpg" alt="bestplitka">
-          </a>
-        </div>
-        
-        <div class="item wow bounceInUp" data-wow-delay="700ms" data-wow-duration="1.5s">
-          <a href="https://seryogagithub.github.io/projects/bss/" target="_blank">
-            <img src="img/portfolio/2.jpg" alt="bss">
-          </a>
+      <div id="map" class="wow bounceInUp"></div>
+      <script>
+        var map;
 
-          <div class="pages text-center">
-            <div class="close">+</div>
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 50.254556, lng: 28.658730},
+            zoom: 12,
+            styles: [{
+              "stylers": [
+                {
+                  "hue": "#ff1a00"
+                },
+                {
+                  "invert_lightness": true
+                },
+                {
+                  "saturation": -100
+                },
+                {
+                  "lightness": 33
+                },
+                {
+                  "gamma": 0.5
+                }
+              ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{
+                  "color": "#2D333C"
+                }]
+            }]
+          });
+        }
+      </script>
 
-            <h5>Сторінки</h5>
-            <ul>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/bss/cabinet.html" target="_blank">Cabinet</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/bss/card.html" target="_blank">Card</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/bss/categori.html" target="_blank">Categori</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="item wow bounceInRight" data-wow-delay="500ms" data-wow-duration="2s">
-          <a href="https://seryogagithub.github.io/projects/colgate/" target="_blank">
-            <img src="img/portfolio/3.jpg" alt="colgate">
-          </a>
-        </div>
-        
-        <div class="item wow rollIn" data-wow-delay="1500ms" data-wow-duration="1s">
-          <a href="https://seryogagithub.github.io/projects/fifa/" target="_blank">
-            <img src="img/portfolio/4.jpg" alt="fifa">
-          </a>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASPycZswOJ1QcCtU3au0M0jJh1HdlzVQI&callback=initMap"
+      async defer></script>
+      
+      <h2 class="text-center">Зворотній зв'язок</h2>
 
-          <div class="pages text-center">
-            <div class="close">+</div>
+      <form id="feedback-form">
+        <input type="text" name="name" placeholder="Компанія; Ім'я" class="wow bounceInDown" data-wow-delay="800ms" required>
+        <input type="text" name="city" placeholder="Місто" class="wow bounceInDown" data-wow-delay="700ms" required>
+        <input type="text" name="position" placeholder="На яку позицію запрошення" class="wow bounceInDown" data-wow-delay="600ms" required>
+        <input type="email" name="email" placeholder="Email" class="wow bounceInDown" data-wow-delay="500ms" required>
 
-            <h5>Сторінки</h5>
-            <ul>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/fifa/cart.html" target="_blank">Cart</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/fifa/cities.html" target="_blank">Cities</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/fifa/events.html" target="_blank">Events</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/fifa/housing.html" target="_blank">Housing</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/fifa/tickets.html" target="_blank">Tickets</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/fifa/shedule.html" target="_blank">Shedule</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/fifa/special-offers.html" target="_blank">Special-offers</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="item wow bounceInDown" data-wow-delay="500ms" data-wow-duration="2s">
-          <a href="https://seryogagithub.github.io/projects/houseStaff/" target="_blank">
-            <img src="img/portfolio/5.jpg" alt="houseStaff">
-          </a>
-        </div>
-        
-        <div class="item wow lightSpeedIn" data-wow-delay="300ms" data-wow-duration="1s">
-          <a href="https://seryogagithub.github.io/projects/kudu/" target="_blank">
-            <img src="img/portfolio/6.jpg" alt="kudu">
-          </a>
+        <textarea name="more" class="wow bounceInDown" data-wow-delay="400ms" placeholder='Додаткова інформація' cols="30" rows="10"></textarea>
 
-          <div class="pages text-center">
-            <div class="close">+</div>
-            
-            <h5>Сторінки</h5>
-            <ul>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/kudu/cart-buy.html" target="_blank">Cart</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/kudu/category.html" target="_blank">Category</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/kudu/designer.html" target="_blank">Designer</a>
-              </li>
-              <li>
-                <a href="https://seryogagithub.github.io/projects/kudu/designer2.html" target="_blank">Designer 2</a>
-              </li>
-            </ul>
-          </div>
+        <div class="text-center">
+          <input type="submit" class="btn wow bounceInDown" data-wow-delay="300ms">
         </div>
-        
-        <div class="item wow bounceInLeft" data-wow-delay="1000ms" data-wow-duration="2s">
-          <a href="https://seryogagithub.github.io/projects/tow/" target="_blank">
-            <img src="img/portfolio/7.jpg" alt="tow">
-          </a>
-        </div>
-        
-        <div class="item wow bounceInDown" data-wow-delay="200ms" data-wow-duration="1s">
-          <a href="https://seryogagithub.github.io/projects/visa/" target="_blank">
-            <img src="img/portfolio/8.jpg" alt="visa">
-          </a>
-        </div>
-        
-        <div class="item wow bounceInRight" data-wow-delay="1500ms" data-wow-duration="2s">
-          <a href="http://www.inform-vs.ru/" target="_blank">
-            <img src="img/portfolio/9.jpg" alt="inform-vs">
-          </a>
-        </div>
-        
-        <div class="item wow rollIn" data-wow-delay="500ms" data-wow-duration="1.5s">
-          <a href="http://ortomed.com.ua/" target="_blank">
-            <img src="img/portfolio/10.jpg" alt="ortomed">
-          </a>
-        </div>
-        
-        <div class="item wow bounceInUp" data-wow-delay="300ms" data-wow-duration="3s">
-          <a href="http://sklad-pro.com/" target="_blank">
-            <img src="img/portfolio/11.jpg" alt="sklad-pro">
-          </a>
-        </div>
-        
-        <div class="item wow lightSpeedIn" data-wow-delay="1500ms" data-wow-duration="0.5s">
-          <a href="https://mvp.trueplay.io/" target="_blank">
-            <img src="img/portfolio/12.jpg" alt="trueplay">
-          </a>
-        </div>
-      </div>
-        
+      </form>
     </div><!-- center -->
   </main>
   <footer>
