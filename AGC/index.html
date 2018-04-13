@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<title>AGC App</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/simple-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/180.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!--<script src="js/jquery.p2r.min"></script>-->
+</head>
+
+<body>
+	<!-- HEADER -->
+
+	<div id="auth" class="hide">
+		<form>
+			<img src="img/logo.png" width="180" alt="">
+			<label for="">APP Login</label>
+			<input type="password" name="password" class="pass" placeholder="Your password">
+			<button type="button" onclick="login()">Login</button>
+		</form>
+	</div>
+
+
+
+	<div id="app" class="1hide">
+		<div class="header">
+			<div class="logo">
+				<a href="#main" data-transition="none"><img src="img/logo.png" width="150" alt=""></a>
+			</div>
+			<div class="menu">
+				<a href="#menu"><img src="img/menu_btn.svg" width="30" alt=""></a>
+			</div>
+		</div>
+		<!-- END HEADER -->
+
+		<!-- MAIN PAGE -->
+		<div data-role="page" id="main">
+			<!-- MAIN TITLE -->
+			<div class="maintitle">
+				<h1>AGC Automotive<br>Glass solutions</h1>
+				<p>Driving clearly ahead </p>
+			</div>
+			<!-- MAIN TITLE -->
+			<div class="mainpic">
+				<img src="img/mainbg2.jpg" alt="background">
+			</div>
+			<!-- INTRO -->
+			<div role="main" class="ui-content">
+				<div class="ui-inner">
+					<br>
+					<h3>Please discover our glass range for Automotive applications.</h3>
+					<p>For each family of products (Windshield, Rear Window, Side Windows, Sunroof), we invite you to select a specific Glass color (clear, green, grey) and transparency (light or dark). This application lets you view glass on the vehicle, from outside or from inside the car.</p>
+					<p><strong>AGC Automotive Glass</strong> range offers optimum properties for light and energy transmission. We wish you a pleasant glass discovery trip.</p>
+					<p>Visit our website for more information about AGC Automotive Glass Solutions <a href="https://google.com/" target="_blank">www.agc-automotive.com.</a></p>
+				</div>
+			</div>
+			<!-- INTRO -->
+			<!-- MENU MAIN PAGE -->
+			<div class="windows">
+				<a href="#windshield" data-transition="none">
+					<div class="windshield skew_btn">
+						<p>Windshield</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#rear" data-transition="none">
+					<div class="rear skew_btn">
+						<p>Backlite</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#side" data-transition="none">
+					<div class="side skew_btn">
+						<p>Side windows</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#sunroof" data-transition="none">
+					<div class="sunroof skew_btn">
+						<p>Sunroof</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+			</div>
+			<!-- END MENU MAIN PAGE -->
+		</div>
+		<!-- END MAIN PAGE -->
+
+		<!-- WINDSHIELD -->
+		<div data-role="page" id="windshield">
+			<!-- MAIN PIC -->
+			<div class="mainpic">
+				<div class="head-overlay"></div>
+				<div class="rotate_btn"><span>Inside</span><span>Outside</span></div>
+				<img src="img/windshield/outer/AGC_External_Wind_IRISGREEN.jpg" class="outer bigger" alt="">
+				<img src="img/windshield/inner/AGC_Interior_Windshield_IRISGREEN.jpg" class="inner" alt="">
+			</div>
+			<!-- END MAIN PIC -->
+			<!-- CONTENT-->
+			<div role="main" class="ui-content">
+				<div class="ui-inner">
+					<br>
+					<!-- IMAGE ROTATOR -->
+					<div id="lami" class="colors-conatiner-small">
+						<h4 class="center">Select the color of your choice</h4>
+						<div class="windshield-rotator glass-rotator">
+							<div class="glass-colors" style="width:600px">
+								<div class="item super-iris" data-color="img/windshield/outer/AGC_External_Wind_SUPERIRIS.jpg" data-color-inner="img/windshield/inner/AGC_Interior_Windshield_SUPERIRIS_CLEAR.jpg">
+									<p>Super Iris / Clear<br>2.1 / 1.6mm</p>
+								</div>
+								<div class="item solarplus-tsa" data-color="img/windshield/outer/outer_windshield_SOLARPLUS71_TSA.jpg" data-color-inner="img/windshield/inner/inner_windshield_SOLARPLUS71_TSA.jpg">
+									<p>Solarplus 71 / TSA<br>2.1 / 1.6mm</p>
+								</div>
+								<div class="item tsa-tsa" data-color="img/windshield/outer/AGC_External_Wind_TSA_TSA.jpg" data-color-inner="img/windshield/inner/AGC_Interior_Windshield_TSA_TSA.jpg">
+									<p>TSA / TSA<br>2.1 / 2.1mm</p>
+								</div>
+								<div class="item iris-green" data-color="img/windshield/outer/AGC_External_Wind_IRISGREEN.jpg" data-color-inner="img/windshield/inner/AGC_Interior_Windshield_IRISGREEN.jpg">
+									<p>Iris Green / Clear<br>2.1 / 1.6mm</p>
+								</div>
+
+								<div class="item solarplus-clair" data-color="img/windshield/outer/AGC_External_Wind_SOLARPLUS71_CLEAR.jpg" data-color-inner="img/windshield/inner/AGC_Interior_Windshield_SOLARPLUS71_Clear.jpg">
+									<p>Solarplus 71 / Clear<br>1.9 / 1.25mm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- IMAGE ROTATOR -->
+					<div class="table-name">
+						<h4>WINDSHIELD</h4>
+						<h5>LAMINATED</h5>
+					</div>
+					<!-- INFOS TABLE -->
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">OUTER / INNER GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Super Iris / Clear <br>2.1 / 1.6mm</th>
+								<td><a href="#superiris-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="superiris-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Super Iris / Clear <br>2.1 / 1.6mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+
+												<TD>71,2</TD>
+												<TD>31,7</TD>
+												<TD>2,2</TD>
+											</TR>
+											<TR>
+
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="10,7">10,7</TD>
+												<TD SDVAL="45,6">45,6</TD>
+											</TR>
+											<TR>
+
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+
+												<TD SDVAL="22,7">22,7</TD>
+												<TD SDVAL="37,6">37,6</TD>
+												<TD SDVAL="33,3">33,3</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Solarplus 71 / TSA <br>2.1 / 1.6mm</th>
+								<td><a href="#solarplus-tsa-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="solarplus-tsa-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Solarplus 71 / TSA <br>2.1 / 1.6mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+
+												<TD SDVAL="74,8">74,8</TD>
+												<TD SDVAL="46,7">46,7</TD>
+												<TD SDVAL="1,58">1,6</TD>
+											</TR>
+											<TR>
+
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="6,9">6,9</TD>
+												<TD SDVAL="5,5">5,5</TD>
+											</TR>
+											<TR>
+
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+
+												<TD SDVAL="47,8">47,8</TD>
+												<TD SDVAL="59,1">59,1</TD>
+												<TD SDVAL="50,1">50,1</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>TSA / TSA <br>2.1 / 2.1mm</th>
+								<td><a href="#tsa-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="tsa-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>TSA / TSA <br>2.1 / 2.1mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="78,1">78,1</TD>
+												<TD SDVAL="52,2">52,2</TD>
+												<TD SDVAL="1,47">1,5</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="7,1">7,1</TD>
+												<TD SDVAL="5,7">5,7</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="42,1">42,1</TD>
+												<TD SDVAL="63,1">63,1</TD>
+												<TD SDVAL="55,1">55,1</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Iris green / Clear <br>2.1 / 1.6mm</th>
+								<td><a href="#irisgreen-cl-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="irisgreen-cl-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Iris green / Clear <br>2.1 / 1.6mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="78,3">78,3</TD>
+												<TD SDVAL="44,2">44,2</TD>
+												<TD SDVAL="1,77149321266968">1,8</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="10,8">10,8</TD>
+												<TD SDVAL="35,4">35,4</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="20,4">20,4</TD>
+												<TD SDVAL="49,5">49,5</TD>
+												<TD SDVAL="45,6">45,6</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Solarplus 71 / Clear <br>1.9 / 1.25mm</th>
+								<td><a href="#solarplus-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="solarplus-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Solarplus 71 / Clear <br>1.9 / 1.25mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="80,6">80,6</TD>
+												<TD SDVAL="56,8">56,8</TD>
+												<TD SDVAL="1,39">1,4</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="7,3">7,3</TD>
+												<TD SDVAL="5,9">5,9</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="37,3">37,3</TD>
+												<TD SDVAL="66,4">66,4</TD>
+												<TD SDVAL="59,4">59,4</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- END CONTENT -->
+
+			<!-- MENU WINDSHIELD-->
+			<div class="windows">
+				<a href="#windshield" data-transition="none">
+					<div class="windshield skew_btn">
+						<p>Windshield</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#rear" data-transition="none">
+					<div class="rear skew_btn">
+						<p>Backlite</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#side" data-transition="none">
+					<div class="side skew_btn">
+						<p>Side windows</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#sunroof" data-transition="none">
+					<div class="sunroof skew_btn">
+						<p>Sunroof</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- END MENU WINDSHIELD -->
+
+		<!-- END WINDSHIELD -->
+
+		<!-- BACKLITE -->
+		<div data-role="page" id="side">
+			<!-- MAIN PAGE -->
+			<div class="mainpic">
+				<div class="head-overlay"></div>
+				<div class="rotate_btn_sides"><span>Inside</span><span>Outside</span></div>
+				<!-- Front side -->
+				<div class="frside">
+					<!-- Outer -->
+					<img src="img/side/outer/front_sidelight/front_sp71.jpg" class="outer" alt="">
+				</div>
+				<div class="reside">
+					<img src="img/side/outer/rear_sidelight/rear_sp71.jpg" class="outer" alt="">
+				</div>
+				<!-- Inner -->
+				<div class="head-overlay"></div>
+				<div class="in_frside hide">
+					<img src="img/side/inner/rear_sidelight/rear_sp71_sp71.jpg" class="inner" alt="">
+				</div>
+				<div class="in_reside hide">
+					<img src="img/side/inner/front_sidelight/front_sp71_sp71.jpg" class="inner" alt="">
+				</div>
+			</div>
+
+			<!-- Thumbnails -->
+			<div role="main" class="ui-content">
+				<div class="ui-inner">
+					<br>
+					<div>
+						<h4 class="center">Select the color of your choice</h4>
+						<h4>FRONT SIDE WINDOW</h4>
+						<br>
+						<div data-role="navbar" class="front-navbar">
+							<ul>
+								<li><a href="#" class="ui-btn-active tempbtn" data-href="tempe_1" data-ajax="false">Tempered</a></li>
+								<li><a href="#" data-href="lami_1" data-ajax="false">Laminated</a></li>
+							</ul>
+						</div>
+
+						<!-- IMAGE ROTATOR -->
+						<div id="tempe_1" class="colors-conatiner content_front">
+							<div class="front-sl-glass-rotator glass-rotator">
+								<div class="glass-colors" style="min-width:400px">
+									<div class="item item-front solarplus71" data-color="img/side/outer/front_sidelight/front_sp71.jpg" data-color-inner="img/side/inner/front_sidelight/front_sp71.jpg">
+										<p>Solarplus 71 <br>3.15mm</p>
+									</div>
+
+									<div class="item item-front pure-gray" data-color="img/side/outer/front_sidelight/front_pure.jpg" data-color-inner="img/side/inner/front_sidelight/front_pure.jpg">
+										<p>Pure Gray<br>3.85mm</p>
+									</div>
+
+									<div class="item item-front tsa" data-color="img/side/outer/front_sidelight/front_tsa.jpg" data-color-inner="img/side/inner/front_sidelight/front_tsa.jpg">
+										<p>TSA<br>3.85mm</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="lami_1" class="colors-conatiner content_front">
+							<div class="front-sl-glass-rotator glass-rotator">
+								<div class="glass-colors" style="width:220px">
+									<div class="item item-front solarplus71-solarplus71" data-color="img/side/outer/front_sidelight/front_sp71_sp71.jpg" data-color-inner="img/side/inner/front_sidelight/front_sp71_sp71.jpg">
+										<p>Solarplus 71 / Solarplus 71 <br>1.6 / 1.6mm</p>
+									</div>
+									<div class="item item-front tsa_tsa_solarpvb" data-color="img/side/outer/front_sidelight/front_tsa_tsa.jpg" data-color-inner="img/side/inner/front_sidelight/front_tsa_tsa.jpg">
+										<p>TSA / TSA + Solar PVB <br>2.1 / 2.1mm</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<!-- IMAGE ROTATOR -->
+
+						<h4>REAR SIDE WINDOW</h4>
+						<br>
+						<div data-role="navbar" class="side-navbar">
+							<ul>
+								<li><a class="ui-btn-active tempbtn" data-href="tempe_2" data-ajax="false">Tempered</a></li>
+								<li><a data-href="lami_2" data-ajax="false">Laminated</a></li>
+							</ul>
+						</div>
+
+						<!-- IMAGE ROTATOR -->
+						<div id="tempe_2" class="colors-conatiner content_side">
+
+							<div class="rear-sl-glass-rotator glass-rotator">
+								<div class="glass-colors" style="width:600px">
+									<div class="item item-rear athergrey8" data-color="img/side/outer/rear_sidelight/rear_anthergrey8.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_anthergrey8.jpg">
+										<p>Athergrey 8 <br>3.85mm</p>
+									</div>
+									<div class="item item-rear athergrey17" data-color="img/side/outer/rear_sidelight/rear_anthergrey17.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_anthergrey17.jpg">
+										<p>Athergrey 17<br>3.85mm</p>
+									</div>
+									<div class="item item-rear athergreen32" data-color="img/side/outer/rear_sidelight/rear_anthergreen.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_anthergreen.jpg">
+										<p>Athergreen 32<br>3.85mm</p>
+									</div>
+									<div class="item item-rear solarplus71" data-color="img/side/outer/rear_sidelight/rear_sp71.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_sp71.jpg">
+										<p>Solarplus 71<br>3.85mm</p>
+									</div>
+									
+									<div class="item item-rear pure-gray" data-color="img/side/outer/rear_sidelight/rear_pure_pure.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_pure.jpg">
+										<p>Pure Gray<br>3.85mm</p>
+									</div>
+
+									<div class="item item-rear tsa" data-color="img/side/outer/rear_sidelight/rear_tsa.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_tsa.jpg">
+										<p>TSA <br>3.85mm</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="lami_2" class="colors-conatiner content_side">
+							<div class="rear-sl-glass-rotator glass-rotator">
+								<div class="glass-colors" style="width:220px">
+									<div class="item item-rear solarplus71-solarplus71" data-color="img/side/outer/rear_sidelight/rear_sp71_sp71.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_sp71_sp71.jpg">
+										<p>Solarplus 71 / Solarplus 71  <br>1.6 / 1.6mm</p>
+									</div>
+									<div class="item item-rear tsa_tsa_solarpvb" data-color="img/side/outer/rear_sidelight/rear_tsa_tsa.jpg" data-color-inner="img/side/inner/rear_sidelight/rear_tsa_tsa.jpg">
+										<p>TSA / TSA + Solar PVB <br>2.1 / 2.1mm </p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- IMAGE ROTATOR -->
+					</div>
+					<!-- TITLE TABLE -->
+					<div class="table-name">
+						<h4>FRONT SIDE WINDOW</h4>
+						<h5>TEMPERED</h5>
+					</div>
+					<!-- END TITLE TABLE -->
+					<!-- TABLE -->
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+						<!-- TABLE CONTENT -->
+						<tbody>
+							<!-- SEC1 -->
+							<tr>
+								<!-- SEC 3 -->
+								<th>Solarplus 71 / 3.15mm</th>
+								<td><a href="#fr-tmp-solarplus-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="fr-tmp-solarplus-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Solarplus 71 / 3.15mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="71,8">75,0</TD>
+												<TD SDVAL="45,1">50,2</TD>
+												<TD SDVAL="1,61">1,5</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="20,5">24,7</TD>
+												<TD SDVAL="6,7">6,9</TD>
+												<TD SDVAL="5,4">5,6</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="49,5">44,2</TD>
+												<TD SDVAL="57,9">61,6</TD>
+												<TD SDVAL="48,6">53,3</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+							  <th>Pure Grey / 3.85mm</th>
+							  <td><a href="#fr-tmp-pure-grey-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+							    <div data-role="popup" id="fr-tmp-pure-grey-popup" class="ui-content" data-theme="a">
+							      <a href="#" data-rel="back" class="close_btn">
+							        <img src="img/close_btn.svg" width="30" alt="">
+							      </a>
+							      <h4>Pure Grey / 3.85mm</h4>
+							      <table class="poptable">
+							        <TR>
+							          <TD>LT A2&deg; [%]</TD>
+							          <TD>ET ISO 9050 [%]</TD>
+							          <TD>Selectivity</TD>
+							        </TR>
+							        <TR>
+							          <TD SDVAL="71,2">71,2</TD>
+							          <TD SDVAL="49,6">49,6</TD>
+							          <TD SDVAL="1,4">1,4</TD>
+							        </TR>
+							        <TR>
+							          <TD>TUV ISO 9050 [%]</TD>
+							          <TD>LR A2&deg; [%]</TD>
+							          <TD>ER ISO 9050 [%]</TD>
+							        </TR>
+							        <TR>
+							          <TD SDVAL="26,5">26,5</TD>
+							          <TD SDVAL="6,6">6,6</TD>
+							          <TD SDVAL="5,5">5,5</TD>
+							        </TR>
+							        <TR>
+							          <TD>EA ISO 9050 [%]</TD>
+							          <TD>SF0 ISO 9050 [%]</TD>
+							          <TD>SF100 ISO 9050 [%]</TD>
+							        </TR>
+							        <TR>
+							          <TD SDVAL="44,8">44,8</TD>
+							          <TD SDVAL="61,2">61,2</TD>
+							          <TD SDVAL="52,8">52,8</TD>
+							        </TR>
+							      </table>
+							        <p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+							    </div>
+							  </td>
+							</tr>
+
+							<tr>
+								<th>TSA / 3.85mm</th>
+								<td><a href="#fr-tmp-tsa-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+									<div data-role="popup" id="fr-tmp-tsa-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>TSA / 3.85mm </h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="77,6">77,6</TD>
+												<TD SDVAL="55">55,0</TD>
+												<TD SDVAL="1,42">1,4</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="31,2">31,2</TD>
+												<TD SDVAL="7,1">7,1</TD>
+												<TD SDVAL="5,8">5,8</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="39,2">39,2</TD>
+												<TD SDVAL="65,1">65,1</TD>
+												<TD SDVAL="57,7">57,7</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+						</tbody>
+						<!-- END TABLE CONTENT -->
+					</table>
+					<!-- END TABLE -->
+					<!-- TITLE TABLE -->
+					<div class="table-name">
+						<h5>LAMINATED</h5>
+					</div>
+					<!-- END TITLE TABLE -->
+					<!-- TABLE -->
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">OUTER / INNER GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+                        <!-- TABLE CONTENT -->
+                        <tbody>
+                            <!-- SEC 1 -->
+                            <tr>
+                                <th>Solarplus 71 / Solarplus 71 <br>1.6 / 1.6mm</th>
+                                <td><a href="#fr-tmp-solarplus-solarplus-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                    <div data-role="popup" id="fr-tmp-solarplus-solarplus-popup" class="ui-content" data-theme="a">
+                                        <a href="#" data-rel="back" class="close_btn">
+                                            <img src="img/close_btn.svg" width="30" alt="">
+                                                </a>
+                                        <h4>Solarplus 71 / Solarplus 71 <br>1.6 / 1.6mm </h4>
+                                        <table class="poptable">
+                                            <TR>
+                                                <TD>LT A2&deg; [%]</TD>
+                                                <TD>ET ISO 9050 [%]</TD>
+                                                <TD>Selectivity</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="74,8">74,8</TD>
+                                                <TD SDVAL="46,6">46,6</TD>
+                                                <TD SDVAL="1,6">1,6</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>TUV ISO 9050 [%]</TD>
+                                                <TD>LR A2&deg; [%]</TD>
+                                                <TD>ER ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="0">0,0</TD>
+                                                <TD SDVAL="6,9">6,9</TD>
+                                                <TD SDVAL="5,5">5,5</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>EA ISO 9050 [%]</TD>
+                                                <TD>SF0 ISO 9050 [%]</TD>
+                                                <TD>SF100 ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="48,0">48,0</TD>
+                                                <TD SDVAL="58,9">58,9</TD>
+                                                <TD SDVAL="49,9">49,9</TD>
+                                            </TR>
+                                        </table>
+                                        <p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>TSA / TSA + Solar PVB <br>2.1 / 2.1mm</th>
+                                <td><a href="#fr-tmp-tsa-tsa-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                    <div data-role="popup" id="fr-tmp-tsa-tsa-popup" class="ui-content" data-theme="a">
+                                        <a href="#" data-rel="back" class="close_btn">
+                                            <img src="img/close_btn.svg" width="30" alt="">
+                                                </a>
+                                        <h4>TSA / TSA + Solar PVB <br>2.1 / 2.1mm</h4>
+                                        <table class="poptable">
+                                            <TR>
+                                                <TD>LT A2&deg; [%]</TD>
+                                                <TD>ET ISO 9050 [%]</TD>
+                                                <TD>Selectivity</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="71">72,8</TD>
+                                                <TD SDVAL="38">40,7</TD>
+                                                <TD SDVAL="1,86">1,8</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>TUV ISO 9050 [%]</TD>
+                                                <TD>LR A2&deg; [%]</TD>
+                                                <TD>ER ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="0">0,0</TD>
+                                                <TD SDVAL="6,6">6,7</TD>
+                                                <TD SDVAL="5,2">5,3</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>EA ISO 9050 [%]</TD>
+                                                <TD>SF0 ISO 9050 [%]</TD>
+                                                <TD>SF100 ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="56,8">54,0</TD>
+                                                <TD SDVAL="52,6">54,6</TD>
+                                                <TD SDVAL="42">44,5</TD>
+                                            </TR>
+                                        </table>
+                                        <p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+                                    </div>
+                                </td>
+                            </tr>						</tbody>
+                        <!-- END TABLE CONTENT -->
+					</table>
+					<!-- END TABLE -->
+
+					<!-- TITLE TABLE -->
+					<div class="table-name">
+						<h4>REAR SIDE WINDOW</h4>
+						<h5>TEMPERED</h5>
+					</div>
+					<!--END TITLE TABLE -->
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+						<!-- TABLE CONTENT -->
+						<tbody>
+							<!-- SEC 1 -->
+							<tr>
+								<th>Athergrey 8 / 3.85mm </th>
+								<td><a href="#rs-lm-athgrey8-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="rs-lm-athgrey8-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergrey 8 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="8,3">8,3</TD>
+												<TD SDVAL="9,4">9,4</TD>
+												<TD SDVAL="0,9">0,9</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0,7">0,7</TD>
+												<TD SDVAL="4,3">4,3</TD>
+												<TD SDVAL="1,3">1,3</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="86,4">86,4</TD>
+												<TD SDVAL="31,7">31,7</TD>
+												<TD SDVAL="15,4">15,4</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Athergrey 17 / 3.85mm</th>
+								<td><a href="#rs-lm-athgrey17-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="rs-lm-athgrey17-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergrey 17 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="18,4">18,4</TD>
+												<TD SDVAL="18,2">18,2</TD>
+												<TD SDVAL="1,02">1,0</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="3,5">3,5</TD>
+												<TD SDVAL="4,4">4,4</TD>
+												<TD SDVAL="4,4">4,4</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+
+												<TD SDVAL="77,4">77,4</TD>
+												<TD SDVAL="38,2">38,2</TD>
+												<TD SDVAL="23,7">23,7</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Athergreen 32 / 3.85mm</th>
+								<td><a href="#rs-lm-athgreen32-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="rs-lm-athgreen32-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergreen 32 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="33,1">33,1</TD>
+												<TD SDVAL="18,9">18,9</TD>
+												<TD SDVAL="1,79">1,8</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="3,1">3,1</TD>
+												<TD SDVAL="4,8">4,8</TD>
+												<TD SDVAL="4,4">4,4</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="76,7">76,7</TD>
+												<TD SDVAL="38,7">38,7</TD>
+												<TD SDVAL="24,2">24,2</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<!-- SEC 4 -->
+							<tr>
+								<th>Solarplus 71 / 3.85mm</th>
+								<td><a href="#rs-lm-solarplus71-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="rs-lm-solarplus71-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Solarplus 71 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="71,8">75,0</TD>
+												<TD SDVAL="45,1">50,2</TD>
+												<TD SDVAL="1,61">1,5</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="20,5">24,7</TD>
+												<TD SDVAL="6,7">6,9</TD>
+												<TD SDVAL="5,4">5,6</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="49,5">44,2</TD>
+												<TD SDVAL="57,9">61,6</TD>
+												<TD SDVAL="48,6">53,3</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th>Pure Grey / 3.85mm</th>
+								<td><a href="#rs-lm-pure-grey-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+									<div data-role="popup" id="rs-lm-pure-grey-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Pure Grey / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="71,2">71,2</TD>
+												<TD SDVAL="49,6">49,6</TD>
+												<TD SDVAL="1,4">1,4</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="26,5">26,5</TD>
+												<TD SDVAL="6,6">6,6</TD>
+												<TD SDVAL="5,5">5,5</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="44,8">44,8</TD>
+												<TD SDVAL="61,2">61,2</TD>
+												<TD SDVAL="52,8">52,8</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th>TSA / 3.85mm</th>
+								<td><a href="#rs-lm-tsa-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+									<div data-role="popup" id="rs-lm-tsa-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>TSA / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="77,6">77,6</TD>
+												<TD SDVAL="55">55,0</TD>
+												<TD SDVAL="1,42">1,4</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="31,2">31,2</TD>
+												<TD SDVAL="7,1">7,1</TD>
+												<TD SDVAL="5,8">5,8</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="39,2">39,2</TD>
+												<TD SDVAL="65,1">65,1</TD>
+												<TD SDVAL="57,7">57,7</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<!-- SEC 5 -->
+
+						</tbody>
+						<!-- END TABLE CONTENT -->
+					</table>
+					<!-- END TABLE -->
+
+					<!-- TITLE TABLE -->
+					<div class="table-name">
+						<h5>LAMINATED</h5>
+					</div>
+					<!-- END TITLE TABLE -->
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">OUTER / INNER GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+                        <!-- TABLE CONTENT -->
+                        <tbody>
+                            <tr>
+                                <!-- SEC 1 -->
+                                <th>Solarplus 71 / Solarplus 71 <br>1.6 / 1.6mm</th>
+                                <td><a href="#rs-lmn-slp71-71-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                    <div data-role="popup" id="rs-lmn-slp71-71-popup" class="ui-content" data-theme="a">
+                                        <a href="#" data-rel="back" class="close_btn">
+                                            <img src="img/close_btn.svg" width="30" alt="">
+                                                </a>
+                                        <h4>Solarplus 71 / Solarplus 71 <br>1.6 / 1.6mm</h4>
+                                        <table class="poptable">
+                                            <TR>
+                                                <TD>LT A2&deg; [%]</TD>
+                                                <TD>ET ISO 9050 [%]</TD>
+                                                <TD>Selectivity</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="74,8">74,8</TD>
+                                                <TD SDVAL="46,6">46,6</TD>
+                                                <TD SDVAL="1,6">1,6</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>TUV ISO 9050 [%]</TD>
+                                                <TD>LR A2&deg; [%]</TD>
+                                                <TD>ER ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="0">0,0</TD>
+                                                <TD SDVAL="6,9">6,9</TD>
+                                                <TD SDVAL="5,5">5,5</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>EA ISO 9050 [%]</TD>
+                                                <TD>SF0 ISO 9050 [%]</TD>
+                                                <TD>SF100 ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="48">48,0</TD>
+                                                <TD SDVAL="58,9">58,9</TD>
+                                                <TD SDVAL="49,9">49,9</TD>
+                                            </TR>
+                                        </table>
+                                        <p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- SEC 2 -->
+                            <tr>
+                                <th>TSA / TSA + Solar PVB <br>2.1 / 2.1mm</th>
+                                <td><a href="#rs-lmn-tsa-pvb-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                    <div data-role="popup" id="rs-lmn-tsa-pvb-popup" class="ui-content" data-theme="a">
+                                        <a href="#" data-rel="back" class="close_btn">
+                                            <img src="img/close_btn.svg" width="30" alt="">
+                                                </a>
+                                        <h4>TSA / TSA + Solar PVB <br>2.1 / 2.1mm</h4>
+                                        <table class="poptable">
+                                            <TR>
+                                                <TD>LT A2&deg; [%]</TD>
+                                                <TD>ET ISO 9050 [%]</TD>
+                                                <TD>Selectivity</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="72,8">72,8</TD>
+                                                <TD SDVAL="40,7">40,7</TD>
+                                                <TD SDVAL="1,8">1,8</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>TUV ISO 9050 [%]</TD>
+                                                <TD>LR A2&deg; [%]</TD>
+                                                <TD>ER ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="0">0,0</TD>
+                                                <TD SDVAL="6,7">6,7</TD>
+                                                <TD SDVAL="5,3">5,3</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD>EA ISO 9050 [%]</TD>
+                                                <TD>SF0 ISO 9050 [%]</TD>
+                                                <TD>SF100 ISO 9050 [%]</TD>
+                                            </TR>
+                                            <TR>
+                                                <TD SDVAL="54,0">54,0</TD>
+                                                <TD SDVAL="54,6">54,6</TD>
+                                                <TD SDVAL="44,5">44,5</TD>
+                                            </TR>
+                                        </table>
+                                        <p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <!-- END TABLE CONTENT -->
+
+					</table>
+					<!-- END TABLE -->
+				</div>
+			</div>
+
+			<!-- MENU -->
+			<div class="windows">
+				<a href="#windshield" data-transition="none">
+					<div class="windshield skew_btn">
+						<p>Windshield</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#rear" data-transition="none">
+					<div class="rear skew_btn">
+						<p>Backlite</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#side" data-transition="none">
+					<div class="side skew_btn">
+						<p>Side windows</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#sunroof" data-transition="none">
+					<div class="sunroof skew_btn">
+						<p>Sunroof</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- END MENU -->
+		<!-- END BACKLITE -->
+
+		<!-- BACKLITE -->
+		<div data-role="page" id="rear">
+			<div class="mainpic">
+				<div class="head-overlay"></div>
+				<div class="rotate_btn"><span>Inside</span><span>Outside</span></div>
+				<img src="img/backlite/outer/back_athergreen32.jpg" class="outer big" alt="">
+				<img src="img/backlite/inner/back_athergreen32.jpg" class="inner" alt="">
+			</div>
+			<div role="main" class="ui-content">
+				<div class="ui-inner">
+					<br>
+
+					<!-- IMAGE ROTATOR -->
+					<div id="tempe" class="colors-conatiner-small">
+						<h4 class="center">Select the color of your choice</h4>
+						<div class="rear-rotator glass-rotator">
+
+							<div class="glass-colors" style="min-width:700px">
+								<div class="item athergrey8" data-color="img/backlite/outer/back_athergrey8.jpg" data-color-inner="img/backlite/inner/back_athergrey8.jpg">
+									<p>Athergrey 8
+									<br>3.85mm</p>
+								</div>
+								<div class="item athergrey17" data-color="img/backlite/outer/back_athergrey17.jpg" data-color-inner="img/backlite/inner/back_athergrey17.jpg">
+									<p>Athergrey 17<br>3.85mm</p>
+								</div>
+								<div class="item athergreen32" data-color="img/backlite/outer/back_athergreen32.jpg" data-color-inner="img/backlite/inner/back_athergreen32.jpg">
+									<p>Athergreen 32<br>3.85mm</p>
+								</div>
+								<div class="item solarplus71" data-color="img/backlite/outer/back_sp71.jpg" data-color-inner="img/backlite/inner/AGC_Interior_Back_SOLARPLUS71.jpg">
+									<p>Solarplus 71<br>3.85mm</p>
+								</div>
+
+								<div class="item pure-gray" data-color="img/backlite/outer/back_pure_grey.jpg" data-color-inner="img/backlite/inner/AGC_Interior_Back_pure_grey.jpg">
+									<p>Pure Grey<br>3.85mm</p>
+								</div>
+
+								<div class="item tsa" data-color="img/backlite/outer/back_TSA.jpg" data-color-inner="img/backlite/inner/AGC_Interior_Back_TSA.jpg">
+									<p>TSA<br>3.15mm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- IMAGE ROTATOR -->
+					<div class="table-name">
+						<h4>BACKLITE</h4>
+						<h5>TEMPERED</h5>
+					</div>
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Athergrey 8 / 3.85mm</th>
+								<td><a href="#back-athgrey8-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="back-athgrey8-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergrey 8 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="8,3">8,3</TD>
+												<TD SDVAL="9,4">9,4</TD>
+												<TD SDVAL="0,9">0,9</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0,7">0,7</TD>
+												<TD SDVAL="4,3">4,3</TD>
+												<TD SDVAL="1,3">1,3</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="86,4">86,4</TD>
+												<TD SDVAL="31,7">31,7</TD>
+												<TD SDVAL="15,4">15,4</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th>Athergrey 17 / 3.85mm</th>
+								<td><a href="#back-athgrey17-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="back-athgrey17-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergrey 17 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="18,4">18,4</TD>
+												<TD SDVAL="18,2">18,2</TD>
+												<TD SDVAL="1,02">1,0</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="3,5">3,5</TD>
+												<TD SDVAL="4,4">4,4</TD>
+												<TD SDVAL="4,4">4,4</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="77,4">77,4</TD>
+												<TD SDVAL="38,2">38,2</TD>
+												<TD SDVAL="23,7">23,7</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th>Athergreen 32 / 3.85mm</th>
+								<td><a href="#back-athgreen32-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="back-athgreen32-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergreen 32 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="33,1">33,1</TD>
+												<TD SDVAL="18,9">18,9</TD>
+												<TD SDVAL="1,79">1,8</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="3,1">3,1</TD>
+												<TD SDVAL="4,8">4,8</TD>
+												<TD SDVAL="4,4">4,4</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="76,7">76,7</TD>
+												<TD SDVAL="38,7">38,7</TD>
+												<TD SDVAL="24,2">24,2</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<th>Solarplus 71 / 3.85mm </th>
+								<td><a href="#back-solarplus71-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="back-solarplus71-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Solarplus 71 / 3.85mm </h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="71,8">71,8</TD>
+												<TD SDVAL="45,1">45,1</TD>
+												<TD SDVAL="1,61">1,6</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="20,5">20,5</TD>
+												<TD SDVAL="6,7">6,7</TD>
+												<TD SDVAL="5,4">5,4</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="49,5">49,5</TD>
+												<TD SDVAL="57,9">57,9</TD>
+												<TD SDVAL="48,6">48,6</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+                <th>Pure Grey / 3.85mm</th>
+                <td>
+                	<a href="#back-lm-pure-gray-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+                  <div data-role="popup" id="back-lm-pure-gray-popup" class="ui-content" data-theme="a">
+                    <a href="#" data-rel="back" class="close_btn">
+                      <img src="img/close_btn.svg" width="30" alt="">
+                    </a>
+                    <h4>Pure Grey / 3.85mm</h4>
+                    <table class="poptable">
+                      <TR>
+                        <TD>LT A2&deg; [%]</TD>
+                        <TD>ET ISO 9050 [%]</TD>
+                        <TD>Selectivity</TD>
+                      </TR>
+                      <TR>
+                        <TD SDVAL="71,2">71,2</TD>
+                        <TD SDVAL="49,6">49,6</TD>
+                        <TD SDVAL="1,4">1,4</TD>
+                      </TR>
+                      <TR>
+                        <TD>TUV ISO 9050 [%]</TD>
+                        <TD>LR A2&deg; [%]</TD>
+                        <TD>ER ISO 9050 [%]</TD>
+                      </TR>
+                      <TR>
+                        <TD SDVAL="26,5">26,5</TD>
+                        <TD SDVAL="6,6">6,6</TD>
+                        <TD SDVAL="5,5">5,5</TD>
+                      </TR>
+                      <TR>
+                        <TD>EA ISO 9050 [%]</TD>
+                        <TD>SF0 ISO 9050 [%]</TD>
+                        <TD>SF100 ISO 9050 [%]</TD>
+                      </TR>
+                      <TR>
+                        <TD SDVAL="44,8">44,8</TD>
+                        <TD SDVAL="61,2">61,2</TD>
+                        <TD SDVAL="52,8">52,8</TD>
+                      </TR>
+                    </table>
+                      <p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+                  </div>
+                </td>
+              </tr>
+							
+							<tr>
+								<th>TSA / 3.15mm</th>
+								<td><a href="#back-tsa-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="back-tsa-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>TSA / 3.15mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="80">80,0</TD>
+												<TD SDVAL="59,7">59,7</TD>
+												<TD SDVAL="1,35">1,4</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="35,5">35,5</TD>
+												<TD SDVAL="7,2">7,2</TD>
+												<TD SDVAL="6">6,0</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="34,3">34,3</TD>
+												<TD SDVAL="68,5">68,5</TD>
+												<TD SDVAL="62,1">62,1</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- /content -->
+
+			<!-- MENU -->
+			<div class="windows">
+				<a href="#windshield" data-transition="none">
+					<div class="windshield skew_btn">
+						<p>Windshield</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#rear" data-transition="none">
+					<div class="rear skew_btn">
+						<p>Backlite</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#side" data-transition="none">
+					<div class="side skew_btn">
+						<p>Side windows</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+				<a href="#sunroof" data-transition="none">
+					<div class="sunroof skew_btn">
+						<p>Sunroof</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- END BACK LITE -->
+
+		<!-- SUNROOF -->
+		<div data-role="page" id="sunroof">
+			<div class="mainpic">
+				<div class="head-overlay"></div>
+				<div class="rotate_btn"><span>Inside</span><span>Outside</span></div>
+				<img src="img/sunroof/outer/sunroof_anthergrey17.jpg" class="outer big" alt="">
+				<img src="img/sunroof/inner/anthergrey17.jpg" class="inner" alt="">
+			</div>
+			<div role="main" class="ui-content">
+				<div class="ui-inner">
+					<br>
+					<div data-role="tabs" id="tabs">
+						<h4 class="center">Select the color of your choice</h4>
+						<br>
+						<div data-role="navbar">
+							<ul>
+								<li class="ui-block-a"><a id="ui-id-1" tabindex="-1" role="presentation" class="ui-btn-active ui-link ui-btn" href="#tempe" data-ajax="false">Tempered</a></li>
+								<li><a href="#lami" data-ajax="false">Laminated</a></li>
+							</ul>
+						</div>
+
+						<!-- IMAGE ROTATOR -->
+						<div id="tempe" class="colors-conatiner">
+							<div class="sunroof-rotator glass-rotator">
+								<div class="glass-colors" style="width:220px">
+									<div class="item athergrey8" data-color="img/sunroof/outer/sunroof_anthergrey8.jpg" data-color-inner="img/sunroof/inner/anthergrey8.jpg">
+										<p>Athergrey 8 <br>3.85mm</p>
+									</div>
+									<div class="item athergrey17" data-color="img/sunroof/outer/sunroof_anthergrey17.jpg" data-color-inner="img/sunroof/inner/anthergrey17.jpg">
+										<p>Athergrey 17<br>3.85mm</p>
+									</div>
+
+									<div class="item pure-gray" data-color="img/sunroof/outer/sunroof_pure.jpg" data-color-inner="img/sunroof/inner/pure.jpg">
+										<p>Pure Gray<br>3.85mm</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- IMAGE ROTATOR -->
+
+						<!-- IMAGE ROTATOR -->
+						<div id="lami" class="colors-conatiner">
+							<div class="sunroof-rotator glass-rotator">
+								<div class="glass-colors" style="width:420px">
+									<div class="item athergrey17-17" data-color="img/sunroof/outer/sunroof_anthergrey17-17.jpg" data-color-inner="img/sunroof/inner/anthergrey17-17.jpg">
+										<p>Athergrey 17 / Athergrey 17 <br>2.1 / 2.1mm</p>
+									</div>
+									<div class="item wonderlite_on" data-color="img/sunroof/outer/sunroof_wonderlite.jpg" data-color-inner="img/sunroof/inner/wonderlite.jpg">
+										<p>Wonderlite on</p>
+									</div>
+									<div class="item wonderlite_off" data-color="img/sunroof/outer/sunroof_wonderlite_off.jpg" data-color-inner="img/sunroof/inner/wonderlite_off.jpg">
+										<p>Wonderlite off</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- IMAGE ROTATOR -->
+					</div>
+					<div class="table-name">
+						<h4>SUNROOF</h4>
+						<h5>TEMPERED</h5>
+					</div>
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Athergrey 8 / 3.85mm</th>
+								<td><a href="#sun-athgrey8-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="sun-athgrey8-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergrey 8 / 3.85mm</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="8,3">8,3</TD>
+												<TD SDVAL="9,4">9,4</TD>
+												<TD SDVAL="0,9">0,9</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0,7">0,7</TD>
+												<TD SDVAL="4,3">4,3</TD>
+												<TD SDVAL="1,3">1,3</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="86,4">86,4</TD>
+												<TD SDVAL="31,7">31,7</TD>
+												<TD SDVAL="15,4">15,4</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Athergrey 17 / 3.85mm</th>
+								<td><a href="#sun-athgrey17-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="sun-athgrey17-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergrey 17 / 3.85mm </h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="18,4">18,4</TD>
+												<TD SDVAL="18,2">18,2</TD>
+												<TD SDVAL="1,02">1,0</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="3,5">3,5</TD>
+												<TD SDVAL="4,4">4,4</TD>
+												<TD SDVAL="4,4">4,4</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="77,4">77,4</TD>
+												<TD SDVAL="38,2">38,2</TD>
+												<TD SDVAL="23,7">23,7</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+							  <th>Pure Grey / 3.85mm</th>
+							  <td><a href="#sun-pure-grey-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+
+							    <div data-role="popup" id="sun-pure-grey-popup" class="ui-content" data-theme="a">
+							      <a href="#" data-rel="back" class="close_btn">
+							        <img src="img/close_btn.svg" width="30" alt="">
+							      </a>
+							      <h4>Pure Grey / 3.85mm</h4>
+							      <table class="poptable">
+							        <TR>
+							          <TD>LT A2&deg; [%]</TD>
+							          <TD>ET ISO 9050 [%]</TD>
+							          <TD>Selectivity</TD>
+							        </TR>
+							        <TR>
+							          <TD SDVAL="71,2">71,2</TD>
+							          <TD SDVAL="49,6">49,6</TD>
+							          <TD SDVAL="1,4">1,4</TD>
+							        </TR>
+							        <TR>
+							          <TD>TUV ISO 9050 [%]</TD>
+							          <TD>LR A2&deg; [%]</TD>
+							          <TD>ER ISO 9050 [%]</TD>
+							        </TR>
+							        <TR>
+							          <TD SDVAL="26,5">26,5</TD>
+							          <TD SDVAL="6,6">6,6</TD>
+							          <TD SDVAL="5,5">5,5</TD>
+							        </TR>
+							        <TR>
+							          <TD>EA ISO 9050 [%]</TD>
+							          <TD>SF0 ISO 9050 [%]</TD>
+							          <TD>SF100 ISO 9050 [%]</TD>
+							        </TR>
+							        <TR>
+							          <TD SDVAL="44,8">44,8</TD>
+							          <TD SDVAL="61,2">61,2</TD>
+							          <TD SDVAL="52,8">52,8</TD>
+							        </TR>
+							      </table>
+							        <p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+							    </div>
+							  </td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- LAMINATED -->
+					<div class="table-name">
+						<h5>LAMINATED</h5>
+					</div>
+					<table id="tech-spec">
+						<thead>
+							<tr>
+								<th data-priority="1">OUTER / INNER GLASS</th>
+								<th data-priority="2"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Athergrey 17 / Athergrey 17</th>
+								<td><a href="#sun-athgrey17-17-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="sun-athgrey17-17-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Athergrey 17 / Athergrey 17</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="15,9">15,9</TD>
+												<TD SDVAL="14,7">14,7</TD>
+												<TD SDVAL="1,07">1,1</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="4,4">4,4</TD>
+												<TD SDVAL="4,3">4,3</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="81">81,0</TD>
+												<TD SDVAL="35,6">35,6</TD>
+												<TD SDVAL="20,4">20,4</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Wonderlite ON</th>
+								<td><a href="#sun-wonder-on-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="sun-wonder-on-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Wonderlite ON</h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="37,1">37,1</TD>
+												<TD SDVAL="16,6">16,6</TD>
+												<TD SDVAL="2,17">2,2</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="13,2">13,2</TD>
+												<TD SDVAL="47">47,0</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="36,4">36,4</TD>
+												<TD SDVAL="26">26,0</TD>
+												<TD SDVAL="19,2">19,2</TD>
+											</TR>
+										</table>
+											<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>Wonderlite OFF</th>
+								<td><a href="#sun-wonder-off-popup" data-rel="popup" data-transition="pop" data-position-to="window" title="Learn more"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+									<div data-role="popup" id="sun-wonder-off-popup" class="ui-content" data-theme="a">
+										<a href="#" data-rel="back" class="close_btn">
+											<img src="img/close_btn.svg" width="30" alt="">
+										</a>
+										<h4>Wonderlite OFF </h4>
+										<table class="poptable">
+											<TR>
+												<TD>LT A2&deg; [%]</TD>
+												<TD>ET ISO 9050 [%]</TD>
+												<TD>Selectivity</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0,4">0,4</TD>
+												<TD SDVAL="0,5">0,5</TD>
+												<TD SDVAL="0,89">0,9</TD>
+											</TR>
+											<TR>
+												<TD>TUV ISO 9050 [%]</TD>
+												<TD>LR A2&deg; [%]</TD>
+												<TD>ER ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="0">0,0</TD>
+												<TD SDVAL="12,2">12,2</TD>
+												<TD SDVAL="46,6">46,6</TD>
+											</TR>
+											<TR>
+												<TD>EA ISO 9050 [%]</TD>
+												<TD>SF0 ISO 9050 [%]</TD>
+												<TD>SF100 ISO 9050 [%]</TD>
+											</TR>
+											<TR>
+												<TD SDVAL="52,9">52,9</TD>
+												<TD SDVAL="14,2">14,2</TD>
+												<TD SDVAL="4,2">4,2</TD>
+											</TR>
+										</table>
+										<p class="lexico_url"> For more details : <a href="#lexico">Lexico</a></p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- MENU -->
+			<div class="windows">
+				<a href="#windshield" data-transition="none">
+					<div class="windshield skew_btn">
+						<p>Windshield</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+
+				<a href="#rear" data-transition="none">
+					<div class="rear skew_btn">
+						<p>Backlite</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+
+				<a href="#side" data-transition="none">
+					<div class="side skew_btn">
+						<p>Side windows</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+
+				<a href="#sunroof" data-transition="none">
+					<div class="sunroof skew_btn">
+						<p>Sunroof</p>
+						<div class="pic"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- END MENU -->
+		<!-- END SUNROOF -->
+		
+		<!-- LEXICO -->
+		<div data-role="page" id="lexico">
+			<div class="maintitle lexico">
+				<h2>Lexico</h2>
+			</div>
+			<div class="mainpic">
+				<img src="img/contacts_bg.jpg" alt="contact">
+			</div>
+			<div role="main" class="ui-content">
+				<div class="ui-inner">
+					<ul class="lexico_list">
+						<li> <span> LT: </span> Light Transmission</li>
+						<li> <span> LR: </span> Light Reflection</li>
+						<li> <span> ET: </span> Energy Transmission</li>
+						<li> <span> ER: </span> Energy Reflection</li>
+						<li> <span> EA: </span> Energy Absorption</li>
+						<li> <span> Solar Factor: </span> Total energy transmittance transmitted through the glazing. Sum of the radiation transmitted directly and that which is absorbed and emitted back to inside.</li>
+						<li> <span> SFO(TTs): </span> Solar Factor at 0km/h</li>
+						<li> <span> SF100: </span> Solar Factor at 100km/h</li>
+						<li> <span> Selectivity: </span> ratio of Light Transmission and Solar Factor (LT/SF)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- END CONTACT -->
+
+		<!-- CONTACT US -->
+		<div data-role="page" id="contacts">
+			<div class="maintitle">
+				<h2>Contact Us</h2>
+				<p>For more information, please send us a message with your coordinates</p>
+			</div>
+			<div class="mainpic">
+				<img src="img/contacts_bg.jpg" alt="contact">
+			</div>
+			<div role="main" class="ui-content">
+				<div class="ui-inner">
+				    <div id="result" class="center"></div>
+					<form action="http://www.agc-automotive.com/appmail.php" id="contactform" method="post" onSubmit="SendForm();">
+                        <input type="text" name="name" placeholder="Name - Vorname">
+                        <input type="email" name="email" placeholder="E-mail">
+                        <input type="text" name="func" placeholder="Function">
+                        <input type="text" name="enterprise" placeholder="Enterprise">
+                        <button type="submit">SEND</button>
+                    </form>
+				</div>
+			</div>
+		</div>
+		<!-- END CONTACT -->
+
+	</div>
+	<!-- APP -->
+
+	<div data-role="panel" id="menu" data-position="right" data-position-fixed="true" data-display="overlay">
+		<a href="#" data-rel="close"><img src="img/back_btn.svg" style="width:35px;height:45px;" width="35" height="35" alt=""></a>
+		<br>
+		<br>
+		<ul>
+			<li>
+				<a href="#windshield" data-transition="none">Windshield</a>
+			</li>
+			<li>
+				<a href="#rear" data-transition="none">Backlite</a>
+			</li>
+			<li>
+				<a href="#side" data-transition="none">Side windows</a>
+			</li>
+			<li>
+				<a href="#sunroof" data-transition="none">Sunroof</a>
+			</li>
+		</ul>
+		<hr>
+		<p><a href="#lexico" data-transition="none">LEXICO</a></p>
+		<p><a href="#contacts" data-transition="none">CONTACT US</a></p>
+	</div>
+	<!-- /panel -->
+
+	<script id="panel-init" src="js/scripts.js"></script>
+	<script src="js/imageloader.js"></script>
+	<script src="js/ajax.js"></script>
+
+</body>
+
+</html>

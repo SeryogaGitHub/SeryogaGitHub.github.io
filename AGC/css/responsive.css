@@ -1,0 +1,344 @@
+@media screen and (min-width: 768px) {
+    body p {
+        font-size: 1em;
+    }
+    .header {
+        height: 13%;
+    }
+    .maintitle {
+        padding-top: 10em !important;
+        width: 600px !important;
+        margin-left: -300px !important;
+    }
+    .maintitle h1 {
+        font-size: 2.6em;
+    }
+    .maintitle p {
+        font-size: 2em;
+    }
+    .mainpic {
+        height: 67vh;
+        overflow: hidden;
+    }
+    .mainpic img {
+        width: 100% !important;
+    }
+    .ui-content {
+        margin-top: 28em !important;
+    }
+    .ui-inner {
+        padding: 1.2em 0em !important;
+        max-width: 539px;
+        margin: 0 auto;
+    }
+    
+    #main .ui-content {
+        padding: 40px 0 100px !important;
+    }
+    .windows {
+        background: #fff;
+        margin-top: -60px;
+        padding: 1.2em 0em !important;
+        max-width: 539px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    .windows a {
+        color: inherit;
+        text-decoration: none;
+        width: 49%;
+        display: inline-block;
+    }
+    
+    .win-wrap {
+        background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: -80px;
+    }
+
+    .skew_btn {
+        border-radius: 4px;
+        height: 258px !important;
+        padding-top: 0 !important;
+        -moz-transform: skewY(-0deg) !important;
+        -webkit-transform: skewY(-0deg) !important;
+        -o-transform: skewY(-0deg) !important;
+        -ms-transform: skewY(-0deg) !important;
+        transform: skewY(-0deg) !important;
+        margin-top: 0px !important;;
+    }
+    .windows .skew_btn.sunroof {
+        margin-top: 0 !important;;
+        padding-top: 0 !important;;
+        height: auto;
+    }
+    
+    .windows .skew_btn p {
+        -moz-transform: skewY(0deg);
+        -webkit-transform: skewY(0deg);
+        -o-transform: skewY(0deg);
+        -ms-transform: skewY(0deg);
+        transform: skewY(0deg);
+    }
+    .skew_btn p {
+        font-size: 1.2em;
+        position: absolute;
+        margin-top: 120px  !important;
+    }
+    .skew_btn .pic {
+        height: 258px !important;
+        margin-top: 0 !important;
+        background-position: center !important;  
+    }
+
+    img.outer {
+        left: 79% !important;
+        width: 132% !important;
+    }
+    
+    #rear img.outer {
+        left: 49% !important;
+        width: 132% !important;
+    }
+    
+    #rear .rotate_btn {
+        top: 48%;
+    }
+    
+    img.inner {
+        width: 132% !important;
+        margin-left: -117px;
+    }
+    
+    .frside img.outer {
+        width: 249% !important;
+        left: -5% !important;
+    }
+    
+    .reside img.outer {
+        left: -3% !important;
+        width: 132% !important;
+    }
+    
+    .in_frside img {
+        width: 264% !important;
+    }
+    
+    #sunroof img.outer {
+        left: 55% !important;
+    }
+    
+    #sunroof img.inner {
+        width: 116% !important;
+        margin-left: -117px;
+    }
+    
+    .glass-rotator {
+        padding: 10% 0% 5% 5%;
+        width: 118%;
+        min-width: auto !important;
+        margin-left: -3%;
+        overflow: auto;
+        height: 253px;
+    }
+    
+    .ui-popup {
+        top: -6em !important;
+    }
+    
+    #menu {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bigger {
+        margin-left: -79%;
+    }
+    .mainpic img {
+        top: -21vh !important;
+    }
+    #rear img.outer {
+        margin-top: 6vh !important;
+    }
+    #rear img.inner {
+        margin-top: -26vh !important;
+    }
+    #windshield img.outer {
+        margin-top: 10vh !important;
+    }
+    #windshield img.inner {
+        margin-top: -3vh !important;
+    }
+    #windshield .rotate_btn, #rear .rotate_btn, #sunroof .rotate_btn {
+        top: 38%;
+    }
+    #side .mainpic {
+        height: 106vh !important;
+    }
+    #side img.outer {
+        top: -59vh !important;
+    }
+    #side img.inner {
+        margin-top: -9vh !important;
+    }
+    #side .in_reside img.inner {
+        width: 100% !important;
+    }
+    #side .in_frside img.inner {
+        width: 200% !important;
+        top: 0 !important;
+    }
+    #side .rotate_btn_sides {
+        top: 26% !important;
+    }
+    #sunroof img.outer {
+        margin-top: 13vh !important;
+        left: 65% !important;
+    }
+    #sunroof img.inner {
+        width: 100% !important;
+        margin: 0 !important;
+        top: 0 !important;
+    }
+    #sunroof .rotate_btn {
+        top: 43%;
+    }
+    
+    .mainpic img {
+        width: 100% !important;
+        margin-top: 28vh !important;
+    }
+    img.inner {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .in_frside img.inner, .in_reside img.inner {
+        margin-left: 0 !important;
+    }
+    .ui-content {
+        padding: 10px 0 40px !important;
+        margin-top: 20em !important;
+    }
+    
+    .glass-colors {
+        width: auto !important;
+    }
+    
+    .glass-rotator {
+        text-align: center;
+        width: 100% !important;
+        height: 182px;
+        padding: 0% 0% 5% 5% !important;
+    }
+    .colors-conatiner-small {
+        margin: 0% 0 5%;
+    }
+    
+    .maintitle.lexico {
+        padding-top: 0em !important;
+    }
+    #lexico .mainpic img {
+        width: 100% !important;
+        margin-top: -55vh !important;
+    }
+    #lexico .ui-content {
+        padding: 40px 0 40px !important;
+        margin-top: 20em !important;
+    }
+    
+    #contacts .maintitle {
+        padding-top: 6em  !important;
+    }
+    
+    #contacts .maintitle h2 {
+        font-size: 3em;
+    }
+    
+    #contacts .maintitle p {
+        font-size: 1.8em;
+    }
+    
+    #contacts .mainpic img {
+        width: 100% !important;
+        margin-top: -55vh !important;
+    }
+    #contacts .ui-content {
+        padding: 40px 0 40px !important;
+        margin-top: 20em !important;
+    }
+    
+    #main .mainpic img {
+        width: 100% !important;
+        margin-top: -35vh !important;
+    }
+    
+    #main .maintitle {
+        padding-top: 7em !important;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    #windshield img.inner {
+        margin-top: -11vh !important;
+    }
+    #windshield img.outer {
+        margin-top: -7vh !important;
+        width: 133% !important;
+        left: 59% !important;
+    }
+    #rear img.outer {
+        margin-top: -1vh !important;
+    }
+    #rear img.inner {
+        margin-top: -36vh !important;
+    }
+    #sunroof img.outer {
+        width: 100%;
+    }
+    #side .mainpic {
+        height: 106vh !important;
+    }
+    #side img.outer {
+        top: -88vh !important;
+    }
+    #side img.inner {
+        margin-top: -24vh !important;
+    }
+    #side .in_reside img.inner {
+        width: 100% !important;
+    }
+    #side .in_frside img.inner {
+        width: 200% !important;
+        top: 0 !important;
+    }
+    #side .rotate_btn_sides {
+        top: 33%;
+    }
+    .glass-rotator {
+        text-align: center;
+        width: 100% !important;
+        height: 182px;
+        padding: 2% 0% 5% 5% !important;
+    }
+    .ui-inner {
+        padding: 1.2em 0em !important;
+    }
+    
+    #main .ui-content {
+        padding: 50px 0 100px !important;
+        margin-top: 20em !important;
+    }
+    
+    #main .mainpic img {
+        margin-top: -55vh !important;
+    }
+    
+    .windows {
+        padding: 1.2em 0em !important;
+        margin-top: -61px;
+    }
+}
