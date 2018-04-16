@@ -136,15 +136,6 @@
         margin-left: -117px;
     }
     
-    .glass-rotator {
-        padding: 10% 0% 5% 5%;
-        width: 118%;
-        min-width: auto !important;
-        margin-left: -3%;
-        overflow: auto;
-        height: 253px;
-    }
-    
     .ui-popup {
         top: -6em !important;
     }
@@ -226,13 +217,6 @@
     
     .glass-colors {
         width: auto !important;
-    }
-    
-    .glass-rotator {
-        text-align: center;
-        width: 100% !important;
-        height: 182px;
-        padding: 0% 0% 5% 5% !important;
     }
     .colors-conatiner-small {
         margin: 0% 0 5%;
@@ -320,9 +304,6 @@
     }
     .glass-rotator {
         text-align: center;
-        width: 100% !important;
-        height: 182px;
-        padding: 2% 0% 5% 5% !important;
     }
     .ui-inner {
         padding: 1.2em 0em !important;

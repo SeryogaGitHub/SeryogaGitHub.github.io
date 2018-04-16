@@ -790,17 +790,17 @@ line-height: 1.5em;
     display: none;
 } 
  
- .glass-rotator {
- 	padding: 10% 0% 5% 20%;
- 	width: 110%%;
- 	margin-left: -3%;
- 	overflow: auto;
- 	height: 195px;
+.glass-colors {
+ 	display: flex;
+    overflow-y: auto;
+    min-height: 175px;
+    margin-bottom: 45px;
  }
  
  .glass-rotator .item {
  	width: 90px;
- 	height: 90px;
+    height: 90px;
+ 	min-width: 90px;
  	border-radius: 4px;
  	display: inline-block;
  	vertical-align: top;
@@ -907,7 +907,7 @@ line-height: 1.5em;
  	position: fixed;
  	background: rgba(36, 127, 231, 1);
  	width: 100%;
- 	height: 100vh;
+ 	height: 100%;
     top: 0;
     left: 0;
  	z-index: 2000;
