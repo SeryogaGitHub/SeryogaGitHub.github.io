@@ -355,6 +355,9 @@ footer{
 	background: #2b2b2b;
 	padding: 20px;
 }
+.print-hidden{
+	display: none;
+}
 @media screen and (max-width: 700px){
 	header nav{
 		ul{
@@ -404,6 +407,9 @@ footer{
 	}
 }
 @media print{
+	.gold-text{
+		color: #adb100;
+	}
 	body{
 		color: #000;
 		background: transparent;
@@ -431,5 +437,8 @@ footer{
 	}
 	#map{
 		display: none;
+	}
+	.print-hidden{
+		display: block;
 	}
 }
