@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
 
     //дата зміни сайта
-    var datetime = '2018-05-14 20:11';
+    var datetime = '2018-05-15 18:00';
     $('#datetime').attr('datetime', datetime).attr('title', datetime);
 });
 
