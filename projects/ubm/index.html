@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <meta name="description" content="HTML,CSS,Jquery">
+  <meta name="author" content="main.email.seryoga@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <meta property="og:title" content="title"/> 
+  <meta property="og:description" content="description"/> 
+  <meta property="og:image" content="logo.jpg" />
+  <meta property="og:url" content="site.com"/> 
+  <meta property="og:site_name" content="title"/>
+    
+</head>
+<body>
+  
+  <div id="sent-popup" class="white-popup mfp-with-anim mfp-hide">
+    <div class="text-center">
+      <h2>Дякую!</h2>
+
+      <p>
+        Ми обов'язково відповімо на Ваше повідомлення найближчим часом
+      </p>
+    </div>
+  </div>
+
+  <div class="white-popup mfp-with-anim mfp-hide" id="feedback-popup">
+    <h2>Зареє&shy;струйтесь</h2>
+
+    <p class="text-center">
+      на головну бізнес-подію 2019 року
+    </p>
+
+    <form action="javascript:void(null);" onsubmit="send_callback(this.id, 'email/feedback.php');" method="post" id="feedback">
+      <input type="text" name="name" placeholder="Ваше ім'я">
+      <input type="tel" name="phone" placeholder="Ваш телефон" required>
+      <input type="text" hidden="hidden" value="Сообщение с форми: Заказать звонок" name="subject">
+        
+      <div class="text-center">
+        <input type="submit" class="btn" value="Надіслати">
+      </div>
+    </form>
+  </div>
+
+  <div class="white-popup mfp-with-anim mfp-hide" id="calling-popup">
+    <h2>Залиште свої контакти,</h2>
+
+    <p class="text-center">
+      щоб отримати додаткову інформацію
+    </p>
+
+    <form action="javascript:void(null);" onsubmit="send_callback(this.id, 'email/calling.php');" method="post" id="calling">
+      <input type="text" name="name" placeholder="Ваше ім'я">
+      <input type="tel" name="phone" placeholder="Ваш телефон" required>
+      <input type="text" hidden="hidden" value="Сообщение с форми: Заказать звонок" name="subject">
+        
+      <div class="text-center">
+        <input type="submit" class="btn" value="Надіслати">
+      </div>
+    </form>
+  </div>
+
+  <div class="white-popup mfp-with-anim mfp-hide" id="speaker-popup">
+
+    <div class="image"></div>
+
+    <h2 class="title">Title</h2>
+    
+    <div class="description">
+      <p>description</p>
+    </div><!-- .description -->
+  </div>
+
+  <header class="main-header">
+    <div class="center">
+      <div class="top-header flex-container align-center">
+        <div class="logo">
+          <a href="#" style="background-image: url(img/logo.png);" class="image"></a>
+        </div>
+
+        <div class="wrap-main-nav">
+          <nav>
+            <ul class="main-nav">
+              <li>
+                <a href="#go-to-1" class="go-to">Спікери</a>
+              </li>
+              <li>
+                <a href="#go-to-2" class="go-to">Про подію</a>
+              </li>
+              <li>
+                <a href="#go-to-3" class="go-to">Програма</a>
+              </li>
+              <li>
+                <a href="#go-to-4" class="go-to">Фотозвіт</a>
+              </li>
+            </ul>
+
+            <div class="text-center feedback-block-mobile">
+              <a href="tel:+380939954803" class="number">+38 (093) 995 48 03</a>
+              <br>
+              <a href="#calling-popup" class="btn popup">замовити дзвінок</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="text-center feedback-block">
+          <a href="tel:+380939954803" class="number">+38 (093) 995 48 03</a>
+          <br>
+          <a href="#calling-popup" class="btn popup">замовити дзвінок</a>
+        </div>
+
+        <div>
+          <div class="mobile-menu">
+            <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" fill="#626261" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+          </div>
+        </div>
+      </div><!-- .top-header -->
+      <div class="bottom-header mobile-bg">
+        <div>
+          <div class="wave">
+            <svg 
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="76px" height="26px">
+              <path fill-rule="evenodd"  opacity="0.902" fill="rgb(0, 0, 0)"
+             d="M63.156,13.903 C56.536,18.959 50.888,18.959 44.266,13.903 C39.949,10.606 36.263,10.606 31.946,13.903 C25.387,18.910 20.038,18.910 13.479,13.903 C9.114,10.568 6.165,10.568 1.796,13.903 L-0.005,11.457 C5.303,7.404 9.763,7.240 15.281,11.457 C20.484,15.430 24.324,15.901 30.145,11.457 C35.664,7.240 40.795,7.431 46.068,11.457 C51.482,15.593 55.730,15.755 61.355,11.457 C66.877,7.240 70.487,7.240 76.005,11.457 L74.203,13.903 C69.766,10.512 67.596,10.512 63.156,13.903 ZM63.156,5.606 C56.536,10.661 50.888,10.661 44.266,5.606 C39.949,2.306 36.263,2.306 31.946,5.606 C25.387,10.612 20.038,10.612 13.479,5.606 C9.114,2.270 6.165,2.270 1.796,5.606 L-0.005,3.159 C5.303,-0.895 9.763,-1.057 15.281,3.159 C20.484,7.133 24.324,7.603 30.145,3.159 C35.664,-1.057 40.795,-0.867 46.068,3.159 C51.482,7.294 55.730,7.457 61.355,3.159 C66.877,-1.057 70.487,-1.057 76.005,3.159 L74.203,5.606 C69.766,2.215 67.596,2.215 63.156,5.606 ZM15.281,19.754 C20.484,23.730 24.324,24.199 30.145,19.754 C35.664,15.538 40.795,15.729 46.068,19.754 C51.482,23.893 55.730,24.054 61.355,19.754 C66.877,15.538 70.487,15.538 76.005,19.754 L74.203,22.201 C69.766,18.813 67.596,18.813 63.156,22.201 C56.536,27.257 50.888,27.259 44.266,22.201 C39.949,18.904 36.263,18.904 31.946,22.201 C25.387,27.211 20.038,27.211 13.479,22.201 C9.114,18.865 6.165,18.865 1.796,22.201 L-0.005,19.754 C5.303,15.703 9.763,15.538 15.281,19.754 Z"/>
+            </svg>
+          </div><!-- .wave -->
+
+          <h1>
+            <span class="small">Ukrainian Business</span> 
+            Marathon
+          </h1>
+
+          <h3>
+            Бізнес-подія 2019 року. <br><a href="#to-go-map" class="go-to">Місце проведення "АРЕНА ЛЬВІВ"</a>
+          </h3>
+
+          <div class="description">
+            <p>
+              Кожного року ми надаємо Вам можливість отримати 
+              нові знання для розвитку та вдосконалення 
+              власного бізнесу з реальних прикладів від 
+              головних експертів України.
+            </p>
+          </div>
+
+          <a href="#feedback-popup" class="btn popup">стати учасником</a>
+          <!-- <a href="#sent-popup" class="btn popup">стати учасником</a> -->
+
+          <div class="mouse">
+            <img src="img/mouse.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div><!-- .bottom-header -->
+  </header>
+
+  <main>
+    <section class="main-speakers section" id="go-to-1">
+      <div class="center">
+        <h2>Головні спікери події</h2>
+
+        <div class="flex-container speakers white-text">
+          <div class="wave">
+            <svg 
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="76px" height="26px">
+              <path fill-rule="evenodd"  opacity="0.902" fill="rgb(0, 0, 0)"
+             d="M63.156,13.903 C56.536,18.959 50.888,18.959 44.266,13.903 C39.949,10.606 36.263,10.606 31.946,13.903 C25.387,18.910 20.038,18.910 13.479,13.903 C9.114,10.568 6.165,10.568 1.796,13.903 L-0.005,11.457 C5.303,7.404 9.763,7.240 15.281,11.457 C20.484,15.430 24.324,15.901 30.145,11.457 C35.664,7.240 40.795,7.431 46.068,11.457 C51.482,15.593 55.730,15.755 61.355,11.457 C66.877,7.240 70.487,7.240 76.005,11.457 L74.203,13.903 C69.766,10.512 67.596,10.512 63.156,13.903 ZM63.156,5.606 C56.536,10.661 50.888,10.661 44.266,5.606 C39.949,2.306 36.263,2.306 31.946,5.606 C25.387,10.612 20.038,10.612 13.479,5.606 C9.114,2.270 6.165,2.270 1.796,5.606 L-0.005,3.159 C5.303,-0.895 9.763,-1.057 15.281,3.159 C20.484,7.133 24.324,7.603 30.145,3.159 C35.664,-1.057 40.795,-0.867 46.068,3.159 C51.482,7.294 55.730,7.457 61.355,3.159 C66.877,-1.057 70.487,-1.057 76.005,3.159 L74.203,5.606 C69.766,2.215 67.596,2.215 63.156,5.606 ZM15.281,19.754 C20.484,23.730 24.324,24.199 30.145,19.754 C35.664,15.538 40.795,15.729 46.068,19.754 C51.482,23.893 55.730,24.054 61.355,19.754 C66.877,15.538 70.487,15.538 76.005,19.754 L74.203,22.201 C69.766,18.813 67.596,18.813 63.156,22.201 C56.536,27.257 50.888,27.259 44.266,22.201 C39.949,18.904 36.263,18.904 31.946,22.201 C25.387,27.211 20.038,27.211 13.479,22.201 C9.114,18.865 6.165,18.865 1.796,22.201 L-0.005,19.754 C5.303,15.703 9.763,15.538 15.281,19.754 Z"/>
+            </svg>
+          </div>
+
+          <div class="speaker default" style="background-image: url(img/speakers/man.png)"></div>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-1.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-2.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Анастасія Владичинська</h5>
+
+              <span class="text">1 Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-2.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-2.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Ліга Гаркуша</h5>
+
+              <span class="text">Топ - менеджер Адідас.</span>
+            </span>
+
+            <div class="description hide">
+              <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-3.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-1.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Олексій Адамів</h5>
+
+              <span class="text">Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-4.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-1.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Олексій Потягайло</h5>
+
+              <span class="text">Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-5.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-2.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Ольга Артюхова</h5>
+
+              <span class="text">Топ -менеджер Адідас.</span>
+            </span>
+
+            <div class="description hide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-6.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-1.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Рената Чучмай</h5>
+
+              <span class="text">Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-7.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-1.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Роман Гавриш</h5>
+
+              <span class="text">Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-8.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-1.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Світлана Павилецька</h5>
+
+              <span class="text">Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-10.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-1.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Юрій Филюк</h5>
+
+              <span class="text">Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <a href="#speaker-popup" class="speaker popup" style="background-image: url(img/speakers/ava-10.jpg)">
+            <span class="logo">
+              <img src="img/speakers/logo-1.png" alt="">
+            </span>
+
+            <span class="info">
+              <h5 class="title">Ярослав Сердюк</h5>
+
+              <span class="text">Веб-дизайнер, засновник студії LogotownDesign</span>
+            </span>
+
+            <div class="description hide">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sequi provident vel fuga suscipit magni cumque, eos est facilis harum nesciunt quod inventore at saepe exercitationem itaque, enim commodi ipsa.</p>
+              <p>Recusandae temporibus omnis eaque alias laudantium dicta placeat sint quisquam provident eius! Voluptatem excepturi qui quaerat ea voluptatum neque et voluptas, impedit iure tempora, quasi voluptates suscipit minus temporibus incidunt!</p>
+              <p>Ea rerum quia distinctio totam blanditiis iste minus harum quas ut neque iusto, a eum quaerat nostrum delectus quam nobis nulla odio. Nobis aliquam libero, debitis praesentium! Veritatis, blanditiis, magnam!</p>
+              <p>Hic eius impedit ut laborum, repellat recusandae. Consequuntur tempore earum eaque totam voluptatem placeat magnam ea aperiam dolores. Animi perspiciatis, consectetur ipsa minima tenetur expedita, dignissimos eveniet eius veritatis est.</p>
+              <p>Magni rerum vero, eligendi perspiciatis consequuntur! Dolorem dicta, explicabo ducimus veniam ullam pariatur ad nemo asperiores veritatis. Animi sint architecto et deserunt vitae praesentium odio repellendus adipisci. Magni, earum, nihil.</p>
+            </div>
+          </a>
+
+          <div class="speaker default" style="background-image: url(img/speakers/woman.png)"></div>
+        </div>
+      </div>
+    </section><!-- .main-speakers -->
+
+    <section class="marathon dark-section section" id="go-to-2">
+      <div class="center">
+        <div class="flex-container container">
+          <div class="marathon-img mobile-bg">
+            <h2>
+              Ukrainian Business 
+              Marathon 2019
+            </h2>
+          </div>
+
+          <div class="wrap-list">
+            <div class="description">
+              <p>
+                Це наймасштабніший бізнес-форум України нового покоління, 
+                що проводиться з 2017 року, та місце зустрічі для власників бізнесу, підприємців, 
+                топ-менеджерів, інвесторів та стартаперів, де учасники отримують 
+                новий досвід, ідеї та знайомства.
+              </p>
+            </div>
+
+            <div class="flex-container list">
+              <div>
+                <img src="img/marathon/1000.png" alt="">
+
+                <p class="text">учасників на одній події</p>
+              </div>
+
+              <div>
+                <img src="img/marathon/24-top.png" alt="">
+
+                <p class="text">експерта з розвитку бізнесу</p>
+              </div>
+
+              <div>
+                <img src="img/marathon/24.png" alt="">
+
+                <p class="text">реальні кейси</p>
+              </div>
+
+              <div>
+                <img src="img/marathon/100.png" alt="">
+
+                <p class="text">партнерів марафону</p>
+              </div>
+            </div><!-- .list -->
+
+            <div class="wrap-btn">
+              <a href="#feedback-popup" class="btn popup">стати учасником</a>
+            </div>
+          </div>
+        </div><!-- .flex-container -->
+
+        <div class="video-block flex-container">
+          <div class="text">
+            <h2>Відеозвіт 2018</h2>
+
+            <p>
+              Дізнайтеся, чому Ukrainian Business <br>
+              Marathon став найвідомішою бізнес-подією у Львові  
+            </p>
+          </div>
+
+          <div>
+            <div class="video-container" data-youtube="OgHClz4pqAE">
+              <div class="screen" style="background-image: url(img/marathon/video.jpg)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ukrainian-business mobile-bg section" id="go-to-3">
+      <div class="center">
+        <h2>
+          Програма Ukrainian 
+          Business Marathon 2019
+        </h2>
+
+        <div class="tab-container mb-100">
+          <ul class="nav nav-tabs">
+            <li><a href="#tab-1" class="btn active">16 березня</a></li>
+            <li><a href="#tab-2" class="btn">17 березня</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane active">
+              <div class="program-time-scroll">
+                <div class="program-time">
+                  <div class="day">
+                    <h6 class='title'>Відкриття</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+
+                      <p>
+                        Ребрендинг 
+                        мережевої компанії. 
+                        Власний досвід 
+                        та приклад.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+
+                  <div class="day">
+                    <h6 class='title'>Відкриття</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+
+                  <div class="day">
+                    <h6 class='title'>Психологія</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+
+                      <p>
+                        Ребрендинг 
+                        мережевої компанії. 
+                        Власний досвід 
+                        та приклад. Ребрендинг 
+                        мережевої компанії. 
+                        Власний досвід 
+                        та приклад.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+
+                  <div class="day">
+                    <h6 class='title'>Продукт</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+
+                      <p>
+                        Ребрендинг 
+                        мережевої компанії. 
+                        Власний досвід 
+                        та приклад.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+
+                  <div class="day">
+                    <h6 class='title'>Ефективність</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+                      <p>
+                        Ребрендинг мережевої компанії. Власний досвід та приклад. Ребрендинг мережевої компанії. Власний досвід та приклад.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+                </div>
+              </div><!-- .program-time-scroll -->
+            </div>
+
+            <div id="tab-2" class="tab-pane">
+              <div class="program-time-scroll">
+                <div class="program-time">
+                  <div class="day">
+                    <h6 class='title'>Відкриття</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+
+                      <p>
+                        Ребрендинг 
+                        мережевої компанії. 
+                        Власний досвід 
+                        та приклад.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+
+                  <div class="day">
+                    <h6 class='title'>Відкриття</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+
+                  <div class="day">
+                    <h6 class='title'>Психологія</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+
+                      <p>
+                        Ребрендинг 
+                        мережевої компанії. 
+                        Власний досвід 
+                        та приклад. Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+
+                  <div class="day">
+                    <h6 class='title'>Продукт</h6>
+
+                    <div class="time">
+                      <time>8:30 - 9:00</time>
+                      <h6>Марк Зархін</h6>
+                    </div>
+
+                    <div class="time">
+                      <time>9:00 - 9:30</time>
+                      <h6>Вступ, представлення</h6>
+
+                      <p>
+                        Особиста місія підприємця.
+                      </p>
+                    </div>
+
+                    <div class="time">
+                      <time>9:30 - 10:00</time>
+                      <h6>Ранкова кава</h6>
+
+                      <p>
+                        Стратегія досягнення 
+                        бізнес-успіху заснована 
+                        на власному досвіді.
+                      </p>
+                    </div>
+                  </div><!-- .day -->
+                </div>
+              </div><!-- .program-time-scroll -->
+            </div>
+          </div><!-- .tab-content -->
+        </div><!-- .tab-container -->
+
+        <div class="new-forum flex-container">
+          <div class="wrap-image">
+            <div class="image">
+              <img src="img/new-forum.jpg" alt="">
+            </div>
+          </div>
+
+          <div>
+            <h2>
+              Ukrainian Business 
+              Marathon 2019 – форум 
+              нового покоління
+            </h2>
+
+            <div class="description">
+              <p>
+                Перелік практичних порад, опираючись на власний досвід, 
+                актуальний контент та розбір питань сучасного бізнесу від топових експертів.
+              </p>
+
+              <p>
+                Знайомства з успішними та цікавими людьми в перервах між виступами, 
+                обговорення важливих ідей з новими бізнес-партнерами та друзями 
+                за інтересами протягом події.
+              </p>
+
+              <p>
+                Вечірка для учасників  UBM 2019 – закриття головного бізнес-марафону 
+                зі спеціальною шоу-програмою, чудовою музикою, смачними напоями 
+                та святковою атмосферою.
+              </p>
+            </div><!-- .description -->
+
+            <a href="#feedback-popup" class="btn popup">стати учасником</a>
+          </div>
+        </div><!-- .new-forum -->
+      </div>
+    </section>
+
+    <section class="section dark-section main-goal mobile-bg">
+      <div class="center">
+        <div class="flex-container top-container mb-100">
+          <div>
+            <h2>Головна мета події</h2>
+
+            <div class="description">
+              <p>
+                Місія UBM – розвиток підприємницької діяльності в Україні 
+                через створення умов для найбільш продуктивного обміну 
+                досвідом з передовими експертами в основних галузях бізнесу. 
+              </p>
+
+              <p>
+                Ціль UBM – створити бізнес-подію такого формату і якості, 
+                щоб 100% учасників поставили оцінку події 10 балів з 10.
+              </p>
+            </div>
+          </div>
+
+          <div class="wrap-count">
+            <div>
+              <h5>
+                Середня оцінка 
+                від учасників 
+                минулого марафону
+              </h5>
+
+              <div class="count">
+                9.2/10
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>
+          Відгуки учасників <br>
+          про UBM 2018
+        </h2>
+
+        <div class="flex-container bottom-container feedback-slider">
+          <div>
+            <div class="image" style="background-image: url(img/speakers/ava-1.jpg);"></div>
+
+            <p>
+              Але щоб ви зрозуміли, 
+              звідки виникає це хибне уявлення 
+              людей, цуратись насолоди 
+              і вихваляти страждання, 
+              я розкрию перед вами.
+            </p>
+          </div>
+
+          <div>
+            <div class="image"></div>
+
+            <p>
+              Дійсно, ніхто не відкидає, 
+              не зневажає, не уникає насолод 
+              тільки через те, що це насолоди, 
+              але лише через те, що тих, хто 
+              вміє розумно вдаватися насолоді.
+            </p>
+          </div>
+
+          <div>
+            <div class="image"></div>
+
+            <p>
+              Так само як немає нікого, 
+              хто полюбивши, вважав за краще 
+              і зажадав би саме страждання 
+              тільки за те, що це страждання 
+              а не тому, що інший раз виникають
+            </p>
+          </div>
+
+          <div>
+            <div class="image"></div>
+
+            <p>
+              Але ми цураємось і вважаємо, що  
+              заслуговують справедливого 
+              обурення ті, хто, піддався звабі 
+              і розбещеним спокусам, 
+              які дають їм насолоду
+            </p>
+          </div>
+
+          <div>
+            <div class="image" style="background-image: url(img/speakers/ava-1.jpg);"></div>
+
+            <p>
+              Але щоб ви зрозуміли, 
+              звідки виникає це хибне уявлення 
+              людей, цуратись насолоди 
+              і вихваляти страждання, 
+              я розкрию перед вами.
+            </p>
+          </div>
+
+          <div>
+            <div class="image"></div>
+
+            <p>
+              Дійсно, ніхто не відкидає, 
+              не зневажає, не уникає насолод 
+              тільки через те, що це насолоди, 
+              але лише через те, що тих, хто 
+              вміє розумно вдаватися насолоді.
+            </p>
+          </div>
+
+          <div>
+            <div class="image"></div>
+
+            <p>
+              Так само як немає нікого, 
+              хто полюбивши, вважав за краще 
+              і зажадав би саме страждання 
+              тільки за те, що це страждання 
+              а не тому, що інший раз виникають
+            </p>
+          </div>
+
+          <div>
+            <div class="image"></div>
+
+            <p>
+              Але ми цураємось і вважаємо, що  
+              заслуговують справедливого 
+              обурення ті, хто, піддався звабі 
+              і розбещеним спокусам, 
+              які дають їм насолоду
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section business-event">
+      <div class="center">
+        <!-- <h2>
+          Учасники про бізнес-подію
+        </h2> -->
+        
+        <div class="wrap-slider mb-100">
+          <div class="slider-for">
+            <div>
+              <div class="item video-container" data-youtube="af59U2BRRAU" style="background-image: url(img/venue/slider/1.jpg);"></div>
+            </div>
+            <div>
+              <div class="item video-container" data-youtube="StZcUAPRRac" style="background-image: url(img/venue/slider/2.jpg);"></div>
+            </div>
+            <div>
+              <div class="item video-container" data-youtube="EOnSh3QlpbQ" style="background-image: url(img/venue/slider/3.jpg);"></div>
+            </div>
+            <div>
+              <div class="item video-container" data-youtube="x2rQzv8OWEY" style="background-image: url(img/venue/slider/1.jpg);"></div>
+            </div>
+            <div>
+              <div class="item video-container" data-youtube="x2rQzv8OWEY" style="background-image: url(img/venue/slider/2.jpg);"></div>
+            </div>
+            <div>
+              <div class="item video-container" data-youtube="DG9TeLISmZU" style="background-image: url(img/venue/slider/3.jpg);"></div>
+            </div>
+          </div>
+
+          <div class="slider-nav">
+            <div>
+              <img src="img/venue/slider/1.jpg" alt="">
+            </div>
+
+            <div>
+              <img src="img/venue/slider/2.jpg" alt="">
+            </div>
+
+            <div>
+              <img src="img/venue/slider/3.jpg" alt="">
+            </div>
+
+            <div>
+              <img src="img/venue/slider/1.jpg" alt="">
+            </div>
+
+            <div>
+              <img src="img/venue/slider/2.jpg" alt="">
+            </div>
+
+            <div>
+              <img src="img/venue/slider/3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-100">
+          <div class="flex-container venue">
+            <div>
+              <h2>Місце проведення</h2>
+
+              <div class="description">
+                <p>
+                  Зустріч традиційно відбудеться на «Арені Львів» – 
+                  одному з найновіших та найсучасніших стадіонів Європи. 
+                </p>
+                
+                <p>
+                  Концепція споруди робить Ukrainian Business Marathon 2019 
+                  подією найвищого рівня і масштабу, а перебування на ньому 
+                  комфортним і незабутнім.
+                </p>
+              </div>
+            </div>
+
+            <div class="wrap-image">
+              <div class="image">
+                <img src="img/venue/venue.jpg" alt="">
+              </div>
+            </div>
+          </div><!-- .venue -->
+        </div>
+      </div><!-- .center -->
+
+      <div class="wrap-business-marathon" id="go-to-4">
+        <div class="center">
+          <h2>
+            Фотогалерея Ukrainian <br>
+            Business Marathon
+          </h2>
+        </div><!-- .center -->
+
+        <div class="image-slider popup-gallery business-marathon">
+          <a href="img/business-marathon/1.jpg" title="Тут назава для фото якщо потрібно" style="background-image: url(img/business-marathon/1.jpg)" class="item"></a>
+          <a href="img/business-marathon/2.jpg" title="title" style="background-image: url(img/business-marathon/2.jpg)" class="item"></a>
+          <a href="img/business-marathon/3.jpg" title="title" style="background-image: url(img/business-marathon/3.jpg)" class="item"></a>
+          <a href="img/business-marathon/4.jpg" title="title" style="background-image: url(img/business-marathon/4.jpg)" class="item"></a>
+          <a href="img/business-marathon/5.jpg" title="title" style="background-image: url(img/business-marathon/5.jpg)" class="item"></a>
+          <a href="img/business-marathon/6.jpg" title="title" style="background-image: url(img/business-marathon/6.jpg)" class="item"></a>
+          <a href="img/business-marathon/2.jpg" title="title" style="background-image: url(img/business-marathon/2.jpg)" class="item"></a>
+          <a href="img/business-marathon/3.jpg" title="title" style="background-image: url(img/business-marathon/3.jpg)" class="item"></a>
+          <a href="img/business-marathon/5.jpg" title="title" style="background-image: url(img/business-marathon/5.jpg)" class="item"></a>
+        </div>
+      </div>
+    </section><!-- .business-event -->
+
+    <section class="section book-your-little">
+      <div class="center">
+        <div class="top-block mb-100">
+          <h2>
+            Забронюй своє місце 
+            На UBM2019
+          </h2>
+
+          <div class="description">
+            <p>
+              Щоб стати учасником головної бізнес-події!
+            </p>
+          </div>
+
+          <form action="#" class="flex-container container">
+            <div>
+              <input type="text" name="name" placeholder="Ваше ім'я">
+            </div>
+
+            <div>
+              <input type="text" name="name" placeholder="Ваш телефон">
+            </div>
+
+            <div>
+              <input type="submit" value="Забронювати" class="btn">
+            </div>
+          </form>
+        </div>
+
+        <h2>Партнери подіїї</h2>
+
+        <div class="slider-brand">
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/1.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/2.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/3.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/4.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/5.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/6.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/7.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/8.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/9.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/10.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/11.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/12.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/4.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/5.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/6.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/10.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/11.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/12.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/4.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/5.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/6.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/7.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/8.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/9.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/7.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/8.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/9.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/10.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/11.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/12.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/4.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/5.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/6.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/10.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/11.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/12.png);"></div>
+          </div>
+
+          <div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/4.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/5.png);"></div>
+            <div class="item" style="background-image: url(img/book-your-little/slider/6.png);"></div>
+          </div>
+        </div><!-- .slider-brand -->
+      </div><!-- .center -->
+    </section>
+
+    <div class="wrap-map" id="to-go-map">
+      <div id="map"></div>
+      <div id="map2"></div>
+      <script>
+        var map;
+        function initMap() {
+          var uluru = {lat: 49.785606, lng: 24.014546};
+
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 49.786606, lng: 24.007546},
+            zoom: 16,
+            styles : [
+            {
+                "featureType": "all",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "saturation": 36
+                    },
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    },
+                    {
+                        "weight": 1.2
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 21
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 29
+                    },
+                    {
+                        "weight": 0.2
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 18
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 19
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            }
+              ]
+          });
+
+          var image = 'img/map-marker.png';
+          var beachMarker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: image
+          });
+
+          map2 = new google.maps.Map(document.getElementById('map2'), {
+            center: {lat: 49.788606, lng: 24.014546},
+            zoom: 16,
+            styles : [
+            {
+                "featureType": "all",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "saturation": 36
+                    },
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 40
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    },
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    },
+                    {
+                        "weight": 1.2
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 20
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 21
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 29
+                    },
+                    {
+                        "weight": 0.2
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 18
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 16
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 19
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#000000"
+                    },
+                    {
+                        "lightness": 17
+                    }
+                ]
+            }
+              ]
+          });
+
+          var image = 'img/map-marker.png';
+          var beachMarker2 = new google.maps.Marker({
+            position: uluru,
+            map: map2,
+            icon: image
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&callback=initMap" type="text/javascript"></script>
+
+      <section class="section">
+        <div class="location">
+          <h2>Наші контакти</h2>
+
+          <div class="flex-container">
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="30" height="42">
+                <g><g><path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" fill="#b7812c"/></g></g></svg>
+
+                м. Львів, вул. Стрийська, 199
+              </li>
+              <li>
+                <a href="tel:+380939954803">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 16.877 16.877" style="enable-background:new 0 0 16.877 16.877;" xml:space="preserve">
+                  <g><path d="M5.301,5.587L1.404,1.688c0.503-0.503,1.005-1.007,1.509-1.511C3.146-0.056,3.522-0.06,3.756,0.17l3.036,3.039   c0.232,0.232,0.232,0.614-0.003,0.848L6.124,4.721L5.505,5.34C5.429,5.417,5.36,5.499,5.301,5.587z M8.507,11.938c-0.638-0.549-1.25-1.132-1.844-1.725C6.07,9.616,5.489,9.006,4.939,8.365c-0.45-0.52-0.538-1.273-0.303-1.907L0.636,2.457c-0.931,0.957-0.812,3.33,0.208,5.415c0.438,0.902,1.006,1.716,1.593,2.49c0.586,0.768,1.229,1.494,1.906,2.176c0.679,0.681,1.401,1.327,2.171,1.913c0.774,0.589,1.59,1.153,2.486,1.59c2.088,1.019,4.462,1.131,5.418,0.199l-4.001-4.001C9.783,12.474,9.029,12.387,8.507,11.938zM16.702,13.119l-3.036-3.037c-0.233-0.23-0.615-0.23-0.848,0.003h-0.002l-0.667,0.666l-0.615,0.618c-0.076,0.076-0.159,0.143-0.247,0.205l3.896,3.898c0.504-0.505,1.007-1.007,1.512-1.51C16.93,13.729,16.935,13.352,16.702,13.119z" fill="#d79f45"/></g></svg>
+
+                  +38 (093) 995 48 03
+                </a>
+              </li>
+              <li>
+                <a href="mailto:ubm2019@gmail.com">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 27.857 27.857" style="enable-background:new 0 0 27.857 27.857;" xml:space="preserve" width="23px" height="27px">
+                  <g><g><path d="M2.203,5.331l10.034,7.948c0.455,0.36,1.082,0.52,1.691,0.49c0.608,0.03,1.235-0.129,1.69-0.49l10.034-7.948c0.804-0.633,0.622-1.152-0.398-1.152H13.929H2.604C1.583,4.179,1.401,4.698,2.203,5.331z" fill="#d79f45"/><path d="M26.377,7.428l-10.965,8.325c-0.41,0.308-0.947,0.458-1.482,0.451    c-0.536,0.007-1.073-0.144-1.483-0.451L1.48,7.428C0.666,6.811,0,7.142,0,8.163v13.659c0,1.021,0.836,1.857,1.857,1.857h12.071H26c1.021,0,1.857-0.836,1.857-1.857V8.163C27.857,7.142,27.191,6.811,26.377,7.428z" fill="#d79f45"/></g></g></svg>
+
+                  ubm2019@gmail.com
+                </a>
+              </li>
+            </ul>
+
+            <div class="network">
+              <div>
+                <a href="https://www.instagram.com/ubmcenter/" target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" fill="#d79f45" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="41" height="41"><g><g><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160C512,71.648,440.352,0,352,0zM464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48h192c61.76,0,112,50.24,112,112V352z"/></g><g><path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128zM256,336c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/></g></g><g><g><circle cx="393.6" cy="118.4" r="17.056"/></g></g></svg>
+              </a>
+              </div>
+              
+              <div>
+                <a href="https://www.facebook.com/ubmcenter/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" fill="#d79f45" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="41" height="41"><g><g><path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392c11.028,0,20,8.972,20,20V452z"/></g></g></svg>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <footer class="main-footer dark-section">
+    <div class="center">
+      <div class="flex-container align-center container">
+        <div>
+          <div class="logo"><img src="img/footer/logo-1.png" alt=""></div>
+          <div class="logo"><img src="img/footer/logo-2.png" alt=""></div>
+          <div class="logo"><img src="img/footer/logo-3.png" alt=""></div>
+        </div>
+
+        <div>
+          <h6 class="copyright">all rights reserved © 2018</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
