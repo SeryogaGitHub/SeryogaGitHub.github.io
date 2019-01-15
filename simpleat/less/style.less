@@ -1,6 +1,8 @@
 @dBlue: #121920;
 @gray: #f0f6f4;
+@lGray: #e5e4d7;
 @green: #78bc61;
+@turq: #36c1ba;
 
 @font-face {
   font-family: 'Bebas Neue Regular';
@@ -29,6 +31,7 @@ body{
 	display: flex;
 	width: 100%;
 	flex-direction: column;
+	background: #fefdfd;
 	.mont;
 	color: #41474d;
 }
@@ -267,48 +270,90 @@ strong{
 }
 .ui-selectmenu-button.ui-button{
 	width: 100%;
-}
-.ui-selectmenu-button{
-	height: 40px;
-	line-height: 30px;
-	width: 100%;
-	background: none;
-	font-weight: normal!important;
+	font-weight: normal;
 }
 .ui-button{
-	background: #1e252b;
-	border: none;
-	font-size: 13px;
+	border-radius: 6px;
 	min-width: 195px; 
 	.mont;
 }
-.ui-button .ui-icon{
-	margin-top: 6px;
-	.transition;
-}
-.ui-button:active, .ui-state-active, .ui-widget-content .ui-state-active{
+.ui-state-active, .ui-widget-content .ui-state-active{
 	border: none;
-	background: #192632;
-	font-weight: normal;
+	background: @lGray;
+	color: @dBlue;
+	font-weight: 700;
 	margin: 0;
 }
-.ui-button:focus, .ui-button:hover{
-	border: none;
-	
-	.ui-icon{
-		transform: rotate(180deg);
+.ui-selectmenu-menu{
+	.ui-menu{
+		padding: 10px 0;
+		max-height: 200px;
+		margin: 2px 0;
+		border: 1px solid @lGray;
+		border-radius: 6px;
+		.mont;
+
+		.ui-menu-item-wrapper{
+			padding: 5px 10px;
+		}
 	}
-}
-.ui-selectmenu-menu .ui-menu{
-	padding: 15px 0;
-	.mont;
 }
 .ui-menu-item{
 	font-size: 13px;
-	font-weight: normal!important;
 
 	& + .ui-menu-item{
 		padding-top: 5px;
+	}
+}
+.radio-container{
+	display: inline-flex;
+	align-items: center;
+
+	.radio-btn{
+		display: none;
+
+		& + label{
+			position: relative;
+			display: inline-block;
+			border: 2px solid @lGray;
+			border-radius: 6px;
+			margin-right: 20px;
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+
+			&:after{
+				content: "";
+				width: 16px;
+				height: 16px;
+				.position-center;
+				background: @lGray;
+				border-radius: 3px;
+				.transition;
+			}
+		}
+		&:checked{
+			& + label{
+				border-color: @turq;
+
+				&:after{
+					width: 100%;
+					height: 100%;
+					background: @turq url(../img/icons/ok.png) no-repeat center;
+					.transition;
+				}
+				& + .info{
+					.more-info{
+						color: @turq;
+					}
+				}
+			}
+		}
+	}
+	.more-info{
+		background: transparent;
+		font-weight: 700;
+		.transition;
 	}
 }
 .main-header{
@@ -344,6 +389,28 @@ strong{
 			margin-left: 55px;
 		}
 	}
+	.ui-button{
+		background: #1e252b;
+		border: none;
+		font-size: 13px;
+		color: #fff;
+
+		.ui-icon{
+			margin-top: 6px;
+			.transition;
+		}
+	}
+	.ui-selectmenu-button{
+		height: 40px;
+		line-height: 30px;
+	}
+	.ui-button:focus, .ui-button:hover{
+		border: none;
+		
+		.ui-icon{
+			transform: rotate(180deg);
+		}
+	}
 }
 .main-containt{
 	flex: 1;
@@ -354,6 +421,41 @@ strong{
 
 		& > *{
 			flex: 1 0 350px;
+		}
+	}
+	p{
+		& + strong{
+			margin-top: 10px;
+			display: inline-block;
+		}
+	}
+	form{
+		margin-top: 25px;
+		
+		.ui-selectmenu-icon.ui-icon{
+			margin-top: 2px;
+		}
+		.ui-selectmenu-button{
+			&.ui-button{
+				border: 2px solid @lGray;
+				background: #fff;
+				font-size: 24px;
+				color: @dBlue;
+				padding: 12px 17px;
+
+				.ui-icon{
+					background: url(../img/icons/bottle-menu.png) no-repeat;
+					height: 25px;
+				}
+			}
+		}
+		.content-radion-change{
+			display: flex;
+			margin-top: 20px;
+
+			& > *{
+				flex: 1 0 120px;
+			}
 		}
 	}
 }
