@@ -17,13 +17,29 @@ $(document).ready(function() {
     }
   });
 
-  $(".mobile-menu").on("click", function(){
-    $("header nav > ul").stop().slideToggle(function(){
-      if ($(this).css('display') === 'none'){
-        $(this).removeAttr('style');
-      }
-    });
+  $('.selectmenu').selectmenu();
+
+  var contentRadionChange = $('.content-radion-change');
+
+  contentRadionChange.on('click', '.change-btn', function(){
+    var id = $(this).data('id'),
+        priceBtn = $('.price-btn');
+
+    priceBtn.find('.active').removeClass('active');
+    priceBtn.find(id).addClass("active");
   });
 
-  $('.selectmenu').selectmenu();
+  contentRadionChange.on('click', '.more-info', function(){
+    $(this).parents('.info').find('.content').slideToggle();
+  });
+
+  $('.popup-youtube').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false
+  });
 });

@@ -9,7 +9,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-rim-auto-match" content="none">
   
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -71,10 +71,10 @@
   </header>
 
   <main class="main-containt">
-    <section class="more-food">
+    <section class="more-food section">
       <div class="center">
         <div class="flex-container container">
-          <div>
+          <div class="text-center">
             <img src="img/bottles.png" alt="">
           </div>
 
@@ -110,31 +110,192 @@
               </select>
 
               <div class="content-radion-change">
-                <div class="radio-container">
-                  <input type="radio" name="radio-1" id="radio-1" class="radio-btn" checked>
-                  <label for="radio-1"></label>
+                <div class="flex-container container">
+                  <div class="radio-container">
+                    <input type="radio" name="radio-1" id="radio-1" class="radio-btn" checked>
+                    <label for="radio-1" class="change-btn" data-id="#change-btn-1"></label>
 
-                  <div class="info">
-                    <button class="more-info" type="button">One-Time</button><br>
-                    <span>Purchase</span>
-                  </div>
-                </div><!-- .radio-container -->
-                
-                <div class="radio-container">
-                  <input type="radio" name="radio-1" id="radio-2" class="radio-btn">
-                  <label for="radio-2"></label>
+                    <div class="info">
+                      <button class="more-info" type="button">One-Time</button><br>
+                      <span>Purchase</span>
 
-                  <div class="info">
-                    <button class="more-info" type="button">Subscribe</button><br>
-                    <span>Subscribe</span>
+                      <div class="content">
+                        <p>
+                          By subscribing you will receive 12 bottles of Simpleat monthly  
+                        </p>
+                        
+                        <p>
+                          You can cancel your subscription anytime. <a href="#">Learn more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- .radio-container -->
+                  
+                  <div class="radio-container">
+                    <input type="radio" name="radio-1" id="radio-2" class="radio-btn">
+                    <label for="radio-2" class="change-btn" data-id="#change-btn-2"></label>
+
+                    <div class="info">
+                      <button class="more-info" type="button">Subscribe</button><br>
+                      <span>and save 5%</span>
+
+                      <div class="content">
+                        <p>
+                          By subscribing you will receive 12 bottles of Simpleat monthly  
+                        </p>
+                        
+                        <p>
+                          You can cancel your subscription anytime. <a href="#">Learn more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- .radio-container -->
+                </div>
+
+                <div class="price-btn">
+                  <div id="change-btn-1" class="flex-container container active">
+                    <div>
+                      <strong>€32</strong><br>
+                      <p>€2.60 per meal (400 kcal)</p>
+                    </div>
+
+                    <div>
+                      <button class="btn" type="submit" name="one-time">Add to cart</button>
+                    </div>
                   </div>
-                </div><!-- .radio-container -->
+
+                  <div id="change-btn-2" class="flex-container container">
+                    <div>
+                      <div class="originally">Originally €32</div>
+                      <strong>€30.04</strong> billed monthly<br>
+                      <p>€2.53 per meal</p>
+                    </div>
+
+                    <div>
+                      <button class="btn" type="submit" name="one-time">Subscribe</button>
+                    </div>
+                  </div>
+                </div><!-- .price-btn -->
               </div><!-- .content-radion-change -->
             </form>
           </div>
         </div><!-- .container -->
       </div>
     </section><!-- .more-food -->
+
+    <section class="section what-simpleat">
+      <div class="center">
+        <div class="flex-container justify-center container text-center">
+          <div class="text">
+            <h2>What is Simpleat?</h2>
+
+            <p>
+              Simpleat is made to provide the perfectly balanced diet with every nutrient your body needs for optimal health.
+            </p>
+
+            <p>
+              Simpleat will take care of your hunger while you have more important things to do whether it is your work, business, travel or simply having fun.
+            </p>
+          </div>
+
+          <div class="video-block">
+            <a href="https://www.youtube.com/watch?v=af59U2BRRAU" class="popup-youtube">
+              <img src="img/what-simpleat.jpg" alt="">
+
+              <div class="play">
+                <svg 
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="80px" height="80px">
+                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                 d="M39.998,80.006 C17.939,80.006 -0.007,62.060 -0.007,40.001 C-0.007,17.943 17.939,-0.003 39.998,-0.003 C62.056,-0.003 80.002,17.943 80.002,40.001 C80.002,62.060 62.056,80.006 39.998,80.006 ZM39.998,2.663 C19.410,2.663 2.660,19.413 2.660,40.001 C2.660,60.589 19.410,77.339 39.998,77.339 C60.586,77.339 77.335,60.589 77.335,40.001 C77.335,19.413 60.586,2.663 39.998,2.663 ZM60.751,41.102 L31.414,61.105 C31.189,61.259 30.926,61.337 30.664,61.337 C30.450,61.337 30.235,61.286 30.041,61.182 C29.603,60.951 29.330,60.498 29.330,60.003 L29.330,19.999 C29.330,19.505 29.603,19.051 30.039,18.820 C30.477,18.589 31.005,18.620 31.414,18.897 L60.751,38.900 C61.115,39.148 61.334,39.559 61.334,40.001 C61.334,40.443 61.115,40.855 60.751,41.102 ZM31.997,22.523 L31.997,57.479 L57.633,40.001 L31.997,22.523 Z"/>
+                </svg>
+
+                Play video
+              </div>
+            </a>
+          </div><!-- .video-block -->
+        </div><!-- .container -->
+      </div>
+    </section>
+
+    <section class="section why-simpleat">
+      <div class="center">
+        <h2>Why Simpleat?</h2>
+        <p class="text-center">Enjoy all the benefits of Simpleat</p>
+
+        <div class="flex-container list">
+          <div class="item">
+            <div class="image" style="background-image: url(img/why-simpleat/img-1.jpg)">
+              <img src="img/why-simpleat/ico-1.svg" alt="">
+            </div>
+
+            <h3>Complete nutrition</h3>
+
+            <p>
+              One bottle of Simleat provides 20% of your daiyly needs for calories and micronutrients
+            </p>
+          </div><!-- .item -->
+
+          <div class="item">
+            <div class="image" style="background-image: url(img/why-simpleat/img-2.jpg)">
+              <img src="img/why-simpleat/ico-2.svg" alt="">
+            </div>
+
+            <h3>Save time</h3>
+
+            <p>
+              Spend your time on business, sport, work, family or fun. Simpleat will take care of your nutrition.
+            </p>
+          </div><!-- .item -->
+
+          <div class="item">
+            <div class="image" style="background-image: url(img/why-simpleat/img-3.jpg)">
+              <img src="img/why-simpleat/ico-4.svg" alt="">
+            </div>
+
+            <h3>Save money</h3>
+
+            <p>
+              Reasonable price for a complete, balanced and healthy meal. 
+            </p>
+          </div><!-- .item -->
+          <div class="item">
+            <div class="image" style="background-image: url(img/why-simpleat/img-4.jpg)">
+              <img src="img/why-simpleat/ico-3.svg" alt="">
+            </div>
+
+            <h3>Great health</h3>
+
+            <p>
+              Simpleat helps your body to stay healthy and vibrant.
+            </p>
+          </div><!-- .item -->
+          <div class="item">
+            <div class="image" style="background-image: url(img/why-simpleat/img-5.jpg)">
+              <img src="img/why-simpleat/ico-5.svg" alt="">
+            </div>
+
+            <h3>High energy</h3>
+
+            <p>
+              No sugar spikes, only sustainable level of energy.
+            </p>
+          </div><!-- .item -->
+          <div class="item">
+            <div class="image" style="background-image: url(img/why-simpleat/img-6.jpg)">
+              <img src="img/why-simpleat/ico-6.svg" alt="">
+            </div>
+
+            <h3>No hunger</h3>
+
+            <p>
+              A bottle of Simpleat immediately saves you from hunger and satisfy your body needs. 
+            </p>
+          </div><!-- .item -->
+        </div><!-- .list -->
+      </div>
+    </section>
   </main>
   
   <footer class="main-footer">
