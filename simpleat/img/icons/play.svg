@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Forma_1_копия_3" data-name="Forma 1 копия 3" class="cls-1" d="M390.782,2407.59l-11-7.5a0.5,0.5,0,0,0-.781.41v15a0.5,0.5,0,0,0,.781.41l11-7.5A0.495,0.495,0,0,0,390.782,2407.59ZM380,2414.55v-13.1l9.613,6.55Zm3-21.55a15,15,0,1,0,15,15A15.018,15.018,0,0,0,383,2393Zm0,29a14,14,0,1,1,14-14A14.016,14.016,0,0,1,383,2422Z" transform="translate(-368 -2393)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><defs><style>.cls-1 {fill: #fff;fill-rule: evenodd;}</style></defs><path id="Forma_1_копия_3" data-name="Forma 1 копия 3" class="cls-1" d="M390.782,2407.59l-11-7.5a0.5,0.5,0,0,0-.781.41v15a0.5,0.5,0,0,0,.781.41l11-7.5A0.495,0.495,0,0,0,390.782,2407.59ZM380,2414.55v-13.1l9.613,6.55Zm3-21.55a15,15,0,1,0,15,15A15.018,15.018,0,0,0,383,2393Zm0,29a14,14,0,1,1,14-14A14.016,14.016,0,0,1,383,2422Z" transform="translate(-368 -2393)"/></svg>
