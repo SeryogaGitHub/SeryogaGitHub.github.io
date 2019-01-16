@@ -87,6 +87,10 @@ h1, h2{
 		height: 9px;
 		background: url(../img/icons/title.png) no-repeat;
 	}
+	& + .desc{
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
 h3{
 	font-size: 24px;
@@ -99,7 +103,9 @@ h5{
 	font-size: 20px;
 }
 h6{
-	font-size: 16px;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 5px;
 }
 p{
 	& + p{
@@ -223,7 +229,7 @@ strong{
   background-position: center;
 }
 .btn{
-	padding: 20px 15px;
+	padding: 19px 15px;
 	border-radius: 6px;
 	border: none;
 	font-size: 18px;
@@ -263,6 +269,10 @@ strong{
 }
 .section{
 	padding: 90px 0;
+
+	.btn{
+		min-width: 249px;
+	}
 }
 .link-svg{
 	display: inline-flex;
@@ -603,7 +613,6 @@ strong{
 .why-simpleat{
 	.list{
 		text-align: center;
-		margin-top: 35px;
 		justify-content: center;
 
 		.item{
@@ -693,6 +702,95 @@ strong{
 		}
 		p{
 			font-size: 13px;
+		}
+	}
+}
+.testimonial{
+	.list{
+		justify-content: center;
+
+		& > *{
+			flex: 1 1 220px;
+			max-width: 265px;
+		}
+		p{
+			font-size: 13px;
+		}
+		h6{
+			color: #fff;
+
+			span + span{
+				position: relative;
+				padding-left: 14px;
+				margin-left: 6px;
+
+				&:after{
+					content: '.';
+					position: absolute;
+					left: 0;
+					top: -8px;
+					font-size: 20px;
+				}
+			}
+		}
+		.item{
+			color: #FFF;
+			.bg-image;
+			position: relative;
+			min-height: 263px;
+			display: flex;
+			align-items: flex-end;
+			padding: 50px 15px 15px;
+			border-radius: 10px;
+			overflow: hidden;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				.gradient(to top, rgba(18, 25, 32, 0.5), rgba(18, 25, 32, 0.15));
+				z-index: 1;
+			}
+			& > *{
+				position: relative;
+				z-index: 3;
+			}
+			&.popup-youtube{
+				&:after{
+					content: "";
+					width: 30px;
+					height: 30px;
+					background: url(../img/icons/play.svg) no-repeat;
+					position: absolute;
+					top: 15px;
+					right: 15px;
+					z-index: 2;
+				}
+			}
+		}
+	}
+}
+.main-ingredients{
+	.list{
+		text-align: center;
+		justify-content: center;
+
+		.item{
+			flex: 1 1 194px;
+			max-width: 350px;
+		}
+		.image{
+			width: 194px;
+			height: 194px;
+			border-radius: 50%;
+			.bg-image;
+			margin: 0 auto 20px;
+		}
+		h3{
+			margin-bottom: 20px;
 		}
 	}
 }
