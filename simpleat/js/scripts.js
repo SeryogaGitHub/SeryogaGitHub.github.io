@@ -42,4 +42,14 @@ $(document).ready(function() {
 
     fixedContentPos: false
   });
+
+  $('.tabs').on('click', '.tab', function(e){
+    e.preventDefault();
+    var id = $(this).attr('href');
+
+    $(this).parents('.nav').find(".active").removeClass('active');
+    $(this).parents('.tabs').find(".active").removeClass('active');
+    $(this).addClass('active');
+    $(this).parents('.tabs').find(id).addClass('active');
+  });
 });

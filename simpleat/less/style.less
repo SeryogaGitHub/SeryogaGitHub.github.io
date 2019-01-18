@@ -134,15 +134,17 @@ button{
 }
 input{
 	appearance: none;
+	font-size: 24px!important;
 }
 input:not([type="submit"]){
 	width: 100%;
 	border: none;
 	border-radius: 0;
-	height: 43px;
+	height: 60px;
 	padding: 0 15px;
-	font-size: 16px;
 	appearance: none;
+	border:  2px solid @lGray;
+	border-radius: 6px;
 	.mont;
 }
 textarea{
@@ -162,10 +164,10 @@ address{
 strong{
 	font-weight: 700;
 }
-::-webkit-input-placeholder {color:#fff;}
-::-moz-placeholder          {color:#fff;}
-:-moz-placeholder           {color:#fff;}
-:-ms-input-placeholder      {color:#fff;}
+::-webkit-input-placeholder {color:@dBlue;}
+::-moz-placeholder          {color:@dBlue;}
+:-moz-placeholder           {color:@dBlue;}
+:-ms-input-placeholder      {color:@dBlue;}
 
 .transition(@element: all, @time: .2s, @function: linear ) {
 	transition: @element @time @function;
@@ -241,7 +243,8 @@ strong{
   background-position: center;
 }
 .btn{
-	padding: 19px 15px;
+	padding: 16px 15px;
+	height: 60px;
 	border-radius: 6px;
 	border: none;
 	font-size: 18px;
@@ -275,6 +278,116 @@ strong{
 	padding: 0 15px;
 	width: 100%;
 	margin: 0 auto;
+}
+.tabs{
+	.nav{
+		display: flex;
+		justify-content: space-around;
+
+		.tab{
+			font-size: 24px;
+			.bebas;
+			padding-bottom: 45px;
+			position: relative;
+
+			&.active, &:hover{
+				color: @turq;
+
+				&:after{
+					width: 70px;
+					background: @turq;
+				}
+			}
+			&.active{
+				&:before{
+					content: '';
+					width: 40px;
+					height: 20px;
+					.position-center;
+					top: auto;
+					background: url(../img/icons/tab.png) no-repeat;
+				}
+			}
+			&:after{
+				content: "";
+				width: 30px;
+				height: 3px;
+				background: @dBlue;
+				.position-center;
+				top: auto;
+				bottom: 35px;
+				.transition;
+			}
+		}
+	}
+	.content{
+		background: #fff;
+		border-radius: 10px;
+
+		.item{
+			display: none;
+			padding: 10px 50px;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 0 -45px;
+
+			& > *{
+				margin: 15px 45px;
+			}
+			&.active{
+				display: flex;
+			}
+			.what-inside{
+				position: relative;
+				.bg-image;
+				background-size: contain;
+				flex: 0 0 300px;
+				min-width: 345px;
+				min-height: 270px;
+				max-height: 560px;
+				min-height: 360px;
+				flex-wrap: wrap;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.text{
+					font-size: 30px;
+					color: @dBlue;
+					padding: 10px;
+				}
+			}
+			.wrap-table{
+				flex: 1 1 450px;
+				overflow: auto;
+
+				table{
+					width: 100%;
+					min-width: 400px;
+					border-collapse: collapse;
+					font-size: 16px;
+					text-align: center;
+
+					th{
+						padding: 7px 0;
+					}
+					td{
+						padding: 8px 0;
+						border-top: 1px solid #e7e8e8;
+
+						&:first-child{
+							font-weight: 700;
+							color: @turq;
+							text-align: left;
+						}
+					}
+					tr{
+					}
+				}
+			}
+		}
+	}
 }
 .gray-block{
 	background: @gray;
@@ -422,6 +535,7 @@ strong{
 	.btn{
 		padding: 10px 15px;
 		font-size: 16px;
+		height: 43px;
 	}
 	#cart{
 		background: transparent;
@@ -839,7 +953,7 @@ strong{
 			&:before{
 				right: 0;
 				left: auto;
-				transform: scale(1, -1);
+				transform: scale(-1, 1)
 			}
 		}
 		.items{
@@ -868,6 +982,37 @@ strong{
 		}
 		p{
 			font-size: 14px;
+		}
+	}
+}
+.low-glycemic{
+	.desc{
+		max-width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.image{
+		margin-top: 40px;
+	}
+}
+.nutritional-facts{
+	.tabs{
+		margin-bottom: 40px;
+	}
+}
+.join-us{
+	.sign-up{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 38px auto 0;
+		max-width: 730px;
+
+		& >  *{
+			margin: 10px;
+		}
+		input:not([type="submit"]){
+			flex: 1 1 300px;
 		}
 	}
 }
