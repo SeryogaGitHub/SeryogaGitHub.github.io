@@ -52,4 +52,9 @@ $(document).ready(function() {
     $(this).addClass('active');
     $(this).parents('.tabs').find(id).addClass('active');
   });
+
+  document.cookie = "username=John Doe";
+  var username = getCookie("username");
+
+  console.log($.cookie('username'))
 });
