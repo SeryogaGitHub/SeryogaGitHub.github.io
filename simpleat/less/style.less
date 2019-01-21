@@ -398,6 +398,9 @@ strong{
 	.btn{
 		padding: 19px 50px;
 	}
+	input.btn, button.btn{
+		padding: 5px 50px;
+	}
 }
 .link-svg{
 	display: inline-flex;
@@ -521,6 +524,12 @@ strong{
 	}
 }
 .main-header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+
 	.container{
 		align-items: center;
 
@@ -558,15 +567,64 @@ strong{
 			margin-left: 55px;
 		}
 	}
-	.ui-button{
-		background: #1e252b;
-		border: none;
-		font-size: 13px;
-		color: #fff;
+	.language{
+		position: relative;
 
-		.ui-icon{
-			margin-top: 6px;
-			.transition;
+		.btn-menu{
+			background: #1e252b;
+			border: none;
+			font-size: 13px;
+			color: #fff;
+			min-width: 195px;
+			height: 40px;
+			border-radius: 6px;
+			display: flex;
+			padding: 5px 25px 5px 15px;
+			align-items: center;
+			position: relative;
+
+			img{
+				margin-right: 11px;
+			}
+			&:before{
+				content: '';
+				background: url(../img/icons/selectmenu.png) no-repeat;
+				width: 7px;
+				height: 4px;
+				.position-center;
+				left: auto;
+				right: 14px;
+			}
+		}
+		.menu{
+			padding: 10px 0;
+			max-height: 200px;
+			margin: 2px 0;
+			border: 1px solid #e5e4d7;
+			border-radius: 6px;
+			background: #fff;
+			margin-bottom: 5px;
+			position: absolute;
+			width: 100%;
+			bottom: 100%;
+			display: none;
+			
+			& > .item{
+				font-size: 13px;
+				display: flex;
+				padding: 5px 10px;
+				align-items: center;
+				cursor: pointer;
+
+				&:hover{
+					background: #e5e4d7;
+					color: #121920;
+					font-weight: 700;
+				}
+				img{
+					margin-right: 11px;
+				}
+			}	
 		}
 	}
 	.ui-selectmenu-button{
@@ -1048,6 +1106,84 @@ strong{
 		margin-top: 17px;
 	}
 }
+.popup.cookie{
+	width: 657px;
+	font-size: 14px;
+	background: #121920;
+	padding: 20px 30px;
+	border-radius: 10px;
+	font-size: 14px;
+	position: relative;
+	color: #fff;
+	display: flex;
+	margin: 0 auto;
+
+	.text{
+		position: relative;
+		padding-left: 30px;
+
+		&:after{
+			content: "";
+			.position-center;
+			background: url(../img/icons/alert.svg) no-repeat;
+			width: 22px;
+			height: 22px;
+			right: auto;
+		}
+	}
+	.btn{
+		height: 40px;
+		padding: 5px 30px;
+		min-width: 118px;
+		font-size: 16px;
+
+		&:hover{
+			background: #fff;
+			color: @dBlue;
+		}
+	}
+}
+.mfp-close-btn-in .mfp-close{
+	display: none;
+}
+.mfp-zoom-in {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out; 
+    transform: scale(0.8); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s ease-out;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0.8); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  } 
+}
 @media screen and (max-width: 970px){
 	.nutritional-facts .list{
 		flex-direction: column;
@@ -1071,14 +1207,19 @@ strong{
 	h1, h2{
 		font-size: 40px;
 	}
-	.main-header .container{
-		flex-direction: column;
-
-		.logo{
-			order: 1;
+	.main-header{
+		.flex-container>*{
+			margin: 7px;
 		}
-		& > *{
-			order: 2;
+		.container{
+			flex-direction: column;
+
+			.logo{
+				order: 1;
+			}
+			& > *{
+				order: 2;
+			}
 		}
 	}
 	.section{
