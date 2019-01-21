@@ -117,8 +117,6 @@ $(document).ready(function() {
     var item = $(this).html();
     $(this).parents('.language').find('.menu').slideToggle();
     $(this).parents('.language').find('.btn-menu').html(item);
-
-    console.log(item = $(this).html())
   });
 
   $('.language').on('click', '.btn-menu', function(){
