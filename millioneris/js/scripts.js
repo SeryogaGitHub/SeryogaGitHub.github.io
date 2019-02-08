@@ -67,12 +67,43 @@ $(document).ready(function() {
     slidesToShow: 1
   });
 
-  $('.our-cars-slider').slick({
+  var $slickElement = $('.reviews-slider');
+
+  $slickElement.after("<p class='reviews-slider-count'></p>");
+
+  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $('.reviews-slider-count').text(i + '/' + slick.slideCount);
+  });
+
+  $slickElement.slick({
+    slide: '.item',
     fade: true,
     infinite: true,
     // speed: 300,
     slidesToShow: 1
   });
 
+  $('.our-cars-slider').slick({
+    fade: true,
+    infinite: true,
+    // speed: 300,
+    slidesToShow: 1,
+    dots: true
+  });
+
   $('.selectmenu').selectmenu();
+
+  var idAuto = 0,
+      itemAuto = [];
+
+  $('.our-cars-slider .item').each(function(){
+    itemAuto.push($(this).attr('data-model'));
+  });
+
+  $('.our-cars-slider .slick-dots li').each(function(){
+    $(this).prepend("<p>" + itemAuto[idAuto] + "</p>");
+    idAuto = idAuto + 1;
+  });
+    
 });
