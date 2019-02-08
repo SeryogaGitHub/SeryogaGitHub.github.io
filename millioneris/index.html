@@ -88,8 +88,8 @@
 
     <section class="form-section">
       <div class="center">
-        <form class="form flex-container">
-          <div>
+        <form class="form">
+          <div class="flex-container container">
             <div class="selects">
               <div>
                 <h6>Откуда</h6>
@@ -99,6 +99,9 @@
                   <option value="city-1">Город 1</option>
                   <option value="city-2">Город 2</option>
                   <option value="city-3">Город 3</option>
+                  <option value="city-3">Город 4</option>
+                  <option value="city-3">Город 5</option>
+                  <option value="city-3">Город 6</option>
                 </select>
 
                 <select name="place" class="selectmenu">
@@ -127,70 +130,94 @@
                 </select>
               </div>
             </div>
-          </div>
 
-          <div class="wrap-slider">
-            <h6>Автомобиль</h6>
-          
-            <div class="slider">
-              <div>
-                <img src="img/slider-auto/1.png" alt="">
-                <p>Mercedes-Benz E-Class</p>
-              </div>
+            <div class="wrap-slider">
+              <h6>Автомобиль</h6>
+            
+              <div class="slider-fade">
+                <div>
+                  <img src="img/slider-auto/1.png" alt="">
+                  <p>Mercedes-Benz D</p>
+                </div>
 
-              <div>
-                <img src="img/slider-auto/1.png" alt="">
-                <p>Mercedes-Benz E-Class</p>
-              </div>
+                <div>
+                  <img src="img/slider-auto/1.png" alt="">
+                  <p>Mercedes DF-Class</p>
+                </div>
 
-              <div>
-                <img src="img/slider-auto/1.png" alt="">
-                <p>Mercedes-Benz E-Class</p>
-              </div>
-            </div><!-- .slider-auto -->
-          </div>
-
-          <div>
-            <h6>Стоимость</h6>
-
-            <div class="price">
-              <span>350</span>
-              <sup>00 &euro;</sup>
+                <div>
+                  <img src="img/slider-auto/1.png" alt="">
+                  <p>Benz Class</p>
+                </div>
+              </div><!-- .slider-auto -->
             </div>
 
-            <button class="btn" type="submit">Заказать</button>
+            <div class="cost">
+              <h6>Стоимость</h6>
+
+              <div class="price">
+                <span>350</span><sup>.00&euro;</sup>
+              </div>
+
+              <button class="btn" type="submit">Заказать</button>
+            </div>
           </div>
+          
         </form>
 
-        <div class="list">
+        <div class="list flex-container">
           <div class="item">
             <img src="img/icons/icon-clock.svg" alt="">
             <p>
-              Скорость и пунктуальность
+              Скорость<br> и пунктуальность
             </p>
           </div>
 
           <div class="item">
             <img src="img/icons/iocn-umbrella.svg" alt="">
             <p>
-              Внимание к клиенту
+              Внимание<br> к клиенту
             </p>
           </div>
 
           <div class="item">
             <img src="img/icons/icon-car.svg" alt="">
             <p>
-              Только новые автомобили
+              Только новые<br> автомобили
             </p>
           </div>
 
           <div class="item">
             <img src="img/icons/icon-wallet.svg" alt="">
             <p>
-              Приятные цены
+              Приятные<br> цены
             </p>
           </div>
         </div><!-- .list -->
+      </div>
+    </section>
+
+    <section class="our-cars">
+      <div class="center">
+        <h2>Наши автомобили</h2>
+
+        <div class="our-cars-slider">
+          <div class="item" data-model="Mercedes-Benz E-Class">
+            <img src="img/index/slider/1.png" alt="">
+          </div>
+
+          <div class="item" data-model="Mercedes-Benz S-Class">
+            <img src="img/index/slider/2.png" alt="">
+          </div>
+
+          <div class="item" data-model="Mercedes-Benz Viano">
+            <img src="img/index/slider/1.png" alt="">
+          </div>
+
+          <div class="item" data-model="Mercedes-Benz Viano">
+            <img src="img/index/slider/2.png" alt="">
+          </div>
+        </div>
       </div>
     </section>
   </main>

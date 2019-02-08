@@ -60,5 +60,19 @@ $(document).ready(function() {
     slidesToShow: 1
   });
 
+  $('.slider-fade').slick({
+    fade: true,
+    infinite: true,
+    // speed: 300,
+    slidesToShow: 1
+  });
+
+  $('.our-cars-slider').slick({
+    fade: true,
+    infinite: true,
+    // speed: 300,
+    slidesToShow: 1
+  });
+
   $('.selectmenu').selectmenu();
 });
