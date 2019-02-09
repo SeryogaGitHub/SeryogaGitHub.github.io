@@ -24,6 +24,31 @@
 </head>
 <body>
 
+  <div id="sent-popup" class="white-popup mfp-with-anim mfp-hide">
+    <div class="text-center">
+      <h2>Спасибо!</h2>
+
+      <p>
+        Мы обязательно ответим на Ваше сообщение
+        в ближайшее время
+      </p>
+    </div>
+  </div>
+
+  <div class="white-popup mfp-with-anim mfp-hide" id="feedback-popup">
+    <h5>Обратный звонок</h5>
+
+    <form action="javascript:void(null);" onsubmit="send_callback(this.id, 'email/feedback.php');" method="post" id="feedback">
+      <input type="text" name="name" placeholder="Имя">
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <input type="text" hidden="hidden" value="Сообщение с форми: Заказать звонок" name="subject">
+        
+      <div class="text-center">
+        <input type="submit" class="btn">
+      </div>
+    </form>
+  </div>
+
   <header class="main-header">
     <div class="center">
       <div class="flex-container align-center">
@@ -56,7 +81,7 @@
         </div><!-- .wrap-menu -->
 
         <div class="right">
-          <a href="#" class="btn">Обратный звонок</a>
+          <a href="#feedback-popup" class="btn popup">Обратный звонок</a>
 
           <div class="language">
             <button class="switch">ru</button>

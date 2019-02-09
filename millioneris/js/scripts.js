@@ -3,9 +3,9 @@
 $(document).ready(function() {
 
   // якір
-  var mainHeader = $('.main-header');
-  var mainHeaderH = mainHeader.outerHeight();
-  
+  var mainHeader = $('.main-header'),
+      mainHeaderH = mainHeader.outerHeight();
+
   $(".go-to").on('click',function(e){
 
     e.preventDefault();
@@ -105,6 +105,22 @@ $(document).ready(function() {
   $('.our-cars-slider .slick-dots li').each(function(){
     $(this).prepend("<p>" + itemAuto[idAuto] + "</p>");
     idAuto = idAuto + 1;
+  });
+
+  $('.popup').magnificPopup({
+    type: 'inline',
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: 'auto',
+
+    closeBtnInside: true,
+    preloader: false,
+    
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'mfp-zoom-in'
   });
     
 });
