@@ -66,7 +66,9 @@ h3{
 	font-size: 30px;
 }
 h4{
-	font-size: 25px;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 15px;
 }
 h5{
 	font-size: 20px;
@@ -161,6 +163,13 @@ strong{
 			& > *{ 
 				margin: 15px;
 			}
+		}
+	}
+	&.cl-2{
+		justify-content: center;
+
+		& > *{
+			flex: 1 1 380px;
 		}
 	}
 	&.direction-column{
@@ -710,6 +719,9 @@ strong{
 		opacity: 0.8;
 		line-height: 27px;
 	}
+	.columns{
+		margin-top: 60px;
+	}
 	.image{
 		width: 50%;
 		float: right;
@@ -732,6 +744,24 @@ strong{
 			img{
 				max-height: 100%;
 				border-radius: 15px;
+			}
+		}
+	}
+}
+.main-footer{
+	border-top: 1px solid #dde3ec;
+	padding: 30px 0;
+
+	.neatwork{
+		a{
+			display: inline-flex;
+			align-items: center;
+
+			svg{
+				margin-right: 4px;
+			}
+			&	+ a{
+				margin-left: 40px;
 			}
 		}
 	}

@@ -3,6 +3,9 @@
 $(document).ready(function() {
 
   // якір
+  var mainHeader = $('.main-header');
+  var mainHeaderH = mainHeader.outerHeight();
+  
   $(".go-to").on('click',function(e){
 
     e.preventDefault();
@@ -11,7 +14,7 @@ $(document).ready(function() {
 
     if ($(anchor).length) {
       var run = $(anchor).offset().top;
-      $('body,html').stop().animate({scrollTop: run}, 1500);
+      $('body,html').stop().animate({scrollTop: run - mainHeaderH}, 1500);
     } else {
       console.warn("ID don't search!")
     }
@@ -41,8 +44,6 @@ $(document).ready(function() {
     $this.parents(language).find('.switch').text(text);
     $this.parents(language).find(languageList).slideToggle();
   });
-
-  var mainHeader = $('.main-header');
 
   $(window).scroll(function(){
     var windowScroll = $(window).scrollTop();
