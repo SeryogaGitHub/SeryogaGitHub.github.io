@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Оформление заказа</title>
+  <meta name="description" content="HTML,CSS,Jquery">
+  <meta name="author" content="main.email.seryoga@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <meta property="og:title" content="Оформление заказа"/> 
+  <meta property="og:description" content="description"/> 
+  <meta property="og:image" content="logo.jpg" />
+  <meta property="og:url" content="site.com"/> 
+  <meta property="og:site_name" content="title"/>
+    
+</head>
+<body class="checkout-page">
+  <div class="white-popup mfp-with-anim mfp-hide" id="feedback-popup">
+    <h5>Обратный звонок</h5>
+
+    <form method="post" id="feedback">
+      <div class="input">
+        <input type="text" name="name" id="input-1" required>
+        <label class="placeholder" for="input-1">Имя</label>
+      </div>
+
+      <div class="input">
+        <input type="tel" name="phone" id="input-2" required>
+        <label class="placeholder" for="input-2">Телефон</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-1">
+        <label for="checkbox-1"></label>
+        <div class="text">Я согласен с <a href="#">условиями использования</a></div>
+      </div>
+        
+      <div class="text-center">
+        <input type="submit" class="btn" value="Перезвоните мне">
+      </div>
+    </form>
+  </div>
+
+  <header class="main-header">
+    <div class="center">
+      <div class="flex-container container align-center">
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+        
+        <div class="menu-vs-left">
+          <div class="wrap-menu">
+            <nav>
+              <ul class="flex-container main-menu">
+                <li>
+                  <a href="#go-to-1" class="go-to">Преимущество</a>
+                </li>
+                <li>
+                  <a href="#go-to-2" class="go-to">Автомобили</a>
+                </li>
+                <li>
+                  <a href="#go-to-3" class="go-to">Отзывы</a>
+                </li>
+                <li>
+                  <a href="#go-to-4" class="go-to">О нас</a>
+                </li>
+                <li>
+                  <a href="#" class="go-to">Статьи</a>
+                </li>
+              </ul>
+            </nav>
+          </div><!-- .wrap-menu -->
+          
+          <div class="right">
+            <a href="#feedback-popup" class="btn popup">Обратный звонок</a>
+
+            <div class="language">
+              <button class="switch">ru</button>
+
+              <ul class="list">
+                <li class="item">en</li>
+                <li class="item active">ru</li>
+                <li class="item">de</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hamburger">
+          <div class="line-hamburger"></div>
+          <div class="line-hamburger"></div>
+          <div class="line-hamburger"></div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <section class="top-block">
+      <div class="center">
+        <div class="breadcrumbs">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;" xml:space="preserve"><g><g id="arrow-back"><path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z" fill="#fb502c"/></g></g></svg>
+            
+            На главную
+          </a>
+        </div>
+
+        <h2>Оформление заказа</h2>
+      </div>
+    </section><!-- .top-block -->
+
+    <section>
+      <form class="center">
+        <div class="flex-container cl-2">
+          <div>
+            <div class="selects">
+              <div>
+                <h6>Откуда</h6>
+
+                <select name="city" class="selectmenu">
+                  <option value="city" disabled selected>Город</option>
+                  <option value="city-1">Город 1</option>
+                  <option value="city-2">Город 2</option>
+                  <option value="city-3">Город 3</option>
+                  <option value="city-3">Город 4</option>
+                  <option value="city-3">Город 5</option>
+                  <option value="city-3">Город 6</option>
+                </select>
+
+                <select name="place" class="selectmenu">
+                  <option value="place" disabled selected>Место</option>
+                  <option value="place-1">Место 1</option>
+                  <option value="place-2">Место 2</option>
+                  <option value="place-3">Место 3</option>
+                </select>
+              </div>
+
+              <div>
+                <h6>Куда</h6>
+
+                <select name="city" class="selectmenu">
+                  <option value="city" disabled selected>Город</option>
+                  <option value="city-1">Город 1</option>
+                  <option value="city-2">Город 2</option>
+                  <option value="city-3">Город 3</option>
+                </select>
+
+                <select name="place" class="selectmenu">
+                  <option value="place" disabled selected>Место</option>
+                  <option value="place-1">Место 1</option>
+                  <option value="place-2">Место 2</option>
+                  <option value="place-3">Место 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-slider">
+            <h6>Автомобиль</h6>
+          
+            <div class="slider-fade">
+              <div>
+                <img src="img/slider-auto/1.png" alt="">
+                <p>Mercedes-Benz D</p>
+              </div>
+
+              <div>
+                <img src="img/slider-auto/1.png" alt="">
+                <p>Mercedes DF-Class</p>
+              </div>
+
+              <div>
+                <img src="img/slider-auto/1.png" alt="">
+                <p>Benz Class</p>
+              </div>
+            </div><!-- .slider-auto -->
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <h4>Уточнения</h4>
+          <div class="flex-container cl-2">
+            <div>
+              <label for="input-1" class="info">Адрес откуда</label>
+              <input type="text" id="input-1" placeholder="Например, ул. Варино, д. 1">
+            </div>
+
+            <div>
+              <label for="input-2" class="info">Количество пассажиров</label>
+
+              <div class="counter">
+                <input type="number" class="count" id="input-2" value='1'>
+
+                <div class="btns">
+                  <button class="minus num" type="button">&#8211;</button>
+                  <button class="plus num" type="button">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="flex-container cl-2">
+          <div>
+            <label for="" class="info">Дата и время посадки</label>
+            <input type="text">
+          </div>
+
+          <div>
+            <label for="input-3" class="info">Адрес куда</label>
+            <input type="text" placeholder="Например, ул. Варино, д. 1">
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox-11" name="checkbox-11">
+          <label for="checkbox-11"></label>
+          <div class="text">Детское кресло/бустер/люлька</div>
+        </div>
+
+        <hr>
+
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox-2" name="checkbox-2">
+          <label for="checkbox-2"></label>
+          <div class="text">Питьевая вода</div>
+        </div>
+
+        <hr>
+
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox-3" checked name="checkbox-3">
+          <label for="checkbox-3"></label>
+          <div class="text">Обратный трансфер</div>
+        </div>
+
+        <div class="flex-container cl-2">
+          <div>
+            <label for="input-4" class="info">Номер авиарейса</label>
+            <input type="text" id="input-4" placeholder="Например, RH 4987">
+          </div>
+
+          <div>
+            <label for="input-3" class="info">Дата и время прилета</label>
+            <input type="text">
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <h4>Контактная информация</h4>
+          
+          <div class="flex-container cl-2">
+            <div>
+              <label for="input-5">Имя и фамилия</label>
+              <input type="text" id="input-5">
+
+              <label for="input-6">Телефон</label>
+              <input type="tel" id="input-6">
+
+              <label for="input-7">E-mail</label>
+              <input type="email" id="input-7">
+            </div>
+
+            <div>
+              <label for="text-1">Дополнительная информация</label>
+              <textarea name="text" id="text-1" cols="30" rows="10"></textarea>
+            </div>
+          </div><!-- .flex-container -->
+        </div><!-- .contact-info -->
+
+        <div class="payment">
+          <div class="flex-container cl-2">
+            <div>
+              <h6>Способ оплаты</h6>
+
+              <div class="radio">
+                <input type="radio" id="radio-1" name="pay" checked>
+                <label for="radio-1"></label>
+                <div class="text">PayPal</div>
+              </div>
+
+              <div class="radio">
+                <input type="radio" id="radio-2" name="pay">
+                <label for="radio-2"></label>
+                <div class="text">Наличными водителю</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-12" name="ceck" checked>
+                <label for="checkbox-12"></label>
+                <div class="text">Я согласен с <a href="#">политикой конфиденциальности</a></div>
+              </div>
+              
+              <div class="flex-container wrap-price">
+                <div>
+                  <h6>Стоимость</h6>
+                  <div class="price">
+                    <span>350</span><sup>.00&euro;</sup>
+                  </div>
+                </div>
+
+                <div>
+                  <button class="btn" type="submit">Оплатить</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div><!-- .payment -->
+      </form><!-- .center -->
+    </section>
+  </main>
+  
+  <footer class="main-footer">
+    <div class="center">
+      <div class="flex-container">
+        <div class="network">
+          <a href="tel:+35795114725">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fb502c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+
+            +3579 51 14 725
+          </a>
+          <a href="mailto:info@exclusive.taxi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fb502c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+
+            info@exclusive.taxi
+          </a>
+          <a href="viber://chat?number=+35795114725">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52.511 52.511" style="enable-background:new 0 0 52.511 52.511;" xml:space="preserve" width="17px" fill="#fb502c" height="17px"><g><g><path d="M31.256,0H21.254C10.778,0,2.255,8.521,2.255,18.995v9.01c0,7.8,4.793,14.81,12,17.665v5.841    c0,0.396,0.233,0.754,0.595,0.914c0.13,0.058,0.268,0.086,0.405,0.086c0.243,0,0.484-0.089,0.671-0.259L21.725,47h9.531    c10.476,0,18.999-8.521,18.999-18.995v-9.01C50.255,8.521,41.732,0,31.256,0z M48.255,28.005C48.255,37.376,40.63,45,31.256,45    h-9.917c-0.248,0-0.487,0.092-0.671,0.259l-4.413,3.997v-4.279c0-0.424-0.267-0.802-0.667-0.942    C8.81,41.638,4.255,35.196,4.255,28.005v-9.01C4.255,9.624,11.881,2,21.254,2h10.002c9.374,0,16.999,7.624,16.999,16.995V28.005z"/><path d="M39.471,30.493l-6.146-3.992c-0.672-0.437-1.472-0.585-2.255-0.423c-0.784,0.165-1.458,0.628-1.895,1.303l-0.289,0.444    c-2.66-0.879-5.593-2.002-7.349-7.085l0.727-0.632h0c1.248-1.085,1.379-2.983,0.294-4.233l-4.808-5.531    c-0.362-0.417-0.994-0.46-1.411-0.099l-3.019,2.624c-2.648,2.302-1.411,5.707-1.004,6.826c0.018,0.05,0.04,0.098,0.066,0.145    c0.105,0.188,2.612,4.662,6.661,8.786c4.065,4.141,11.404,7.965,11.629,8.076c0.838,0.544,1.781,0.805,2.714,0.805    c1.638,0,3.244-0.803,4.202-2.275l2.178-3.354C40.066,31.413,39.934,30.794,39.471,30.493z M35.91,34.142    c-0.901,1.388-2.763,1.782-4.233,0.834c-0.073-0.038-7.364-3.835-11.207-7.75c-3.592-3.659-5.977-7.724-6.302-8.291    c-0.792-2.221-0.652-3.586,0.464-4.556l2.265-1.968l4.152,4.776c0.369,0.424,0.326,1.044-0.096,1.411l-1.227,1.066    c-0.299,0.26-0.417,0.671-0.3,1.049c2.092,6.798,6.16,8.133,9.13,9.108l0.433,0.143c0.433,0.146,0.907-0.021,1.155-0.403    l0.709-1.092c0.146-0.226,0.37-0.379,0.63-0.434c0.261-0.056,0.527-0.004,0.753,0.143l5.308,3.447L35.91,34.142z"/><path d="M28.538,16.247c-0.532-0.153-1.085,0.156-1.236,0.688c-0.151,0.531,0.157,1.084,0.688,1.235    c1.49,0.424,2.677,1.613,3.097,3.104c0.124,0.44,0.525,0.729,0.962,0.729c0.09,0,0.181-0.012,0.272-0.037    c0.531-0.15,0.841-0.702,0.691-1.234C32.405,18.578,30.69,16.859,28.538,16.247z"/><path d="M36.148,22.219c0.09,0,0.181-0.012,0.272-0.037c0.532-0.15,0.841-0.703,0.691-1.234c-1.18-4.183-4.509-7.519-8.689-8.709    c-0.531-0.153-1.084,0.158-1.235,0.689c-0.151,0.531,0.157,1.084,0.688,1.235c3.517,1,6.318,3.809,7.311,7.328    C35.311,21.931,35.711,22.219,36.148,22.219z"/><path d="M27.991,7.582c-0.532-0.153-1.085,0.156-1.236,0.689c-0.151,0.531,0.157,1.084,0.688,1.235    c5.959,1.695,10.706,6.453,12.388,12.416c0.124,0.44,0.525,0.729,0.962,0.729c0.09,0,0.181-0.012,0.272-0.037    c0.531-0.15,0.841-0.703,0.691-1.234C39.887,14.753,34.613,9.467,27.991,7.582z"/></g>
+            </g></svg>
+
+            Viber
+          </a>
+          <a href="whatsapp://send?text=Hello&phone=+35795114725">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="#fb502c"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+
+            What’sUp
+          </a>
+        </div>
+
+        <div class="copyright">
+          &copy; 2019 MILLIONERIS
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>

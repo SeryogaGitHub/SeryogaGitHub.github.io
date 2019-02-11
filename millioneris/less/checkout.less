@@ -1,0 +1,60 @@
+@import url(mixin.less);
+
+.checkout-page{
+	label{
+		font-weight: 700;
+		margin-bottom: 7px;
+		display: inline-block;
+	}
+	.slider-fade{
+		max-width: 260px;
+		display: inline-block;
+	}
+	.ui-selectmenu-button{
+		&.ui-button{
+			background: #fff;
+			border: 1px solid #a4aec0;
+			border-radius: 6px;
+		}
+	}
+	hr{
+		margin: 30px 0;
+	}
+	.contact-info{
+		margin-top: 45px;
+
+		input + label{
+			margin-top: 30px;
+		}
+	}
+	.payment{
+		background: #dde3ec;
+		padding: 40px;
+		border-radius: 15px;
+		margin-top: 15px;
+
+		label{
+			margin-top: 0;
+			border-color: transparent;
+		}
+		.radio + .radio{
+			margin-top: 20px;
+		}
+		.wrap-price{
+			margin-top: 12px;
+			justify-content: flex-start;
+
+			h6{
+				margin-bottom: 0;
+			}
+			.btn{
+				margin-top: 0;
+				font-size: 16px;
+				min-width: 170px;
+			}
+		}
+	}
+	@media screen and (max-width: 768px){
+		
+	}
+}

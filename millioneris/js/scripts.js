@@ -39,6 +39,23 @@ $(document).ready(function() {
     $('.slider-fade').slick('refresh');
   });
 
+  var counter = $('.counter');
+
+  counter.on('click', '.num', function(){
+    var valInput = $(this).parents('.counter').find('input'),
+        valCounter = valInput.val();
+
+    if($(this).hasClass('plus')){
+      valCounter++;
+    } else {
+      if(valCounter >=1 ){
+        valCounter--;
+      }
+    }
+
+    valInput.val(valCounter);
+  });
+
   var language = $('.language'),
       languageList = language.find('.list');
 
