@@ -1,6 +1,4 @@
-@orange: #fb502c;
-@red: #fa2005;
-@black: #1a1d1d;
+@import url(mixin.less);
 
 html{
 	height: 100%;
@@ -139,31 +137,6 @@ strong{
 :-moz-placeholder           {color:#fff;}
 :-ms-input-placeholder      {color:#fff;}
 
-.transition(@element: all, @time: .2s, @function: linear ) {
-	transition: @element @time @function;
-}
-.position-center{
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	margin: auto;
-}
-.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
-	background: @start;
-	background: -webkit-linear-gradient(@origin, @start, @stop);
-	background: -moz-linear-gradient(@origin, @start, @stop);
-	background: -o-linear-gradient(@origin, @start, @stop);
-	background: -ms-linear-gradient(@origin, @start, @stop);
-	background: linear-gradient(@origin, @start, @stop);
-}
-.text-center{
-	text-align: center;
-}
-.color-orange{
-	color:@orange;
-}
 .checkbox{
 	display: flex;
 	margin-top: 10px;
@@ -249,18 +222,9 @@ strong{
 		justify-content: flex-end;
 	}
 }
-.font{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-}
 .main-container{
 	flex: 1;
 	padding: 130px 0 80px;
-}
-.bg-image{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .btn{
 	padding: 0px 30px;
@@ -301,11 +265,6 @@ strong{
 	.slick-next{
 		left: auto;
 	}
-}
-.nowrap{
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 .clear:before,
 .clear:after {
@@ -553,7 +512,7 @@ strong{
 	.copyright{
 		opacity: 0.6;
 	}
-	.neatwork{
+	.network{
 		a{
 			display: inline-flex;
 			align-items: center;
@@ -942,7 +901,7 @@ strong{
 		height: 50px;
 		font-size: 16px;
 	}
-	.main-footer .neatwork{
+	.main-footer .network{
 		flex-direction: column;
 		display: flex;
 
@@ -976,5 +935,6 @@ strong{
   }
 }
 
-@import url(pages/index.less);
-@import url(pages/404.less);
+@import url(index.less);
+@import url(404.less);
+@import url(email.less);

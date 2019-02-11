@@ -1,0 +1,113 @@
+@import url(mixin.less);
+
+.email-page{
+	background: #dde3ec;
+	font-size: 14px;
+	font-weight: 400;
+
+	h1, h2{
+		font-size: 24px;
+	}
+	h1{
+		margin-bottom: 10px;
+
+		& + p{
+			font-size: 22px;
+		}
+	}
+	h2{
+		margin-bottom: 20px;
+	}
+	h3{
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	h4{
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+	.full-container{
+		max-width: 630px;
+		padding: 15px 0;
+		margin: 0 auto;
+	}
+	.email-header{
+		.logo{
+			margin-bottom: 25px;
+		}
+		.title{
+			border-radius: 15px 15px 0 0;
+			background: @red;
+			color: #fff;
+			padding: 30px;
+		}
+	}
+	.email-container{
+		border-radius: 0 0 15px 15px;
+		overflow: hidden;
+
+		.block{
+			background: #fff;
+			padding: 30px 30px 0;
+
+			table{
+				td{
+					height: 30px;
+				}
+				td:last-child{
+					opacity: 0.8;
+				}
+				td:first-child{
+					font-weight: bold;
+					padding-right: 18px;
+				}
+			}
+			&.all{
+				border-bottom: 1px solid #dde3ec;
+				padding-bottom: 30px;
+			}
+			hr{
+				border: none;
+				border-bottom: 1px solid #dde3ec;
+				margin-top: 30px;
+			}
+			.description{
+				margin-top: 25px;
+			}
+		}
+		.price{
+			background: #fff;
+			padding: 30px;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: right;
+		}
+		.date, .time{
+			padding-left: 18px;
+			display: inline-block;
+		}
+		.date{
+			background: url(../img/icons/calendar.svg) no-repeat left center;
+		}
+		.time{
+			background: url(../img/icons/clock.svg) no-repeat left center;
+			margin: 0 7px;
+		}
+	}
+	.main-footer{
+		text-align: center;
+
+		.network{
+			margin: 30px 0;
+
+			a{
+				color: @orange;
+
+				&:hover{
+					color: @black; 
+				}
+			}
+		}
+	}
+}

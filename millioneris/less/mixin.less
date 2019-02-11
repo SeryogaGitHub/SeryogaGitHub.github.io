@@ -1,0 +1,43 @@
+@orange: #fb502c;
+@red: #fa2005;
+@black: #1a1d1d;
+
+.transition(@element: all, @time: .2s, @function: linear ) {
+	transition: @element @time @function;
+}
+.position-center{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+.nowrap{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+	background: @start;
+	background: -webkit-linear-gradient(@origin, @start, @stop);
+	background: -moz-linear-gradient(@origin, @start, @stop);
+	background: -o-linear-gradient(@origin, @start, @stop);
+	background: -ms-linear-gradient(@origin, @start, @stop);
+	background: linear-gradient(@origin, @start, @stop);
+}
+.text-center{
+	text-align: center;
+}
+.color-orange{
+	color:@orange;
+}
+.bg-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.font{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
