@@ -22,82 +22,109 @@
   <meta property="og:site_name" content="title"/>
     
 </head>
-<body>
-
+<body class="index-page">
   <div id="sent-popup" class="white-popup mfp-with-anim mfp-hide">
     <div class="text-center">
-      <h2>Спасибо!</h2>
+      <h2>Спасибо, ваш заказ оформлен</h2>
 
       <p>
-        Мы обязательно ответим на Ваше сообщение
-        в ближайшее время
+        После обработки заказа менеджером, вам на e-mail будет отправлено письмо-подтверждение
       </p>
+        
+      <div class="text-center">
+        <button class="btn close-popup">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;" xml:space="preserve"><g><g id="arrow-back"><path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z" fill="#ffffff"/></g></g></svg>
+
+          Вернуться на главную
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="white-popup mfp-with-anim mfp-hide" id="feedback-popup">
     <h5>Обратный звонок</h5>
 
-    <form action="javascript:void(null);" onsubmit="send_callback(this.id, 'email/feedback.php');" method="post" id="feedback">
-      <input type="text" name="name" placeholder="Имя">
-      <input type="tel" name="phone" placeholder="Телефон" required>
-      <input type="text" hidden="hidden" value="Сообщение с форми: Заказать звонок" name="subject">
+    <form method="post" id="feedback">
+      <div class="input">
+        <input type="text" name="name" id="input-1" required>
+        <label class="placeholder" for="input-1">Имя</label>
+      </div>
+
+      <div class="input">
+        <input type="tel" name="phone" id="input-2" required>
+        <label class="placeholder" for="input-2">Телефон</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox-1">
+        <label for="checkbox-1"></label>
+        <div class="text">Я согласен с <a href="#">условиями использования</a></div>
+      </div>
         
       <div class="text-center">
-        <input type="submit" class="btn">
+        <input type="submit" class="btn" value="Перезвоните мне">
       </div>
     </form>
   </div>
 
   <header class="main-header">
     <div class="center">
-      <div class="flex-container align-center">
-        <div>
+      <div class="flex-container container align-center">
+        <div class="logo">
           <a href="#">
             <img src="img/logo.png" alt="">
           </a>
         </div>
+        
+        <div class="menu-vs-left">
+          <div class="wrap-menu">
+            <nav>
+              <ul class="flex-container main-menu">
+                <li>
+                  <a href="#go-to-1" class="go-to">Преимущество</a>
+                </li>
+                <li>
+                  <a href="#go-to-2" class="go-to">Автомобили</a>
+                </li>
+                <li>
+                  <a href="#go-to-3" class="go-to">Отзывы</a>
+                </li>
+                <li>
+                  <a href="#go-to-4" class="go-to">О нас</a>
+                </li>
+                <li>
+                  <a href="#" class="go-to">Статьи</a>
+                </li>
+              </ul>
+            </nav>
+          </div><!-- .wrap-menu -->
+          
+          <div class="right">
+            <a href="#feedback-popup" class="btn popup">Обратный звонок</a>
 
-        <div class="wrap-menu">
-          <nav>
-            <ul class="flex-container main-menu">
-              <li>
-                <a href="#go-to-1" class="go-to">Преимущество</a>
-              </li>
-              <li>
-                <a href="#go-to-2" class="go-to">Автомобили</a>
-              </li>
-              <li>
-                <a href="#go-to-3" class="go-to">Отзывы</a>
-              </li>
-              <li>
-                <a href="#go-to-4" class="go-to">О нас</a>
-              </li>
-              <li>
-                <a href="#" class="go-to">Статьи</a>
-              </li>
-            </ul>
-          </nav>
-        </div><!-- .wrap-menu -->
+            <div class="language">
+              <button class="switch">ru</button>
 
-        <div class="right">
-          <a href="#feedback-popup" class="btn popup">Обратный звонок</a>
-
-          <div class="language">
-            <button class="switch">ru</button>
-
-            <ul class="list">
-              <li class="item">en</li>
-              <li class="item active">ru</li>
-              <li class="item">de</li>
-            </ul>
+              <ul class="list">
+                <li class="item">en</li>
+                <li class="item active">ru</li>
+                <li class="item">de</li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <div class="hamburger">
+          <div class="line-hamburger"></div>
+          <div class="line-hamburger"></div>
+          <div class="line-hamburger"></div>
+        </div>
+
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="main-container">
     <section class="top-block">
       <div class="center">
         <div class="flex-container container">
@@ -113,6 +140,12 @@
 
     <section class="form-section">
       <div class="center">
+        <button class="btn-order-form">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="11px" height="11px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><g><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z" fill="#ffffff"/></g></svg>
+
+          Форма заказа
+        </button>
+
         <form class="form">
           <div class="flex-container container">
             <div class="selects">
@@ -313,18 +346,15 @@
             </p>
 
             <div class="text-center">
-              <a href="#" class="btn">Заказать трансфер</a>
+              <a href="#sent-popup" class="btn popup">Заказать трансфер</a>
             </div>
           </div>
         </div>
       </div>
     </section><!-- .reviews-section -->
 
-    <section class="reviews-section section">
-    </section>
-
     <section class="content-section section" id="go-to-4">
-      <div class="center">
+      <div class="center container">
         <div class="image">
           <div class="content">
             <img src="img/index/contant-section.jpg" alt="">

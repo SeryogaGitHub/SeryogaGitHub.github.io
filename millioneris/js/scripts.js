@@ -20,12 +20,23 @@ $(document).ready(function() {
     }
   });
 
-  $(".mobile-menu").on("click", function(){
-    $("header nav > ul").stop().slideToggle(function(){
-      if ($(this).css('display') === 'none'){
-        $(this).removeAttr('style');
-      }
-    });
+  $(".hamburger").on("click", function(){
+    $(this).toggleClass('active');
+    $('.menu-vs-left').toggleClass('open');
+  });
+
+  $('.our-cars-slider').slick({
+    fade: true,
+    infinite: true,
+    // speed: 300,
+    slidesToShow: 1,
+    dots: true
+  });
+
+  $('.btn-order-form').on('click', function(){
+    $(this).toggleClass('active');
+    $(this).next('.form').slideToggle();
+    $('.slider-fade').slick('refresh');
   });
 
   var language = $('.language'),
@@ -45,8 +56,16 @@ $(document).ready(function() {
     $this.parents(language).find(languageList).slideToggle();
   });
 
+  var windowScroll = $(window).scrollTop();
+
+  if(windowScroll > 10){
+    mainHeader.addClass("scroll");
+  } else {
+    mainHeader.removeClass("scroll");
+  }
+
   $(window).scroll(function(){
-    var windowScroll = $(window).scrollTop();
+    windowScroll = $(window).scrollTop();
 
     if(windowScroll > 10){
       mainHeader.addClass("scroll");
@@ -85,14 +104,6 @@ $(document).ready(function() {
     slidesToShow: 1
   });
 
-  $('.our-cars-slider').slick({
-    fade: true,
-    infinite: true,
-    // speed: 300,
-    slidesToShow: 1,
-    dots: true
-  });
-
   $('.selectmenu').selectmenu();
 
   var idAuto = 0,
@@ -121,6 +132,34 @@ $(document).ready(function() {
     midClick: true,
     removalDelay: 300,
     mainClass: 'mfp-zoom-in'
+  });
+
+  $('.input').on('click', function(){
+    $(this).find('label').addClass('active');
+  });
+
+  $('.input input').blur(function(){
+    var langth = $(this).val().length;
+    
+    if(!langth){
+      $(this).parents('.input').find('.placeholder').removeClass('active');
+    }
+  });
+
+  $('.white-popup form').validate({
+    rules: {
+      phone: {
+        matches:"^\d{10}$",
+        minlength:8,
+        maxlength:10,
+      }
+    },
+    messages: {
+      phone: "Введите правильный номер телефона",
+      name: {
+        required: "Введите имя"
+      }
+    }
   });
     
 });
