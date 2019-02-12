@@ -280,6 +280,7 @@
 		}
 		.wrap-slider{
 			width: 100%;
+			text-align: left;
 
 			.reviews-slider{
 				position: relative;
@@ -348,6 +349,33 @@
 				.slick-prev{
 					left: 0;
 				}
+			}
+		}
+	}
+	.content-section{
+		.image{
+			&:after{
+				padding-top: 88%;
+			}
+		}
+	}
+	@media screen and (max-width: 920px){
+		.content-section{
+			.container{
+				h2{
+					&, & + p{
+						&, & + p{
+							order: 1;
+						}
+					}
+				}
+				*{
+					order: 3;
+				}
+			}
+			.image{
+				margin: 25px 0 5px;
+				order: 2;
 			}
 		}
 	}

@@ -619,7 +619,7 @@ hr{
 		&:after{
 			content: '';
 			display: block;
-			padding-top: 88%;
+			padding-top: 70%;
 		}
 		.content{
 			position: absolute;
@@ -1004,17 +1004,11 @@ hr{
 }
 @media screen and (max-width: 920px){
 	.content-section{
-
 		.container{
 			display: flex;
 			flex-direction: column;
 
 			h2{
-				&, & + p{
-					&, & + p{
-						order: 1;
-					}
-				}
 				& + p{
 					font-size: 18px;
 					line-height: 30px;
@@ -1027,16 +1021,12 @@ hr{
 			.columns{
 				margin-top: 20px;
 			}
-			*{
-				order: 3;
-			}
 		}
 		.image{
 			width: 100%;
 			float: none;
-			order: 2;
 			text-align: center;
-			margin: 25px 0 5px; 
+			margin: 0 0 20px; 
 
 			&:after{
 				padding-top: inherit;
@@ -1068,6 +1058,17 @@ hr{
 	h2{
 		font-size: 24px;
 		margin-bottom: 30px;
+	}
+	.content-section{
+		.container {
+			h2{
+				margin-bottom: 10px;
+
+				& + p{
+					margin-bottom: 10px;
+				}
+			}
+		}
 	}
 	.main-container{
 		padding: 75px 0 50px;

@@ -93,12 +93,6 @@ $(document).ready(function() {
     }
   });
 
-  $('.slider').slick({
-    infinite: true,
-    // speed: 300,
-    slidesToShow: 1
-  });
-
   $('.slider-fade').slick({
     fade: true,
     infinite: true,
@@ -165,6 +159,8 @@ $(document).ready(function() {
     }
   });
 
+  // валідація в попапі
+
   $('.white-popup form').validate({
     rules: {
       name: {
@@ -184,7 +180,7 @@ $(document).ready(function() {
     }
   });
     
-  // лічильник для годин
+  // лічильник для годин і хвилин
   var clockCounter = $('.clock-counter');
 
   clockCounter.on('click', '.timepicker', function(){
@@ -249,7 +245,7 @@ $(document).ready(function() {
     if(timeHC < 10){
       timeHC = "0" + timeHC
     }
-    
+
     timeH.html(timeHC);
     $(this).parents('.clock-counter').find('input').val(hourHC +" : " + timeHC);
     thisInput.attr("data-minutes", timeHC);
