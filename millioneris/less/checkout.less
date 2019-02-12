@@ -1,5 +1,4 @@
 @import url(mixin.less);
-
 .checkout-page{
 	label{
 		font-weight: 700;
@@ -9,6 +8,15 @@
 	.slider-fade{
 		max-width: 260px;
 		display: inline-block;
+	}
+	.counters{
+		justify-content: flex-start;
+		margin-top: 15px;
+	}
+	.info-counter{
+		margin-top: 5px;
+		font-size: 12px;
+		color: #6a7996;
 	}
 	.ui-selectmenu-button{
 		&.ui-button{
@@ -54,7 +62,91 @@
 			}
 		}
 	}
-	@media screen and (max-width: 768px){
+	.date-time{
+		display: flex;
+		border: 1px solid #a4aec0;
+		border-radius: 6px;
+		max-height: 50px;
 		
+		& > *{
+			flex: 1;
+		}
+		input{
+			border: none;
+			width: 100%;
+			height: 48px;
+		}
+		.datepicker, .timepicker{
+			background: url(../img/icons/calendar-red.svg) no-repeat 15px center;
+			padding-left: 40px;
+			cursor: pointer;
+		}
+		.timepicker{
+		 	background-image: url(../img/icons/clock-red.svg);
+		}
+		.clock-counter{
+			position: relative;
+		}
+		.time-popup{
+			display: flex;
+			justify-content: space-around;
+			position: absolute;
+			z-index: 6;
+			align-items: center;
+			border-radius: 15px;
+			font-size: 26px;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			padding: 30px;
+			background: #fff;
+			box-shadow: 0 0 30px 10px rgba(23, 25, 25, 0.2);
+
+			.btn-plus, .btn-minus{
+				width: 35px;
+				height: 16px;
+				background: url(../img/icons/go-back-left-arrow.svg) no-repeat top center;
+			}
+			.btn-plus{
+				transform: rotate(90deg);
+			}
+			.btn-minus{
+				transform: rotate(-90deg);
+			}
+			.time{
+				margin: 30px 0;
+				width: 35px;
+				text-align: center;
+			}
+		}
+	}
+	@media screen and (max-width: 768px){
+		h2{
+			margin-bottom: 0;
+		}
+		h4{
+			font-size: 24px;
+			margin-bottom: 0px;
+		}
+		.contact-info{
+			margin-top: 0;
+
+			input+label{
+				margin-top: 20px;
+			}
+		}
+		textarea{
+			min-height: 120px;
+		}
+		.payment{
+			padding: 15px;
+
+			.wrap-price{
+				justify-content: center;
+			}
+		}
+		.date-time .time-popup{
+			padding: 15px;
+		}
 	}
 }

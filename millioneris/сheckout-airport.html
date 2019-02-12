@@ -215,13 +215,13 @@
         <div class="flex-container cl-2">
           <div>
             <label for="" class="info">Дата и время посадки</label>
-            
+
             <div class="date-time">
               <div>
                 <input type="text" class="datepicker" readonly placeholder="DD.MM.YYYY">
               </div>
               <div class="clock-counter">
-                <input type="text" class="timepicker" readonly placeholder="HH:mm" data-hour="16" data-minutes='10'>
+                <input type="text" class="timepicker" readonly placeholder="HH:mm" data-hour="12" data-minutes='35'>
               </div>
             </div>
           </div>
@@ -235,18 +235,86 @@
         <hr>
 
         <div class="checkbox">
-          <input type="checkbox" id="checkbox-11" name="checkbox-11">
+          <input type="checkbox" id="checkbox-11" name="checkbox-11" checked>
           <label for="checkbox-11"></label>
           <div class="text">Детское кресло/бустер/люлька</div>
         </div>
 
+        <div class="counters flex-container">
+          <div>
+            <label for="input-2" class="info">Детское кресло</label>
+
+            <div class="counter">
+              <input type="number" class="count" id="input-2" value='1'>
+
+              <div class="btns">
+                <button class="minus num" type="button">&#8211;</button>
+                <button class="plus num" type="button">+</button>
+              </div>
+            </div>
+
+            <div class="info-counter">
+              Для ребенка весом 9–18 кг
+            </div>
+          </div>
+
+          <div>
+            <label for="input-2" class="info">Детский бустер</label>
+
+            <div class="counter">
+              <input type="number" class="count" id="input-2" value='0'>
+
+              <div class="btns">
+                <button class="minus num" type="button">&#8211;</button>
+                <button class="plus num" type="button">+</button>
+              </div>
+            </div>
+
+            <div class="info-counter">
+              Для ребенка весом 9–36 кг
+            </div>
+          </div>
+
+          <div>
+            <label for="input-2" class="info">Детская люлька</label>
+
+            <div class="counter">
+              <input type="number" class="count" id="input-2" value='0'>
+
+              <div class="btns">
+                <button class="minus num" type="button">&#8211;</button>
+                <button class="plus num" type="button">+</button>
+              </div>
+            </div>
+
+            <div class="info-counter">
+              Для ребенка весом 1–9 кг
+            </div>
+          </div>
+        </div><!-- .counters -->
+
         <hr>
 
         <div class="checkbox">
-          <input type="checkbox" id="checkbox-2" name="checkbox-2">
+          <input type="checkbox" id="checkbox-2" name="checkbox-2" checked>
           <label for="checkbox-2"></label>
           <div class="text">Питьевая вода</div>
         </div>
+
+        <div class="counters flex-container">
+          <div>
+            <label for="input-7" class="info">Количество бутылок 0.5 л</label>
+
+            <div class="counter">
+              <input type="number" class="count" id="input-7" value='1'>
+
+              <div class="btns">
+                <button class="minus num" type="button">&#8211;</button>
+                <button class="plus num" type="button">+</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- .counters -->
 
         <hr>
 
@@ -270,7 +338,7 @@
                 <input type="text" class="datepicker" readonly placeholder="DD.MM.YYYY">
               </div>
               <div class="clock-counter">
-                <input type="text" class="timepicker" readonly placeholder="HH:mm" data-hour="17" data-minutes='00'>
+                <input type="text" class="timepicker" readonly placeholder="HH:mm" data-hour="19" data-minutes='40'>
               </div>
             </div>
           </div>

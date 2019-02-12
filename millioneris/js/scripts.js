@@ -56,6 +56,8 @@ $(document).ready(function() {
     valInput.val(valCounter);
   });
 
+  $( ".datepicker" ).datepicker({ dateFormat: 'dd.mm.yy' });
+
   var language = $('.language'),
       languageList = language.find('.list');
 
@@ -151,7 +153,7 @@ $(document).ready(function() {
     mainClass: 'mfp-zoom-in'
   });
 
-  $('.input').on('click', function(){
+  $('.input').on('click focus', function(){
     $(this).find('label').addClass('active');
   });
 
@@ -165,8 +167,11 @@ $(document).ready(function() {
 
   $('.white-popup form').validate({
     rules: {
+      name: {
+        minlength: 3
+      },
       phone: {
-        matches:"^\d{10}$",
+        matches: /\d/g,
         minlength:8,
         maxlength:10,
       }
@@ -179,4 +184,74 @@ $(document).ready(function() {
     }
   });
     
+  // лічильник для годин
+  var clockCounter = $('.clock-counter');
+
+  clockCounter.on('click', '.timepicker', function(){
+    var dataHour = $(this).attr('data-hour'),
+        dataMinutes = $(this).attr('data-minutes');
+
+    $(this).parents('.clock-counter').prepend('<div class="time-popup"><div class="hour"><button class="btn-plus btn-time" type="button"></button><div class="time">'+ dataHour +'</div><button class="btn-minus btn-time" type="button"></button></div><div class="dots">:</div><div class="minutes"><button class="btn-plus btn-time" type="button"></button><div class="time">'+ dataMinutes +'</div><button class="btn-minus btn-time" type="button"></button></div></div>');
+
+    $('body').prepend('<div class="time-overlay"></div>');
+  });
+
+  $('body').on('click', '.time-overlay', function(){
+    $(this).remove();
+    $('.time-popup').remove();
+  });
+
+  $('body').on('click', '.hour .btn-time', function(){
+    var timeH = $(this).parents('.hour').find('.time'),
+        timeHC = timeH.html(),
+        thisInput = $(this).parents('.clock-counter').find('input'),
+        minutesHC = $(this).parents('.time-popup').find('.minutes .time').html();
+
+    if($(this).hasClass('btn-plus')){
+      timeHC++;
+      if(timeHC === 24){
+        timeHC = '0';
+      }
+    } else {
+      if(timeHC == '00'){
+        timeHC = 24;
+      }
+      timeHC--;
+    }
+
+    if(timeHC < 10){
+      timeHC = "0" + timeHC
+    }
+
+    timeH.html(timeHC);
+    $(this).parents('.clock-counter').find('input').val(timeHC +" : " + minutesHC);
+    thisInput.attr("data-hour", timeHC);
+  });
+
+  $('body').on('click', '.minutes .btn-time', function(){
+    var timeH = $(this).parents('.minutes').find('.time'),
+        timeHC = timeH.html(),
+        thisInput = $(this).parents('.clock-counter').find('input'),
+        hourHC = $(this).parents('.time-popup').find('.hour .time').html();
+
+    if($(this).hasClass('btn-plus')){
+      timeHC = +timeHC + 5;
+      if(timeHC === 60){
+        timeHC = 0;
+      }
+    } else {
+      if(timeHC == '00'){
+        timeHC = 60;
+      }
+      timeHC = timeHC - 5;
+    }
+
+    if(timeHC < 10){
+      timeHC = "0" + timeHC
+    }
+    
+    timeH.html(timeHC);
+    $(this).parents('.clock-counter').find('input').val(hourHC +" : " + timeHC);
+    thisInput.attr("data-minutes", timeHC);
+  });
 });
