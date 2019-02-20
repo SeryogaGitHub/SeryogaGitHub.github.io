@@ -117,6 +117,44 @@ body{
   color: #32373c;
   margin: 0 0 18px;
 }
+.white-popup table + h3{
+  margin-top: 25px;
+}
+.white-popup table{
+  font-size: 14px;
+}
+.white-popup table td:first-child{
+  font-weight: 600;
+}
+.white-popup table td:last-child{
+  padding: 5px 24px;
+}
+.white-popup table td{
+  padding: 5px 0;
+}
+.white-popup .price{
+  margin-top: 28px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #32373c;
+}
+.white-popup h3{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.white-popup hr{
+  margin: 20px 0;
+  border: none;
+  background: #dddddd;
+  height: 1px;
+}
+.white-popup h6{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.white-popup p{
+  font-size: 14px;
+}
 .admin-block{
   font-family: 'Montserrat', sans-serif;
   color: #23282d;
