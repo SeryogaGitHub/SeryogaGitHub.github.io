@@ -28,7 +28,8 @@ $(document).ready(function() {
   $('.our-cars-slider').slick({
     fade: true,
     infinite: true,
-    // speed: 300,
+    autoplay: true,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     dots: true
   });
@@ -113,8 +114,16 @@ $(document).ready(function() {
     slide: '.item',
     fade: true,
     infinite: true,
-    // speed: 300,
-    slidesToShow: 1
+    slidesToShow: 1,
+    swipe: false,
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            swipe: true
+          }
+        }
+      ]
   });
 
   $('.selectmenu').selectmenu();

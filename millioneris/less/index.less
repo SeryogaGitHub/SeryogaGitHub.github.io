@@ -75,10 +75,12 @@
 			margin-top: -70px;
 
 			.container{
-				padding: 30px 45px;
+				padding: 30px 45px 17px 45px;
 				justify-content: center;
+				align-items: stretch;
 
 				& > *{
+					margin-top: 0;
 					flex: 1 1 300px;
 				}
 				.cost{
@@ -89,11 +91,12 @@
 					.price{
 						font-size: 42px;
 						min-width: 170px;
+						padding-top: 25px;
 					}
 					.btn{
 						.position-center;
 						top: auto;
-						bottom: -93px;
+						bottom: -60px;
 						width: 170px;
 						height: 60px;
 						font-size: 16px;
@@ -105,14 +108,29 @@
 			text-align: center;
 			min-width: 255px;
 
+			h6{
+				position: relative;
+				z-index: 2;
+			}
 			.slider-fade{
-				text-align: center;
-				margin: 20px;
-				
+				& > *:not(.slick-arrow){
+					position: relative;
+					z-index: 2;
+				}
+				&:after{
+					content: "";
+					.position-center;
+					width: 30px;
+				    background: #fff;
+				    height: 60%;
+				    box-shadow: 0 0 55px 35px #fff;
+					z-index: 1;
+				}
 				.slick-slide{
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
+					position: relative;
 
 					img{
 						align-self: center;
@@ -129,14 +147,14 @@
 		}
 		.list{
 			padding: 80px 0;
-			justify-content: center;
+			justify-content: space-between;
 			color: #fff;
 			font-size: 18px;
 
 			.item{
 				display: flex;
 				align-items: center;
-				flex: 1 1 250px;
+				flex: inherit;
 				max-width: 350px;
 
 				img{
@@ -176,24 +194,40 @@
 				margin: 0 auto;
 			}
 			.slick-dots{
+				justify-content: space-around;
+
 				li{
 					cursor: pointer;
 					padding-bottom: 15px;
+					flex: inherit;
+
+					&:hover{
+						p{
+							color: @orange;
+							opacity: 1;
+						}
+					}
 				}
 				p{
 					opacity: 0.4;
 					color: #171919;
+					.transition;
 				}
 			}
 			.slick-arrow{
 				background-image: url(../img/icons/go-back-left-arrow.svg);
 				width: 16px;
 				height: 16px;
+				.transition;
+
+				&:hover{
+					background-image: url(../img/icons/go-back-left-arrow-black.svg);
+				}
 			}
 			.slick-dots{
 				width: 100%;
 				display: flex!important;
-				justify-content: center;
+				justify-content: space-between;
 				margin-top: 30px;
 				position: relative;
 
@@ -232,11 +266,11 @@
 			}
 			.slick-prev{
 				transform: rotate(0deg);
-				left: 12%;
+				left: 8%;
 			}
 			.slick-next{
 				transform: rotate(180deg);
-				right: 12%;
+				right: 8%;
 			}
 		}
 	}
@@ -352,13 +386,6 @@
 			}
 		}
 	}
-	.content-section{
-		.image{
-			&:after{
-				padding-top: 88%;
-			}
-		}
-	}
 	@media screen and (max-width: 920px){
 		.content-section{
 			.container{
@@ -429,6 +456,9 @@
 				}
 				.slick-prev{
 					left: 0;
+				}
+				.slick-dots{
+					justify-content: center;
 				}
 				.slick-dots li{
 					display: none;

@@ -64,6 +64,13 @@ h2{
 	font-size: 42px;
 	margin-bottom: 50px;
 	font-weight: 700;
+
+	&.mb35{
+		margin-bottom: 35px;
+	}
+	&.mb30{
+		margin-bottom: 30px;
+	}
 }
 h3{
 	font-size: 30px;
@@ -177,6 +184,11 @@ hr{
 	}
 	.text{
 		margin-top: 3px;
+
+		label{
+			font-weight: 500;
+			cursor: pointer;
+		}
 	}
 	a{
 		color: @orange;
@@ -196,9 +208,6 @@ hr{
 }
 .price{
 	font-size: 42px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
 	sup{
 		font-size: 21px;
@@ -274,6 +283,7 @@ hr{
 
 	&:hover{
 		background: #2d2f33;
+		box-shadow: 0 20px 40px 0 rgba(26, 29, 29, 0.6);
 	}
 	a&{
 		display: inline-flex;
@@ -286,9 +296,14 @@ hr{
 		background: url(../img/icons/arrow-next.svg) no-repeat;
 		background-size: cover;
 		font-size: 0;
-		width: 30px;
-		height: 50px;
-		z-index: 2;
+		width: 20px;
+		height: 40px;
+		z-index: 3;
+		.transition;
+
+		&:hover{
+			background-image: url(../img/icons/arrow-next-black.svg);
+		}
 	}
 	.slick-prev{
 		right: auto;
@@ -298,6 +313,9 @@ hr{
 		left: auto;
 	}
 }
+.max-width{
+	max-width: 850px;
+}
 .clear:before,
 .clear:after {
    content: "";
@@ -305,6 +323,19 @@ hr{
 }
 .clear:after {
    clear: both;
+}
+.pluso{
+	margin-top: 55px;
+
+	.pluso-wrap{
+		background: transparent!important;
+	}
+	.pluso-more{
+		display: none!important;
+	}
+}
+.m-mb15{
+	margin-top: -15px;
 }
 .center{
 	position: relative;
@@ -333,6 +364,14 @@ hr{
 
 	&.ui-widget-content{
 		border: none;
+	}
+	&:after{
+		content: ''; 
+	    position: absolute;
+	    left: 12px; top: -20px;
+	    border: 10px solid transparent;
+	    border-bottom: 12px solid #fff;
+	    display: block;
 	}
 	.ui-datepicker-header{
 		background: #fff;
@@ -388,6 +427,7 @@ hr{
 		margin-top: 10px;
 		padding: 17px;
 		border: none;
+		color: @black;
 
 		&:active{
 			background: @orange;
@@ -411,6 +451,19 @@ hr{
 	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
 	max-height: 200px;
 
+	&::-webkit-scrollbar {
+	    width: 4px;
+	    background: transparent;
+	    margin-right: 3px;
+	    border-radius: 20px;
+	}
+	&::-webkit-scrollbar-track {
+	    -webkit-box-shadow: none;
+	}
+	&::-webkit-scrollbar-thumb {
+	  background-color: #dde3ec;
+	  border-radius: 5px;
+	}
 	.ui-menu-item-wrapper{
 		padding: 15px 18px;
 		border: none;
@@ -443,6 +496,9 @@ hr{
 	.main-container{
 		padding-top: 100px;
 	}
+	.content-section h2+p{
+		margin-bottom: 22px;
+	}
 }
 .selects{
 	display: flex;
@@ -452,7 +508,7 @@ hr{
 
 	& > *{
 		flex: 1 1 200px;
-		margin: 7.5px;
+		margin: 0 7.5px 15px;
 	}
 }
 .wrap-slider{
@@ -461,7 +517,8 @@ hr{
 
 	.slider-fade{
 		text-align: center;
-		margin: 20px;
+		margin: 0 20px;
+		padding-top: 15px;
 		
 		.slick-slide{
 			display: flex;
@@ -531,7 +588,7 @@ hr{
 			color: @black;
 
 			&:hover{
-				color: @orange;
+				color: @orange!important;
 			}
 		}
 	}
@@ -560,6 +617,7 @@ hr{
 			color: @black;
 			background: transparent;
 			background: url(../img/icons/down-arrow-black.svg) no-repeat center right;
+			background-size: 10px;
 		}
 		.switch, .item{
 			padding: 12px 17px;
@@ -590,10 +648,9 @@ hr{
 		text-align: center;
 	}
 	.number{
-		padding-left: 67px;
-		background-image: url(../img/icons/telephone.svg);
-		background-repeat: no-repeat;
-		background-position: 30px center;
+		svg{
+			margin-right: 15px;
+		}
 	}
 }
 .content-section{
@@ -660,10 +717,11 @@ hr{
 }
 .main-footer{
 	border-top: 1px solid #dde3ec;
-	padding: 30px 0;
+	padding: 30px 0 20px;
 
 	.copyright{
 		opacity: 0.6;
+		font-size: 14px;
 	}
 	.network{
 		a{
@@ -811,7 +869,7 @@ hr{
 			box-shadow: 0 0 12px 0px @orange;
 		}
 	}
-	.error{
+	.error:not(input){
 		margin-top: 5px;
 		color: #6a7996;
 		display: inline-block;
@@ -852,7 +910,6 @@ hr{
 	}
 	.btn{
 		font-size: 16px;
-		background: @red;
 		margin-top: 25px;
 	}
 }
@@ -875,14 +932,14 @@ hr{
 
 		button{
 			background: transparent;
-			font-size: 45px;
+			font-size: 37px;
 			color: @orange;
 			padding: 0 17px;
 			line-height: 50px;
 			background: #fff;
 		}
 		.minus{
-			font-size: 42px;
+			font-size: 32px;
 			margin-top: -4px;
 			padding: 0 15px 0 19px;
 		}
@@ -934,18 +991,21 @@ hr{
 	.item{
 		display: inline-flex;
 		align-items: flex-end;
-		padding: 30px 40px;
+		padding: 30px;
 		color: #fff;
 		.bg-image;
 
 		&:after{
 			content: '';
 			display: block;
-			padding-top: 65%;
+			padding-top: 60%;
+		}
+		h4{
+			font-size: 18px;
 		}
 	}
 	.full{
-		padding: 30px 40px;
+		padding: 39px 41px;
 		display: flex;
 		align-items: flex-end;
 		min-width: 64%;
@@ -959,8 +1019,11 @@ hr{
 		}
 	}
 	.double{
+		h4{
+			font-size: 18px;
+		}
 		.inner{
-			padding: 30px 40px;
+			padding: 30px;
 			display: flex;
 			border-radius: 15px;
 			align-items: flex-end;

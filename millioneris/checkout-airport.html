@@ -117,7 +117,7 @@
           </a>
         </div>
 
-        <h2>Оформление заказа</h2>
+        <h2 class="mb35">Оформление заказа</h2>
       </div>
     </section><!-- .top-block -->
 
@@ -326,11 +326,6 @@
 
         <div class="flex-container cl-2">
           <div>
-            <label for="input-4" class="info">Номер авиарейса</label>
-            <input type="text" id="input-4" placeholder="Например, RH 4987">
-          </div>
-
-          <div>
             <label class="info">Дата и время прилета</label>
             
             <div class="date-time">
@@ -341,7 +336,12 @@
                 <input type="text" class="timepicker" readonly placeholder="HH:mm" data-hour="19" data-minutes='40'>
               </div>
             </div>
+            <div class="info-counter">
+              Т.к. обратный трансфер в аэропорт, то рекомендуем вычитать из времени вылета, указанного в билете, 2–3 часа и время в пути до аэропорта
+            </div>
           </div>
+
+          <div></div>
         </div>
         
         <div class="contact-info">
@@ -374,13 +374,13 @@
               <div class="radio">
                 <input type="radio" id="radio-1" name="pay" checked>
                 <label for="radio-1"></label>
-                <div class="text">PayPal</div>
+                <div class="text"><label for="radio-1">PayPal</label></div>
               </div>
 
               <div class="radio">
                 <input type="radio" id="radio-2" name="pay">
                 <label for="radio-2"></label>
-                <div class="text">Наличными водителю</div>
+                <div class="text"><label for="radio-2">Наличными водителю</label></div>
               </div>
             </div>
 
@@ -388,7 +388,7 @@
               <div class="checkbox">
                 <input type="checkbox" id="checkbox-12" name="ceck" checked>
                 <label for="checkbox-12"></label>
-                <div class="text">Я согласен с <a href="#">политикой конфиденциальности</a></div>
+                <div class="text">Я согласен с <a href="#"><label for="checkbox-12">политикой конфиденциальности</label></a></div>
               </div>
               
               <div class="flex-container wrap-price">
