@@ -70,7 +70,7 @@ $(document).ready(function() {
     var $this = $(this),
         text = $this.text();
 
-    $this.parents(languageList).find('.active').removeClass('active');
+    $this.parents('.language .list').find('.active').removeClass('active');
     $this.addClass('active');
     $this.parents(language).find('.switch').text(text);
     $this.parents(language).find(languageList).slideToggle();
@@ -127,6 +127,9 @@ $(document).ready(function() {
   });
 
   $('.selectmenu').selectmenu();
+  $('.info').tooltip({
+    track: true
+  });
 
   var idAuto = 0,
       itemAuto = [];

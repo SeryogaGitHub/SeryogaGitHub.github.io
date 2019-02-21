@@ -306,11 +306,13 @@ hr{
 		}
 	}
 	.slick-prev{
+		left: 12px;
 		right: auto;
 		transform: rotate(180deg);
 	}
 	.slick-next{
 		left: auto;
+		right: 12px;
 	}
 }
 .max-width{
@@ -326,6 +328,7 @@ hr{
 }
 .pluso{
 	margin-top: 55px;
+	margin-left: -60px!important;
 
 	.pluso-wrap{
 		background: transparent!important;
@@ -358,6 +361,7 @@ hr{
 	}
 }
 .ui-datepicker{
+	margin-top: 4px;
 	padding: 20px;
 	border-radius: 15px;
 	box-shadow: 0 0 30px 10px rgba(23, 25, 25, 0.2);
@@ -549,6 +553,7 @@ hr{
 
 	&.scroll{
 		background: @black;
+		padding: 0;
 
 		.main-menu a{
 			color: #fff;
@@ -618,6 +623,12 @@ hr{
 			background: transparent;
 			background: url(../img/icons/down-arrow-black.svg) no-repeat center right;
 			background-size: 10px;
+			.transition;
+
+			&:hover{
+				color: @orange!important;
+				background-image: url(../img/icons/down-arrow-orange.svg)!important;
+			}
 		}
 		.switch, .item{
 			padding: 12px 17px;
@@ -850,6 +861,14 @@ hr{
 		margin-right: 15px;
 	}
 }
+.pluso{
+	transform: scale(0.8);
+	margin-left: -25px;
+}
+.ui-widget-shadow{
+	box-shadow: 0 0 10px #bababa;
+	border: none!important;
+}
 .white-popup{
 	padding: 40px;
 	max-width: 400px;
@@ -1066,6 +1085,9 @@ hr{
     top: 35%;
   }
 }
+.breadcrumbs{
+	margin-bottom: 10px;
+}
 .pagination{
 	display: flex;
 	align-items: center;
@@ -1174,6 +1196,7 @@ hr{
 	.article-page{
 		.main-container{
 			padding-top: 50px;
+			padding-bottom: 30px;
 		}
 	}
 }
@@ -1234,6 +1257,9 @@ hr{
 		font-size: 24px;
 		margin-bottom: 30px;
 	}
+	.pluso{
+		margin-top: 10px;
+	}
 	.pagination{
 		.pages{
 			a{
@@ -1257,16 +1283,19 @@ hr{
 			flex-wrap: wrap;
 			flex-direction: row;
 			flex: 1 1 450px!important;
-			margin: 0;
+			margin: 0!important;
 
 			.inner{
 				flex: 1 1 300px;
-				margin: 15px!important;
+				margin: 10px!important;
 			}
 		}
 		.container{
+			margin: 0 -10px;
+
 			& > *{
 				flex: 1 1 300px;
+				margin: 10px;
 			}
 		}
 	}
@@ -1328,6 +1357,11 @@ hr{
       margin-top: 40px;
     }
   }
+}
+@media screen and (max-width: 320px){
+	.counter{
+		max-width: 100%;
+	}
 }
 
 @import url(index.less);

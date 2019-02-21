@@ -77,7 +77,7 @@
 			.container{
 				padding: 30px 45px 17px 45px;
 				justify-content: center;
-				align-items: stretch;
+				align-items: center;
 
 				& > *{
 					margin-top: 0;
@@ -87,11 +87,18 @@
 					flex: 0 0 100px;	
 					text-align: center;
 					position: relative;
+					z-index: 3;
 
+					h6{
+						margin-bottom: 0;
+					}
 					.price{
 						font-size: 42px;
 						min-width: 170px;
-						padding-top: 25px;
+						display: flex;
+						min-height: 125px;
+						align-items: center;
+						justify-content: center;
 					}
 					.btn{
 						.position-center;
@@ -113,6 +120,9 @@
 				z-index: 2;
 			}
 			.slider-fade{
+				max-width: 290px;
+				margin: 0 auto;
+
 				& > *:not(.slick-arrow){
 					position: relative;
 					z-index: 2;
@@ -176,7 +186,7 @@
 			content: '';
 			height: 50%;
 			width: 100%;
-			padding-top: 3.3%;
+			padding-top: 50px;
 			background: #fff url(../img/index/city-pattern.svg) repeat-x top center/contain;
 		}
 		& > *{
@@ -358,6 +368,26 @@
 			}
 		}
 	}
+	@media screen and (max-width: 1150px){
+		.form-section{
+			.list{
+				max-width: 465px;
+				margin: 0 auto;
+				flex: 1 1 40%;
+			}
+			.form .container .cost{
+				flex: 1 1 100%;
+				margin-top: 10px;
+
+				h6{
+					margin-bottom: 10px;
+				}
+				.price{
+					min-height: 70px;
+				}
+			}
+		}
+	}
 	@media screen and (max-width: 1250px){
 		.our-cars{
 			padding: 40px 0;
@@ -366,6 +396,9 @@
 				height: 200px;
 				padding-top: 0;
 				background-size: cover;
+			}
+			.form-section .list .item{
+				min-width: 260px;
 			}
 			img{
 				max-height: 383px;
@@ -405,6 +438,9 @@
 				order: 2;
 			}
 		}
+		.reviews-section .right .btn{
+			font-size: 16px;
+		}
 	}
 	@media screen and (min-width: 768px){
 		.form-section .form{
@@ -413,6 +449,9 @@
 	}
 	@media screen and (max-width: 768px){
 		.reviews-section{
+			h2{
+				margin-bottom: 20px;
+			}
 			.container{
 				flex-direction: column;
 			}
@@ -424,6 +463,10 @@
 				p{
 					line-height: 22px!important;
 				}
+			}
+			.wrap-slider .reviews-slider:after{
+				top: 20px;
+				left: -35px;
 			}
 			.right{
 				border-radius: 0 0 15px 15px;
@@ -476,15 +519,22 @@
 				display: block;
 			}
 			.list{
-				padding: 50px 0 30px 0;
+				padding: 30px 0;
+				text-align: center;
 
 				.item{
 					flex-direction: column;
 					align-items: flex-start;
-					flex: 1 1 40%;
+					min-width: 120px;
+
+					p{
+						width: 100%;
+					}
 
 					img{
 						margin-bottom: 10px;
+						margin-left: auto;
+						margin-right: auto;
 					}
 				}
 			}
@@ -495,10 +545,10 @@
 				.container{
 					padding: 10px 35px 30px;
 
+					& > *{
+						flex: 1 1 100%;
+					}
 					.cost{
-						.price{
-							min-height: 50px;
-						}
 						.btn{
 					  	bottom: -75px;
 					  }
@@ -514,7 +564,7 @@
 		.reviews-section{
 			.right{
 				.text{
-					padding-right: 15px;
+					padding-right: 18%;
 					padding-bottom: 50px;
 				}
 			}
