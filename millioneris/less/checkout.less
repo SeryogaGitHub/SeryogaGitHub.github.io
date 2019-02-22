@@ -137,7 +137,7 @@
 	}
 	@media screen and (max-width: 768px){
 		h2{
-			margin-bottom: 0;
+			margin-bottom: 10px;
 		}
 		h4{
 			font-size: 24px;
@@ -177,6 +177,20 @@
 		.ui-datepicker.ui-widget-content{
 			width: 90%;
 			left: 5%!important;
+		}
+	}
+	@media screen and (max-width: 400px){
+		.counter{
+			max-width: 100%;
+
+			input{
+				width: 100%;
+			}
+		}
+		.counters{
+			& > *{
+				flex-basis: 100%;
+			}
 		}
 	}
 }
