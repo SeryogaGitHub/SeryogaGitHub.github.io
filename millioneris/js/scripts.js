@@ -61,29 +61,29 @@ $(document).ready(function() {
 
   $( ".datepicker" ).datepicker( {
     dateFormat: 'dd.mm.yy',
-    beforeShow: function(input) {
-      var doc = $(document).width(),
-          calendarTop;
+    // beforeShow: function(input) {
+    //   var doc = $(document).width(),
+    //       calendarTop;
 
-      var i = $(this).parents('.center').position().left;
-      console.log("left" + i)
-      if(doc > 768){
-        calendarTop = 305;
-      } else {
-        calendarTop = 165;
-      }
+    //   var i = $(this).parents('.center').position().left;
+    //   console.log("left" + i)
+    //   if(doc > 768){
+    //     calendarTop = 305;
+    //   } else {
+    //     calendarTop = 165;
+    //   }
 
-      var field = $(this),
-          height = $('#ui-datepicker-div'),
-          left = field.position().left,
-          top = field.position().top + calendarTop;
+    //   var field = $(this),
+    //       height = $('#ui-datepicker-div'),
+    //       left = field.position().left,
+    //       top = field.position().top + calendarTop;
 
-      console.log(left);
+    //   console.log(left);
 
-      setTimeout(function(){
-          $('#ui-datepicker-div').css({'top':top + 'px', 'left': left + 'px'});
-      },1)
-    }
+    //   setTimeout(function(){
+    //       $('#ui-datepicker-div').css({'top':top + 'px', 'left': left + 'px'});
+    //   },1)
+    // }
   });
 
   var language = $('.language'),
