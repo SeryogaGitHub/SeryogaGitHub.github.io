@@ -63,7 +63,7 @@ $(document).ready(function() {
 
       var field = $(this),
           left = field.offset().left,
-          top = field.offset().top + 50;
+          top = field.offset().top + 48;
 
       setTimeout(function(){
           $('#ui-datepicker-div').css({'top':top + 'px', 'left': left + 'px'});
