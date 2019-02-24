@@ -57,33 +57,18 @@ $(document).ready(function() {
     valInput.val(valCounter);
   });
 
-  // $( ".datepicker" ).datepicker({ dateFormat: 'dd.mm.yy' });
-
   $( ".datepicker" ).datepicker( {
     dateFormat: 'dd.mm.yy',
-    // beforeShow: function(input) {
-    //   var doc = $(document).width(),
-    //       calendarTop;
+    beforeShow: function(input) {
 
-    //   var i = $(this).parents('.center').position().left;
-    //   console.log("left" + i)
-    //   if(doc > 768){
-    //     calendarTop = 305;
-    //   } else {
-    //     calendarTop = 165;
-    //   }
+      var field = $(this),
+          left = field.offset().left,
+          top = field.offset().top + 50;
 
-    //   var field = $(this),
-    //       height = $('#ui-datepicker-div'),
-    //       left = field.position().left,
-    //       top = field.position().top + calendarTop;
-
-    //   console.log(left);
-
-    //   setTimeout(function(){
-    //       $('#ui-datepicker-div').css({'top':top + 'px', 'left': left + 'px'});
-    //   },1)
-    // }
+      setTimeout(function(){
+          $('#ui-datepicker-div').css({'top':top + 'px', 'left': left + 'px'});
+      },1);
+    }
   });
 
   var language = $('.language'),
