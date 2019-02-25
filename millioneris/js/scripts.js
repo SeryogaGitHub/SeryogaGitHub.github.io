@@ -3,21 +3,24 @@
 $(document).ready(function() {
 
   // якір
-  var mainHeader = $('.main-header'),
-      mainHeaderH = mainHeader.outerHeight();
+  var mainHeader = $('.main-header');
 
   $(".go-to").on('click',function(e){
 
     e.preventDefault();
 
-    var anchor = $(this).attr("href");
+    var anchor = $(this).attr("href"),
+        height = mainHeader.height();
 
     if ($(anchor).length) {
-      var run = $(anchor).offset().top;
-      $('body,html').stop().animate({scrollTop: run - mainHeaderH}, 1500);
+      var run = $(anchor).offset().top - height,
+          runTime = run / 2500 * 1000;
+          
+      $('body,html').stop().animate({scrollTop: run}, runTime);
     } else {
       console.warn("ID don't search!")
     }
+    console.log(run)
   });
 
   $(".hamburger").on("click", function(){
