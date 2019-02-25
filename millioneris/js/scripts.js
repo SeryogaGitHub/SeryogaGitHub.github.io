@@ -13,10 +13,9 @@ $(document).ready(function() {
         height = mainHeader.height();
 
     if ($(anchor).length) {
-      var run = $(anchor).offset().top - height,
-          runTime = run / 2500 * 1000;
+      var run = $(anchor).offset().top - height;
           
-      $('body,html').stop().animate({scrollTop: run}, runTime);
+      $('body,html').stop().animate({scrollTop: run}, 1500);
     } else {
       console.warn("ID don't search!")
     }

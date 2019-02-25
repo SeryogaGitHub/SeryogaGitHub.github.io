@@ -21,9 +21,6 @@
 	.top-block{
 		background: url(../img/index/top-block.jpg) no-repeat top center/cover;
 
-		.container{
-			min-height: 100vh;
-		}
 		h1, p{
 			color: #fff;
 		}
@@ -448,6 +445,11 @@
 	@media screen and (min-width: 768px){
 		.form-section .form{
 			display: block!important;
+		}
+		.top-block{
+			.container{
+				min-height: 100vh;
+			}
 		}
 	}
 	@media screen and (max-width: 768px){
