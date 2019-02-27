@@ -294,16 +294,19 @@ hr{
 .slick-slider{
 	.slick-arrow{
 		.position-center;
-		background: url(../img/icons/arrow-next.svg) no-repeat;
-		background-size: cover;
+		// background: url(../img/icons/arrow-next.svg) no-repeat;
+		// background-size: cover;
+		background: transparent;
 		font-size: 0;
 		width: 20px;
 		height: 40px;
 		z-index: 3;
 		.transition;
+		color: @orange;
 
 		&:hover{
-			background-image: url(../img/icons/arrow-next-black.svg);
+			// background-image: url(../img/icons/arrow-next-black.svg);
+			color: @black;
 		}
 	}
 	.slick-prev{
