@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <meta name="description" content="Розробник сайтів на PHP,HTML,CSS,Jquery,CMS">
+  <meta name="author" content="main.email.seryoga@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+  
+  <!-- <link rel="icon" href="img/logo.jpg" type="image/x-icon" /> -->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <meta property="og:title" content="Розробник"/> 
+  <meta property="og:description" content="Сайти високої якості."/> 
+  <!-- <meta property="og:image" content="img/logo.jpg" /> -->
+  <meta property="og:url" content="site.com"/> 
+  <meta property="og:site_name" content="title"/>
+    
+</head>
+<body>
+  <div id="sent-popup" class="white-popup mfp-with-anim mfp-hide">
+    <div class="text-center">
+      <h2>Спасибо!</h2>
+
+      <p>
+        Мы обязательно ответим на Ваше сообщение
+        в ближайшее время
+      </p>
+    </div>
+  </div>
+
+  <div class="white-popup mfp-with-anim mfp-hide" id="feedback-popup">
+    <h2>Оставте заявку</h2>
+
+    <form action="javascript:void(null);" onsubmit="send_callback(this.id, 'email/feedback.php');" method="post" id="feedback">
+      <input type="text" name="name" placeholder="Имя">
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <input type="text" hidden="hidden" value="Сообщение с сайта: ENGINEERING SOLUTIONS" name="subject">
+        
+      <div class="text-center">
+        <input type="submit" class="btn">
+      </div>
+    </form>
+  </div>
+
+  <header>
+    <div class="top">
+      <div class="center">
+        <div class="flex-container container">
+          <div>
+            <nav>
+              <ul class="main-nav">
+                <li>
+                  <a href="#go-to-1" class="go-to">Виды работ</a>
+                </li>
+                <li>
+                  <a href="#go-to-2" class="go-to">Наши проекты</a>
+                </li>
+                <li>
+                  <a href="#go-to-3" class="go-to">Примеры работ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="number-btn">
+            <a href="tel:+380677452303" class="tel">+38 (067) 745 23 03</a>
+            <a href="#feedback-popup" class="btn popup">Заказать звонок</a>
+          </div>
+        </div><!-- .flex-container -->
+      </div>
+    </div><!-- .top -->
+      
+      <div class="bottom">
+        <div class="center">
+          <h1>
+            engineering <br>
+            solutions
+          </h1>
+
+          <h4 class="description">
+            Климатические системы «под ключ»
+            для объектов премиум-класса
+          </h4>
+
+          <p>
+            Выполняем монтаж внутренней инженерии для получения правильного климата и комфорта в каждой комнате.
+          </p>
+
+          <a href="#feedback-popup" class="btn popup">Рассчитать стоимость объекта</a>
+        </div>
+      </div><!-- .bottom -->
+  </header>
+
+  <main>
+    <section class="section about">
+      <div class="center">
+        <div class="container">
+          <div>
+            <h2 class="line-title">О НАС</h2>
+          </div>
+
+          <div class="image">
+            <img src="img/wolf.jpg" alt="">
+          </div>
+
+          <div class="text">
+            <h3>Обращение руководителя</h3>
+
+            <p>
+              Вместе со своей командой на протяжении 7 лет предоставляем услуги монтажа качественной внутренней инженерии. 
+              Благодаря полученному опыту осуществляем сложные 
+              и нестандартные задачи. На нашем счету более 15 крупных проектов, отличающихся качеством технологий 
+              и минимальными сроками выполнения.
+            </p>
+            
+            <div class="lines">
+              <h5>Даниил Юрьевич</h5>
+              <p>
+                директор ТОВ «Инжиниринг Солюшнс»
+              </p>
+            </div>
+            
+            <a href="#feedback-popup" class="btn h50 popup">Рассчитать стоимость объекта</a>
+          </div>
+        </div><!-- .container -->
+      </div>
+    </section><!-- .about -->
+
+    <section class="section our-work" id="go-to-2">
+      <div class="center">
+        <div class="text-center">
+          <h2 class="lines">Наши работы</h2>
+        </div>
+
+        <div class="container">
+          <div class="item">
+            <div class="image" style="background-image: url(img/our-work/1.jpg);"></div>
+          </div>
+
+          <div class="text">
+            <h3 class="line-title">Коттеджный городок Goodlife Park <span class="count">01</span></h3>
+
+            <p>
+              Закрытый загородный клуб в Вышгородском районе состоит из 40 особняков, которые расположились 
+              на участках площадью от 14 до 18 соток. Жилая площадь домов варьируется от 220 до 358 кв. м. 
+            </p>
+
+            <h6 class="line-title">Проведенные работы:</h6>
+            
+            <ul class="list">
+              <li>
+                Монтаж инженерной сантехники Valtec.
+              </li>
+              <li>
+                Установка индивидуального газового отопления (двухконтурный газовый котел).
+              </li>
+              <li>
+                Разведение 35 кв. м теплых полов в доме.
+              </li>
+              <li>
+                Размещение артезианских скважин, обслуживающих весь коттеджный городок.
+              </li>
+              <li>
+                Установка канализации септик.
+              </li>
+            </ul>
+
+            <a href="#feedback-popup" class="popup btn">Обсудить ваш проект</a>
+          </div>
+        </div><!-- .container -->
+
+        <div class="slider">
+          <div>
+            <img src="img/our-work/slider/1.jpg" alt="">
+          </div>
+          <a href="https://www.youtube.com/watch?v=1M4ADcMn3dA" class="popup-youtube">
+            <img src="img/our-work/slider/2.jpg" alt="">
+          </a>
+          <div>
+            <img src="img/our-work/slider/3.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/our-work/slider/4.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/our-work/slider/1.jpg" alt="">
+          </div>
+          <a href="https://www.youtube.com/watch?v=EOnSh3QlpbQ" class="popup-youtube">
+            <img src="img/our-work/slider/2.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="item">
+            <div class="image" style="background-image: url(img/our-work/1.jpg);"></div>
+          </div>
+
+          <div class="text">
+            <h3 class="line-title">Коттеджный городок Goodlife Park <span class="count">02</span></h3>
+
+            <p>
+              Закрытый загородный клуб в Вышгородском районе состоит из 40 особняков, которые расположились 
+              на участках площадью от 14 до 18 соток. Жилая площадь домов варьируется от 220 до 358 кв. м. 
+            </p>
+
+            <h6 class="line-title">Проведенные работы:</h6>
+            
+            <ul class="list">
+              <li>
+                Монтаж инженерной сантехники Valtec.
+              </li>
+              <li>
+                Установка индивидуального газового отопления (двухконтурный газовый котел).
+              </li>
+              <li>
+                Разведение 35 кв. м теплых полов в доме.
+              </li>
+              <li>
+                Размещение артезианских скважин, обслуживающих весь коттеджный городок.
+              </li>
+              <li>
+                Установка канализации септик.
+              </li>
+            </ul>
+
+            <a href="#feedback-popup" class="popup btn">Обсудить ваш проект</a>
+          </div>
+        </div><!-- .container -->
+
+        <div class="slider">
+          <div>
+            <img src="img/our-work/slider/1.jpg" alt="">
+          </div>
+          <a href="https://www.youtube.com/watch?v=1M4ADcMn3dA" class="popup-youtube">
+            <img src="img/our-work/slider/2.jpg" alt="">
+          </a>
+          <div>
+            <img src="img/our-work/slider/3.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/our-work/slider/4.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/our-work/slider/1.jpg" alt="">
+          </div>
+          <a href="https://www.youtube.com/watch?v=EOnSh3QlpbQ" class="popup-youtube">
+            <img src="img/our-work/slider/2.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="container">
+          <div class="item">
+            <div class="image" style="background-image: url(img/our-work/1.jpg);"></div>
+          </div>
+
+          <div class="text">
+            <h3 class="line-title">Коттеджный городок Goodlife Park <span class="count">03</span></h3>
+
+            <p>
+              Закрытый загородный клуб в Вышгородском районе состоит из 40 особняков, которые расположились 
+              на участках площадью от 14 до 18 соток. Жилая площадь домов варьируется от 220 до 358 кв. м. 
+            </p>
+
+            <h6 class="line-title">Проведенные работы:</h6>
+            
+            <ul class="list">
+              <li>
+                Монтаж инженерной сантехники Valtec.
+              </li>
+              <li>
+                Установка индивидуального газового отопления (двухконтурный газовый котел).
+              </li>
+              <li>
+                Разведение 35 кв. м теплых полов в доме.
+              </li>
+              <li>
+                Размещение артезианских скважин, обслуживающих весь коттеджный городок.
+              </li>
+              <li>
+                Установка канализации септик.
+              </li>
+            </ul>
+
+            <a href="#feedback-popup" class="popup btn">Обсудить ваш проект</a>
+          </div>
+        </div><!-- .container -->
+
+        <div class="slider">
+          <div>
+            <img src="img/our-work/slider/1.jpg" alt="">
+          </div>
+          <a href="https://www.youtube.com/watch?v=1M4ADcMn3dA" class="popup-youtube">
+            <img src="img/our-work/slider/2.jpg" alt="">
+          </a>
+          <div>
+            <img src="img/our-work/slider/3.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/our-work/slider/4.jpg" alt="">
+          </div>
+          <div>
+            <img src="img/our-work/slider/1.jpg" alt="">
+          </div>
+          <a href="https://www.youtube.com/watch?v=EOnSh3QlpbQ" class="popup-youtube">
+            <img src="img/our-work/slider/2.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section our-directions" id="go-to-3">
+      <div class="center">
+        <div class="wrap-title">
+          <h2 class="lines left">Наши направления</h2>
+          <p class="description">«Инжиниринг Солюшнс» предоставляет широкий спектр инженерных услуг – от проектирования до монтажа и пусконаладочных работ.</p>
+        </div>
+        
+        <ul class="list-cout">
+          <li class="item">
+            <h3>ОТОПЛЕНИЕ</h3>
+            <p>
+              Обеспечиваем устройство индивидуальных тепловых пунктов, прокладку и монтаж теплопроводов, 
+              подключение к сети отопительных приборов.
+            </p>
+          </li>
+
+          <li class="item">
+            <h3>Водоснабжение</h3>
+            <p>
+              Прокладываем комплекс инженерных сооружений для забора воды, ее очистки, подачи в жилое помещение.
+            </p>
+          </li>
+
+          <li class="item">
+            <h3>Канализационные cистемы</h3>
+            <p>
+              Проектируем и устанавливаем различные виды систем канализации.
+            </p>
+          </li>
+
+          <li class="item">
+            <h3>Вентиляция и кондиционирование</h3>
+            <p>
+              Внедряем системы вентиляции и кондиционирования, используя при этом только качественное и современное оборудование.
+            </p>
+          </li>
+
+          <li class="item">
+            <h3>Котельные и тепловые насосы</h3>
+            <p>
+              Составляем проект с учетом всех мощностей и соблюдаем необходимые требования по установке. 
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section calculate-cost">
+      <div class="center">
+        <h2 class="line-title">
+          Рассчитайте предварительную стоимость 
+          услуг для вашего объекта
+        </h2> 
+
+        <form action="javascript:void(null);" onsubmit="send_callback(this.id, 'email/calculate.php');" method="post" id="calculate">
+          <div class="flex-container container">
+            <div class="checkbox-list">
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-1" name="heating" value="Отопление" checked>
+                <label for="checkbox-1"></label>
+                <label for="checkbox-1" class="text">ОТОПЛЕНИЕ</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-2" name="water-supply" value="Водоснабжение">
+                <label for="checkbox-2"></label>
+                <label for="checkbox-2" class="text">Водоснабжение</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-3" name="sewage" value="Канализация">
+                <label for="checkbox-3"></label>
+                <label for="checkbox-3" class="text">Канализация</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-4" name="ventilation" value="Вентиляция">
+                <label for="checkbox-4"></label>
+                <label for="checkbox-4" class="text">Вентиляция</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-5" name="conditioning" value="Кондиционирование">
+                <label for="checkbox-5"></label>
+                <label for="checkbox-5" class="text">Кондиционирование</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-6" name="boiler-rooms" value="Котельные">
+                <label for="checkbox-6"></label>
+                <label for="checkbox-6" class="text">Котельные</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-7" name="heat-pumps" value="Тепловые насосы">
+                <label for="checkbox-7"></label>
+                <label for="checkbox-7" class="text">Тепловые насосы</label>
+              </div>
+            </div><!-- .checkbox-list -->
+
+            <div class="more">
+              <input type="text" placeholder="ВАШЕ ИМЯ" name="name">
+              <input type="tel" placeholder="+38 (_ _ _) _ _ _  _ _  _ _" name="phone" required>
+              <input type="submit" value="Узнать стоимость" class="btn">
+            </div>
+          </div><!-- .flex-container -->
+
+          <input type="text" hidden="hidden" value="Сообщение с сайта: ENGINEERING SOLUTIONS, форма Рассчитайте предварительную стоимость." name="subject">
+        </form>
+      </div>
+    </section>
+
+    <section class="section list-works" id="go-to-1">
+      <div class="center">
+        <h2 class="lines left">Что входит в перечень работ?</h2>
+
+        <p class="description">
+          Наша команда гарантирует достижение правильного климата и максимальное обеспечение комфорта всем жильцам.
+        </p>
+
+        <div class="wrap-list">
+          <ul class="list">
+            <li>
+              <h3>Проектирование</h3>
+
+              <div class="lines">
+                <p>
+                  Услуга предполагает разработку плана, выбор наиболее оптимальных решений и проектирование инженерных систем.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <h3>Монтажные работы</h3>
+
+              <div class="lines">
+                <p>
+                  Виды работ, которые включают установку различных систем: отопления, водоснабжения, вентиляции, кондиционирования и т. д.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <h3>Пусконаладочные работы</h3>
+
+              <div class="lines">
+                <p>
+                  Проведение работ и тестирование перед вводом оборудования в эксплуатационный режим.
+                </p>
+              </div>
+            </li>
+          </ul><!-- .list -->
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="center">
+      <p class="description">
+        На все выполненные нами работы действует <strong>гарантия</strong> на <span class="orange">2</span> года,
+        а на материалы и оборудование – до <span class="orange">5</span> лет.
+      </p>
+
+      <div class="flex-container container">
+        <div class="wrap-map">
+          <div id="map"></div>
+          <script>
+            var map;
+            function initMap() {
+              var location = {lat: 50.382734, lng: 30.343780};
+
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: location,
+                zoom: 14
+              });
+
+              var image = 'img/icons/map-marker.svg';
+              var beachMarker = new google.maps.Marker({
+                position: location,
+                map: map,
+                icon: image
+              });
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&callback=initMap" type="text/javascript"></script>
+        </div>
+
+        <div class="contacts">
+          <h2>
+            Где мы?
+          </h2>
+
+          <h3>
+            Украина, г. Киев, ул. Киевская 10
+          </h3>
+        </div>
+      </div><!-- .container -->
+    </div>
+  </footer>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+
+  <script>
+    function send_callback(element, mail) {
+      var form = '#' + element;
+      var msg = $(form).serialize();
+
+      $.ajax({
+        type: 'POST',
+        url: mail,
+        data: msg,
+        success: function(data) {
+          if (data == "mail error") {
+            alert('Ошибка отправки!');
+          }
+          
+          else if (data == "mail success") {
+            $(form)[0].reset();
+            
+            $.magnificPopup.close({
+              mainClass: 'mfp-zoom-in'
+            });
+
+            setTimeout(function(){
+              $.magnificPopup.open({
+                items: {src: '#sent-popup'},
+                mainClass: 'mfp-zoom-in'
+              });
+            }, 300);
+          }
+        },
+        error: function(xhr, str){
+          alert('Error: ' + xhr.responseCode + ' Please, try again later.');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
