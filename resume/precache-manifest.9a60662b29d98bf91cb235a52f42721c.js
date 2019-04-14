@@ -1,31 +1,31 @@
 self.__precacheManifest = [
   {
     "revision": "310fc34281feccbf2e3ab4b43fc2607d",
-    "url": "./resume/img/10.310fc342.jpg"
+    "url": "./img/10.310fc342.jpg"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "./resume/robots.txt"
+    "url": "./robots.txt"
   },
   {
     "revision": "c69c662012feed295dce8c441fac48fd",
-    "url": "./resume/img/19.c69c6620.jpg"
+    "url": "./img/19.c69c6620.jpg"
   },
   {
     "revision": "6f7741fc92bde74cd5d4",
-    "url": "./resume/js/chunk-2d217e3c.fb1437f3.js"
+    "url": "./js/chunk-2d217e3c.fb1437f3.js"
   },
   {
     "revision": "3629ee5ded31920b170e",
-    "url": "./resume/js/chunk-5063b1df.7852ae2b.js"
+    "url": "./js/chunk-5063b1df.7852ae2b.js"
   },
   {
     "revision": "80e41bd6291724ed840f",
-    "url": "./resume/js/chunk-vendors.0bae18da.js"
+    "url": "./js/chunk-vendors.0bae18da.js"
   },
   {
     "revision": "5cc8dfc7ff13b7703f75d2458e2e020e",
-    "url": "./resume/img/26.5cc8dfc7.jpg"
+    "url": "./img/26.5cc8dfc7.jpg"
   },
   {
     "revision": "481a79d52229b82757cafa6b61b0114c",
