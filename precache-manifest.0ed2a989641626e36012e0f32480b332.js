@@ -64,8 +64,12 @@ self.__precacheManifest = [
     "url": "/img/24.b168322e.jpg"
   },
   {
-    "revision": "52c5b7cd309948d9bcd7c78df85c923a",
+    "revision": "7cd63616248d7b83cde9a4427501a6aa",
     "url": "/index.html"
+  },
+  {
+    "revision": "b944492960d285d9c71424704eecbacd",
+    "url": "/img/main-bg-mb.b9444929.jpg"
   },
   {
     "revision": "45d7a6a43f811960ade99416e2d4764a",
@@ -88,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/lato-regular.81f40287.svg"
   },
   {
-    "revision": "5d62fc87147923d3db39",
+    "revision": "5e82e5672194ea27f7e5",
     "url": "/js/app.21bf41b2.js"
   },
   {
@@ -176,7 +180,7 @@ self.__precacheManifest = [
     "url": "/css/chunk-vendors.188e04d6.css"
   },
   {
-    "revision": "5d62fc87147923d3db39",
-    "url": "/css/app.ebd88120.css"
+    "revision": "5e82e5672194ea27f7e5",
+    "url": "/css/app.c4921795.css"
   }
 ];
