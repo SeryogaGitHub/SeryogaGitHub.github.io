@@ -1,0 +1,7 @@
+.main_header{
+    grid-area: header;
+    background: antiquewhite;
+}
+.main_header .logo img{
+    max-width: 100px;
+}
