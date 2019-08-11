@@ -1,0 +1,37 @@
+@import url(./default.less);
+@import url(./mixin.less);
+
+.btn{
+	padding: 0px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #000;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	.transition;
+
+	&:hover{
+		background: #2d2f33;
+	}
+	a&{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.center{
+	position: relative;
+	max-width: 1240px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+.mobile-menu{
+	display: none;
+	background: transparent;
+
+	svg{
+		display: block;
+	}
+}
