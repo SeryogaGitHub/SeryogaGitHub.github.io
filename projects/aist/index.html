@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <meta name="description" content="Розробник сайтів на PHP,HTML,CSS,Jquery,CMS">
+  <meta name="author" content="main.email.seryoga@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+
+  <link rel="icon" href="img/logo.jpg" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <meta property="og:title" content="Web Site"/>
+  <meta property="og:description" content="Сайти високої якості."/>
+  <meta property="og:image" content="img/logo.jpg"/>
+  <meta property="og:url" content="site.com"/>
+  <meta property="og:site_name" content="title"/>
+
+</head>
+<body>
+
+<div class="white-popup scrollbar mfp-with-anim mfp-hide" id="choose-city-popup">
+  <div class="container">
+    <h2 class="title-line">
+      <div class="line left"></div>
+      <span>Выберите Ваш город</span>
+      <div class="line right"></div>
+    </h2>
+
+    <form action="#">
+      <input class="gray" type="search" name="name" placeholder="Найти город">
+
+      <ul class="cities scrollbar">
+        <li><a href="#">Махачкала</a></li>
+        <li><a href="#">Буйнакск</a></li>
+        <li><a href="#">Дагестанские Огни</a></li>
+        <li><a href="#">Дербент</a></li>
+        <li><a href="#">Избербаш</a></li>
+        <li><a href="#">Каспийск</a></li>
+        <li><a href="#">Кизилюрт</a></li>
+        <li><a href="#">Кизляр</a></li>
+        <li><a href="#">Хасавюрт</a></li>
+        <li><a href="#">Южно-Сухокумск</a></li>
+      </ul>
+    </form>
+  </div>
+</div><!-- #choose-city-popup -->
+
+<div class="white-popup mfp-with-anim mfp-hide" id="cart-empty">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="title-line">
+        <div class="line left"></div>
+        <span>Корзина</span>
+        <div class="line right"></div>
+      </h2>
+      <p>Ваша корзина пуста</p>
+      <a href="#" class="btn">Заказать еду</a>
+    </div>
+  </div>
+</div><!-- #choose-city-popup -->
+
+<div class="white-popup mfp-with-anim mfp-hide" id="map-popup">
+  <div id="map"></div>
+
+  <script>
+    var map;
+
+    function initMap() {
+      var location = {lat: 25.740662, lng: -80.215623};
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: location,
+        zoom: 12,
+      });
+    }
+  </script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&callback=initMap"
+          type="text/javascript"></script>
+</div><!-- #choose-city-popup -->
+
+<form class="white-popup scrollbar mfp-with-anim mfp-hide" id="cart">
+  <div class="container">
+    <h2 class="title-line">
+      <div class="line left"></div>
+      <span>Корзина</span>
+      <div class="line right"></div>
+    </h2>
+
+    <div class="products-line">
+      <div class="title-remove">
+        <h3 class="title">Набор Рыбная запеканка с овощами 1</h3>
+        <button class="delete-btn"></button>
+      </div>
+
+      <div class="count-price">
+        <div class="counter">
+          <button class="minus-btn num"></button>
+          <div class="wrap-input">
+            <input type="number" class="count" value="1">
+          </div>
+          <button class="plus-btn num"></button>
+        </div>
+
+        <div class="price">420,00 ₽</div>
+      </div>
+    </div><!-- .product-line -->
+
+    <div class="products-line">
+      <div class="title-remove">
+        <h3 class="title">Набор Рыбная запеканка с овощами 1</h3>
+        <button class="delete-btn"></button>
+      </div>
+
+      <div class="count-price">
+        <div class="counter">
+          <button class="minus-btn num"></button>
+          <div class="wrap-input">
+            <input type="number" class="count" value="1">
+          </div>
+          <button class="plus-btn num"></button>
+        </div>
+
+        <div class="price">960,00 ₽</div>
+      </div>
+    </div><!-- .product-line -->
+
+    <div class="products-line">
+      <div class="title-remove">
+        <h3 class="title">Набор Рыбная запеканка с овощами 1</h3>
+        <button class="delete-btn"></button>
+      </div>
+
+      <div class="count-price">
+        <div class="counter">
+          <button class="minus-btn num"></button>
+          <div class="wrap-input">
+            <input type="number" class="count" value="1">
+          </div>
+          <button class="plus-btn num"></button>
+        </div>
+
+        <div class="price">5 610,00 ₽</div>
+      </div>
+    </div><!-- .product-line -->
+
+    <h5>Возможно вы забыли:</h5>
+    <div class="slider-forgotten">
+      <div class="item">
+        <div class="logo">
+          <img src="img/product-logo.jpg" alt="">
+        </div>
+
+        <div class="info">
+          <h5>Набор Рыбная запеканка с овощами 4</h5>
+
+          <div class="price-btn">
+            <div class="price">280,00 ₽</div>
+            <a href="#" class="btn">Добавить</a>
+          </div>
+        </div>
+      </div><!-- .item -->
+
+      <div class="item">
+        <div class="logo">
+          <img src="img/product-logo.jpg" alt="">
+        </div>
+
+        <div class="info">
+          <h5>Набор Рыбная запеканка с овощами 4</h5>
+
+          <div class="price-btn">
+            <div class="price">280,00 ₽</div>
+            <a href="#" class="btn">Добавить</a>
+          </div>
+        </div>
+      </div><!-- .item -->
+
+      <div class="item">
+        <div class="logo">
+          <img src="img/product-logo.jpg" alt="">
+        </div>
+
+        <div class="info">
+          <h5>Набор Рыбная запеканка с овощами 4</h5>
+
+          <div class="price-btn">
+            <div class="price">280,00 ₽</div>
+            <a href="#" class="btn">Добавить</a>
+          </div>
+        </div>
+      </div><!-- .item -->
+    </div><!-- .slider-forgotten -->
+
+    <div class="slide-container">
+      <button class="btn-slide title-line" type="button">
+        <span>Добавить еще заказ</span>
+        <span class="line right"></span>
+        <span class="arrow"></span>
+      </button>
+
+      <div class="content">
+        <p class="detail-info">
+          Для вашего удобства здесь можно сформировать ещё заказы отдельными группами с отдельными итоговыми суммами для
+          каждого заказа. Идеально подходит для групп людей из одной огранизации.
+        </p>
+
+        <div class="text-center">
+          <a href="#" class="btn">Оформить заказ</a>
+        </div>
+
+        <hr>
+
+        <div class="flex-right">
+          <table>
+            <tr>
+              <td>Сумма заказа:</td>
+              <td>6 900,00 ₽</td>
+            </tr>
+
+            <tr>
+              <td>Доставка:</td>
+              <td>бесплатно</td>
+            </tr>
+
+            <tr>
+              <td>Итого:</td>
+              <td>6 900,00 ₽</td>
+            </tr>
+          </table>
+        </div><!-- .flex-right -->
+
+        <input type="text" placeholder="Введите промо-код" class="gray mb-24">
+
+        <h2 class="title-line">
+          <div class="line left"></div>
+          <span>Контактные данные:</span>
+          <div class="line right"></div>
+        </h2>
+
+        <input type="text" placeholder="Ваше имя" class="gray">
+        <input type="tel" placeholder="Ваш номер телефона" class="gray">
+        <!--          <input type="text" placeholder="Ваш адрес" class="gray input-address">-->
+
+        <div class="map-input mt-24">
+          <input type="text" placeholder="Введите адрес доставки" class="input-address gray">
+          <a href="#map-popup" class="map-btn-popup popup gray"></a>
+        </div>
+
+        <div class="group-input">
+          <input type="text" placeholder="Квартира" class="gray">
+          <input type="text" placeholder="Подъезд" class="gray">
+          <input type="text" placeholder="Этаж" class="gray">
+        </div>
+      </div>
+    </div><!-- .slide-container -->
+
+    <div class="slide-container active">
+      <button class="btn-slide title-line" type="button">
+        <span>Доп. сведения</span>
+        <span class="line right"></span>
+        <span class="arrow"></span>
+      </button>
+
+      <div class="content">
+        <input type="text" placeholder="Нужна сдача с суммы" class="gray">
+        <input type="number" placeholder="Количество персон" class="gray">
+
+        <textarea placeholder="Комментарий к заказу" class="gray"></textarea>
+      </div><!-- .content -->
+    </div><!-- .slide-container -->
+
+    <h5 class="mb-24">Способ оплаты:</h5>
+
+    <div class="radio">
+      <input type="radio" id="radio-1" name="pay" checked="">
+      <label for="radio-1"><span></span></label>
+      <div class="text"><label for="radio-1">Способ оплаты 1</label></div>
+    </div>
+
+    <div class="radio">
+      <input type="radio" id="radio-2" name="pay">
+      <label for="radio-2"><span></span></label>
+      <div class="text"><label for="radio-2">Способ оплаты 2</label></div>
+    </div>
+
+    <div class="text-center mt-24">
+      <p class="opacity-half mb-24">Вам будет начислено 99 бонусных баллов</p>
+    </div>
+
+    <p class="detail-info">
+      Нажимая кнопку “Отправить заказ”, Вы автоматически
+      соглашаетесь с <a href="#">Пользовательским соглашением</a>
+    </p>
+
+    <div class="shadow-top">
+      <div class="text-center">
+        <button class="btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div><!-- #choose-city-popup -->
+</form>
+
+<nav class="mobile-menu">
+  <div class="container scrollbar">
+    <div class="city">
+      <a href="#choose-city-popup" class="popup">г. Махачкала</a>
+    </div>
+
+    <ul class="main-menu">
+      <li><a href="#">Вход</a></li>
+      <li><a href="#">Регистрация</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Бонусы</a></li>
+      <li><a href="#">Блог</a></li>
+    </ul>
+
+    <h5>Компания</h5>
+    <ul class="more-link">
+      <li><a href="#">Информация для партнеров</a></li>
+      <li><a href="#">Пользовательское соглашение</a></li>
+      <li><a href="#">О компании</a></li>
+    </ul>
+
+    <h5>Полезные ссылки</h5>
+    <ul class="more-link">
+      <li><a href="#">О проекте</a></li>
+      <li><a href="#">Бонусные баллы</a></li>
+      <li><a href="#">Блог</a></li>
+    </ul>
+  </div>
+
+  <div class="line-close">
+    <button class="close"></button>
+  </div>
+</nav>
+
+<header class="main-header">
+  <div class="container">
+    <div>
+      <button class="btn button-mobile-menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 7H19V5H5V7Z" fill="white"/>
+          <path d="M19 13H5V11H19V13Z" fill="white"/>
+          <path d="M19 19H5V17H19V19Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+
+    <div>
+      <a href="#">
+        <svg width="90" height="40" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M19.7856 1.64956L19.8853 0.0162964L18.942 1.38689C11.9289 11.5764 13.1647 20.402 14.9328 24.1581L8.74719 24.6739L16.3564 27.9777L18.3117 27.8694L12.2847 25.2525L16.3739 24.9116L16.0435 24.33C14.385 21.41 12.6424 13.1608 18.7902 3.26972C18.6526 7.45604 18.9155 12.4607 19.9597 16.7258C20.9034 20.5808 22.5155 23.9592 25.1829 25.4891C27.9204 27.0592 31.5515 26.5812 36.2227 23.2277L36.4054 23.0963L36.4044 22.879C36.3994 21.7461 37.3653 20.8239 38.5619 20.8192C39.5641 20.8152 40.4113 21.4568 40.662 22.3321L40.7492 22.6368L45.4643 22.8618L40.7427 23.144L40.6532 23.4386C40.3939 24.2927 39.5643 24.9181 38.5798 24.922C37.999 24.9242 37.4718 24.7105 37.0807 24.3596L36.797 24.105L36.4861 24.3295C35.2768 25.2028 33.7233 26.1498 32.0548 26.8783C30.3824 27.6087 28.6227 28.1068 26.9923 28.1125C25.3764 28.1181 23.8947 27.6417 22.718 26.4216C21.5502 25.2103 20.6393 23.2213 20.253 20.1154L19.1907 18.9395L19.319 20.04C19.7045 23.3439 20.6698 25.5879 22.0394 27.0081C23.4216 28.4417 25.1693 28.9889 26.9956 28.9826C28.8075 28.9762 30.7028 28.4268 32.4398 27.6684C34.048 26.9663 35.545 26.0738 36.7504 25.2297C37.264 25.5854 37.8985 25.7948 38.5836 25.792C39.8709 25.7871 40.9698 25.0366 41.4281 23.975L43.4287 23.8554L42.2405 26.6044H43.4901L44.684 23.7804L51.3178 23.3839L52.6735 26.6044H53.9231L52.5206 23.312L54.7294 23.18L52.1446 22.4294L48.9434 14.9142L48.3564 16.3486L50.8349 22.2366L45.4429 21.9852L48.5458 14.6453H47.4096L44.2608 21.9301L41.4417 21.7987C40.9887 20.7115 39.8673 19.9439 38.558 19.949C36.9338 19.9554 35.608 21.149 35.4934 22.6581C31.0307 25.8104 27.8851 26.0218 25.6591 24.7449C23.347 23.4187 21.8078 20.3852 20.8707 16.5938C21.0001 15.1156 22.1016 11.3454 25.5184 7.11469C25.5128 7.13608 25.507 7.15752 25.5012 7.17904L25.4986 7.18854C24.7175 10.0927 23.6311 14.1325 24.1132 20.4789L25.1548 22.0386L25.0335 20.4652C24.554 14.2446 25.6018 10.3412 26.3831 7.43089L26.3858 7.42076C26.5756 6.71343 26.7496 6.06475 26.8819 5.4557L27.2346 3.83159L26.0851 5.08247C22.7996 8.65816 21.1376 12.0967 20.4122 14.4232C19.6522 10.1667 19.5545 5.43548 19.7856 1.64956ZM15.4135 28.3099L13.4856 27.8049L8.49995 28.799L0.00732422 33.2853L1.5401 33.4719L8.8258 29.6231L15.4135 28.3099ZM79.4622 16.5637L78.5533 17.1196C77.7582 16.0797 76.3758 15.3983 74.88 15.3804V14.448C76.8682 14.466 78.4019 15.2907 79.4622 16.5637ZM74.4067 15.3983C71.6611 15.6135 69.5973 17.6754 69.5973 20.6338C69.5973 23.5564 71.6611 25.654 74.4067 25.8693V26.8016C71.0362 26.6044 68.4611 24.1481 68.4611 20.6338C68.4611 17.1196 71.0362 14.6811 74.4067 14.466V15.3983ZM78.5533 24.1481L79.481 24.6858C78.3451 25.9948 76.8682 26.8016 74.88 26.8194V25.8872C76.3758 25.8872 77.7582 25.188 78.5533 24.1481ZM64.6299 14.6453L55.5793 26.6044H57.0751L65.9932 14.6453H64.6299ZM56.7341 14.6453H55.655V25.69L56.7341 24.3274V14.6453ZM64.8193 26.6044H65.8986V15.6673L64.8193 17.1375V26.6044ZM16.7503 37.51H16.211V32.2245H16.7503V37.51ZM20.9792 37.51H20.44V32.2245H20.9792V37.51ZM21.6226 37.7341V39.3287H21.1495V38.1999H16.211V37.7341H21.6226ZM23.4565 35.8168H26.5312C26.5217 35.1091 26.0486 34.2313 24.9891 34.1685V33.7653C26.3041 33.8191 27.0327 34.8405 27.0327 36.0588V36.1843H23.4565C23.4565 36.1843 23.4281 36.0319 23.4565 35.8168ZM24.7527 38.2985C23.5322 38.1999 22.6996 37.295 22.6996 36.0319C22.6996 34.8224 23.5416 33.837 24.7527 33.7743V34.1685C22.7091 34.294 22.6429 37.6445 24.7527 37.8863V38.2985ZM26.4935 37.304L26.7487 37.6086C26.2948 38.0565 25.727 38.2985 24.9891 38.3073V37.9044H24.9986C25.5758 37.9044 26.1054 37.6981 26.4935 37.304ZM28.7964 33.8729V35.8259H31.3318V36.2469H28.3045V33.8729H28.7964ZM31.5685 38.1999V33.8729H32.0604V38.1999H31.5685ZM28.3045 36.4708H28.7964V38.1999H28.3045V36.4708ZM34.3365 34.1327C34.6393 33.9265 35.0367 33.7653 35.557 33.7653C36.3328 33.7653 36.7963 34.2401 36.7963 34.9657V38.1999H36.3044V35.0822C36.2855 34.5359 36.0678 34.2223 35.4624 34.2223C35.0839 34.2223 34.6393 34.4283 34.3365 34.7059V34.1327ZM38.2534 33.7653C38.9629 33.7653 39.3318 34.1596 39.4454 34.5807L39.4458 34.5822L39.4459 34.5822C39.4558 34.6203 39.4927 34.762 39.4927 34.921V38.1999H39.0006V35.172C39.0006 34.5626 38.8019 34.2223 38.1586 34.2223C37.7613 34.2223 37.4112 34.3745 37.0611 34.6524C37.0611 34.6524 37.0423 34.5178 37.0045 34.4104C36.9573 34.2761 36.9004 34.1954 36.9004 34.1954C37.2505 33.9356 37.7424 33.7653 38.2534 33.7653ZM33.608 38.1999V33.8729H34.1001V38.1999H33.608ZM41.7643 37.3578C42.0764 37.6534 42.5402 37.8774 43.0321 37.8774C44.0539 37.8774 44.6308 37.0802 44.6308 36.0319C44.6308 34.9838 44.1296 34.2132 43.1078 34.2132C42.6156 34.2132 42.0764 34.5178 41.7643 34.7957V34.2761C42.0953 33.9625 42.5779 33.7653 43.1171 33.7653C44.3375 33.7653 45.1607 34.6433 45.1607 36.0319C45.1607 37.4114 44.3375 38.3073 43.1171 38.3073C42.5968 38.3073 42.1237 38.2178 41.7643 37.8863V37.3578ZM41.5277 39.8483H41.0358V33.8729H41.5277V39.8483ZM49.1169 36.0319C49.1169 37.0802 49.7034 37.8505 50.7159 37.8505C51.1982 37.8505 51.6713 37.4831 51.9836 37.1159V37.7698C51.6428 38.0834 51.1698 38.3073 50.6306 38.3073C49.4197 38.3073 48.5966 37.4205 48.5966 36.0319C48.5966 34.6612 49.4197 33.7653 50.6306 33.7653C51.1605 33.7653 51.6144 33.8817 51.9836 34.1237V34.6971C51.6524 34.4014 51.1605 34.1863 50.6683 34.1863C49.6561 34.1863 49.1169 34.9838 49.1169 36.0319ZM52.7215 38.1639C52.7215 39.4811 51.7754 39.9557 50.6683 39.9557C49.8927 39.9557 49.4006 39.8214 48.8614 39.3018L49.1453 38.9255C49.5427 39.3734 50.0914 39.5168 50.6683 39.5168C51.4915 39.5168 52.22 39.1405 52.22 38.1639V33.8729H52.7215V38.1639ZM56.0452 38.3073C54.7774 38.2447 53.9921 37.2592 53.9921 36.0319C53.9921 34.8136 54.7774 33.8282 56.0452 33.7653V34.1954C55.0611 34.258 54.5124 35.1091 54.5124 36.0319C54.5124 36.9635 55.0611 37.8146 56.0452 37.8863V38.3073ZM56.3004 33.7653C57.5873 33.8191 58.382 34.8045 58.382 36.0319C58.382 37.2592 57.5873 38.2537 56.3004 38.3073V37.8863C57.3034 37.8327 57.8521 36.9635 57.8521 36.0319C57.8521 35.1091 57.3034 34.2492 56.3004 34.1863V33.7653ZM62.8595 34.8045C62.5286 34.3745 62.1405 34.2044 61.6391 34.2044C60.6173 34.2044 59.9835 34.9122 59.9174 35.8707H59.3968C59.4632 34.6793 60.3241 33.7653 61.6107 33.7653C62.4054 33.7653 62.8595 34.0611 63.2285 34.4999L62.8595 34.8045ZM63.2285 37.5638C62.8595 38.0118 62.4054 38.3073 61.6107 38.3073C60.2863 38.3073 59.4253 37.3397 59.3968 36.1126H59.9174C59.9456 37.1159 60.5891 37.8684 61.6391 37.8684C62.1405 37.8684 62.5379 37.7072 62.8691 37.2771L63.2285 37.5638ZM65.0748 34.1327C65.3776 33.9265 65.7749 33.7653 66.2952 33.7653C67.0708 33.7653 67.5346 34.2401 67.5346 34.9657V38.1999H67.0427V35.0822C67.0236 34.5359 66.806 34.2223 66.2004 34.2223C65.8222 34.2223 65.3776 34.4283 65.0748 34.7059V34.1327ZM68.9914 33.7653C69.7011 33.7653 70.07 34.1596 70.1835 34.5807C70.193 34.6164 70.2308 34.7598 70.2308 34.921V38.1999H69.7388V35.172C69.7388 34.5626 69.5402 34.2223 68.8969 34.2223C68.4995 34.2223 68.1495 34.3745 67.7994 34.6524C67.7994 34.6524 67.7805 34.5178 67.7426 34.4104C67.6953 34.2761 67.6387 34.1954 67.6387 34.1954C67.9887 33.9356 68.4807 33.7653 68.9914 33.7653ZM64.3462 38.1999V33.8729H64.8382V38.1999H64.3462ZM74.6785 38.1999V35.172C74.6785 34.5269 74.1581 34.1863 73.4864 34.1863C72.9093 34.1863 72.4835 34.4373 72.0766 34.8314L71.7456 34.4909C72.2187 34.0072 72.7483 33.7653 73.5053 33.7653C74.4325 33.7653 75.1704 34.1863 75.1704 35.1539V38.1999H74.6785ZM72.0484 36.8739C72.0484 37.4831 72.5496 37.8684 73.2971 37.8684C73.6755 37.8684 74.1486 37.6624 74.4418 37.4295V37.9579C74.0729 38.2178 73.6378 38.3073 73.1268 38.3073C72.3416 38.3073 71.5281 37.7967 71.5281 36.8651C71.5281 35.9245 72.3605 35.378 73.2971 35.378C73.8269 35.378 74.2147 35.5123 74.4418 35.6199V36.1752C74.1013 35.9602 73.6662 35.8259 73.2971 35.8259C72.5496 35.8259 72.0484 36.256 72.0484 36.8739ZM76.9441 33.9625V36.3724C76.9064 37.3847 77.8524 37.8684 78.2023 37.8684V38.2894C77.5781 38.2894 76.4522 37.6265 76.4522 36.3724V33.9625C76.4522 32.7977 77.4455 32.135 78.2023 32.135V32.556C77.6915 32.556 76.9441 33.0845 76.9441 33.9625ZM78.4105 32.556V32.135C79.5457 32.135 80.1892 32.8785 80.1892 33.7384C80.1892 34.5538 79.7444 34.9748 79.2998 35.136C79.8769 35.2794 80.3122 35.799 80.3122 36.5605C80.3122 37.7072 79.4134 38.2894 78.4105 38.2894V37.8684C79.0918 37.8684 79.8201 37.3936 79.8201 36.5605C79.8201 35.5213 78.8079 35.351 78.5051 35.351H77.1523V34.93H78.5051C79.2432 34.93 79.6971 34.5178 79.6971 33.7384C79.6971 33.1652 79.2998 32.556 78.4105 32.556ZM81.558 38.1999V33.8729H82.0501V38.1999H81.558ZM82.2865 36.1305L84.7368 33.8729H85.3992L82.2865 36.6949V36.1305ZM84.7275 38.1999L83.0528 36.3096L83.4029 36.005L85.3612 38.1999H84.7275ZM89.1635 37.8327C88.8607 38.0387 88.3688 38.2985 87.8484 38.2985C87.0062 38.2985 86.3536 37.725 86.3536 36.9994V33.8729H86.8455V36.883C86.8455 37.5012 87.2806 37.8146 87.943 37.8146C88.3215 37.8146 88.8607 37.5191 89.1635 37.2414V37.8327ZM89.8918 33.8729V38.1999H89.3999V33.8729H89.8918ZM84.4022 15.5776V14.6453H80.7289V15.5776H84.4022ZM85.9548 14.6453H84.8755V26.6044H85.9548V14.6453ZM90.0826 14.6453H86.4281V15.5776H90.0826V14.6453Z"
+                  fill="#389908"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M40.653 23.4394L40.7426 23.1448L45.4641 22.8626L40.749 22.6376L40.6618 22.3329L41.4415 21.7994L51.6039 22.2732L54.7292 23.1808L41.4277 23.9758L40.653 23.4394ZM15.4133 28.3107L13.4854 27.8058L8.49971 28.7996L0.00708008 33.2859L1.53986 33.4727L8.82554 29.624L15.4133 28.3107Z"
+                  fill="#CC3300"/>
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect width="90" height="40" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+
+    <div>
+      <a href="#cart" class="btn cart popup">
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.0869 18L2.9199 8H3.9999V11H5.9999V8H11.9999V11H13.9999V8H15.0799L15.9129 18H2.0869ZM5.9999 5C5.9999 3.346 7.3459 2 8.9999 2C10.6539 2 11.9999 3.346 11.9999 5V6H5.9999V5ZM16.9969 6.917C16.9529 6.398 16.5199 6 15.9999 6H13.9999V5C13.9999 2.243 11.7569 0 8.9999 0C6.2429 0 3.9999 2.243 3.9999 5V6H1.9999C1.4799 6 1.0469 6.398 1.0039 6.917L0.00390049 18.917C-0.0190995 19.195 0.0749005 19.472 0.2639 19.677C0.4539 19.883 0.719901 20 0.999901 20H16.9999C17.2799 20 17.5459 19.883 17.7359 19.677C17.9249 19.472 18.0199 19.195 17.9969 18.917L16.9969 6.917Z"
+                fill="white"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="slider-main">
+    <div class="item" style="background-image: url(img/home-baner.jpg)">
+      <h2>
+        Доставка еды
+        из любого
+        ресторана
+      </h2>
+
+      <p>В Вашем городе</p>
+
+      <a href="#" class="btn">Заказать еду</a>
+    </div>
+
+    <div class="item" style="background-image: url(img/home-baner.jpg)">
+      <h2>
+        Доставка еды
+        из любого
+        ресторана
+      </h2>
+
+      <p>В Вашем городе</p>
+
+      <a href="#" class="btn">Заказать еду</a>
+    </div>
+
+    <div class="item" style="background-image: url(img/home-baner.jpg)">
+      <h2>
+        Доставка еды
+        из любого
+        ресторана
+      </h2>
+
+      <p>В Вашем городе</p>
+
+      <a href="#" class="btn">Заказать еду</a>
+    </div>
+
+    <div class="item" style="background-image: url(img/home-baner.jpg)">
+      <h2>
+        Доставка еды
+        из любого
+        ресторана
+      </h2>
+
+      <p>В Вашем городе</p>
+
+      <a href="#" class="btn">Заказать еду</a>
+    </div>
+
+  </div><!-- .slider-main -->
+
+  <div class="container">
+    <form action="#" class="form-address mt-24">
+      <div class="map-input">
+        <input type="text" placeholder="Введите адрес доставки" class="input-address">
+        <a href="#map-popup" class="map-btn-popup popup"></a>
+      </div>
+    </form>
+
+    <div class="nav-tabs">
+      <div class="line-products scrollbar">
+        <a href="#" class="item" data-content="#item-1">Еда</a>
+        <a href="#" class="item active" data-content="#item-2">Продукты</a>
+        <a href="#" class="item" data-content="#item-3">Десерты</a>
+        <a href="#" class="item" data-content="#item-4">Вода</a>
+        <a href="#" class="item" data-content="#item-5">Детям</a>
+        <a href="#" class="item" data-content="#item-6">Разное</a>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane" id="item-1">
+        <div class="wrap-product-items">
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Все рестораны</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Пицца</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-3.jpg" alt="">
+
+            <h6>Роллы / Суши</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-4.jpg" alt="">
+
+            <h6>Шашлыки</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Бургеры</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Завтраки</h6>
+          </div><!-- .product-item -->
+        </div><!-- .wrap-product-items -->
+      </div><!-- .item -->
+
+      <div class="tab-pane active" id="item-2">
+        <div class="wrap-product-items">
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Пицца</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Все рестораны</h6>
+          </div><!-- .product-item -->
+
+
+          <div class="product-item">
+            <img src="img/test-3.jpg" alt="">
+
+            <h6>Роллы / Суши</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-4.jpg" alt="">
+
+            <h6>Шашлыки</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Бургеры</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Завтраки</h6>
+          </div><!-- .product-item -->
+        </div><!-- .wrap-product-items -->
+      </div><!-- .item -->
+
+      <div class="tab-pane" id="item-3">
+        <div class="wrap-product-items">
+          <div class="product-item">
+            <img src="img/test-4.jpg" alt="">
+
+            <h6>Шашлыки</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Все рестораны</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Пицца</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-3.jpg" alt="">
+
+            <h6>Роллы / Суши</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Бургеры</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Завтраки</h6>
+          </div><!-- .product-item -->
+        </div><!-- .wrap-product-items -->
+      </div><!-- .item -->
+
+      <div class="tab-pane" id="item-4">
+        <div class="wrap-product-items">
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Все рестораны</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-4.jpg" alt="">
+
+            <h6>Шашлыки</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Бургеры</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Завтраки</h6>
+          </div><!-- .product-item -->
+        </div><!-- .wrap-product-items -->
+      </div><!-- .item -->
+
+      <div class="tab-pane" id="item-5">
+        <div class="wrap-product-items">
+          <div class="product-item">
+            <img src="img/test-3.jpg" alt="">
+
+            <h6>Роллы / Суши</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-4.jpg" alt="">
+
+            <h6>Шашлыки</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Бургеры</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Завтраки</h6>
+          </div><!-- .product-item -->
+        </div><!-- .wrap-product-items -->
+      </div><!-- .item -->
+
+      <div class="tab-pane" id="item-6">
+        <div class="wrap-product-items">
+          <div class="product-item">
+            <img src="img/test-2.jpg" alt="">
+
+            <h6>Бургеры</h6>
+          </div><!-- .product-item -->
+
+          <div class="product-item">
+            <img src="img/test-1.jpg" alt="">
+
+            <h6>Завтраки</h6>
+          </div><!-- .product-item -->
+        </div><!-- .wrap-product-items -->
+      </div><!-- .item -->
+    </div><!-- .container -->
+  </div>
+
+  <div class="promotions-discounts">
+    <div class="container">
+      <h2>Акции скидки</h2>
+
+      <div class="discounts-slider">
+        <div><img src="img/test-1.jpg" alt=""></div>
+        <div><img src="img/test-2.jpg" alt=""></div>
+        <div><img src="img/test-3.jpg" alt=""></div>
+        <div><img src="img/test-4.jpg" alt=""></div>
+        <div><img src="img/test-1.jpg" alt=""></div>
+      </div>
+
+      <div class="text-center">
+        <a href="#" class="btn white">Посмотреть все акции</a>
+      </div>
+    </div>
+  </div><!-- .promotions-discounts -->
+</main>
+
+<footer class="main-footer">
+  <div class="network">
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5"
+              d="M11.9148 23.8294C18.4949 23.8294 23.8291 18.4952 23.8291 11.915C23.8291 5.33487 18.4949 0.000609552 11.9148 0.000609837C5.33471 0.000610121 0.000488015 5.33487 0.000487687 11.915C0.000487359 18.4952 5.33471 23.8294 11.9148 23.8294Z"
+              fill="#2C2C2C"/>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M11.4648 17.1405L12.3999 17.1405C12.3999 17.1405 12.6824 17.1095 12.8266 16.9541C12.9593 16.8113 12.9551 16.5433 12.9551 16.5433C12.9551 16.5433 12.9368 15.2885 13.5191 15.1038C14.0932 14.9217 14.8304 16.3165 15.6118 16.8527C16.2026 17.2586 16.6516 17.1696 16.6516 17.1696L18.7408 17.1405C18.7408 17.1405 19.8338 17.0732 19.3155 16.2139C19.2731 16.1436 19.0137 15.5782 17.7622 14.4165C16.4522 13.2006 16.6276 13.3972 18.2056 11.294C19.1667 10.0131 19.5509 9.23108 19.4309 8.89615C19.3164 8.57715 18.6096 8.66146 18.6096 8.66146L16.2572 8.67612C16.2572 8.67612 16.0828 8.65233 15.9535 8.72964C15.8271 8.80546 15.7458 8.98217 15.7458 8.98217C15.7458 8.98217 15.3735 9.97337 14.8769 10.8163C13.8294 12.5951 13.4106 12.6889 13.2394 12.5785C12.8412 12.3211 12.9406 11.5444 12.9406 10.9926C12.9406 9.26889 13.2021 8.55017 12.4315 8.36412C12.1758 8.30232 11.9876 8.26154 11.3337 8.25496C10.4944 8.24625 9.78395 8.25751 9.38169 8.4546C9.11409 8.58564 8.90765 8.87767 9.03338 8.89445C9.18885 8.91526 9.54098 8.98939 9.72767 9.24361C9.96872 9.57154 9.96023 10.3081 9.96023 10.3081C9.96023 10.3081 10.0987 12.3372 9.63677 12.5893C9.31968 12.7622 8.88471 12.4092 7.95086 10.7955C7.47236 9.96891 7.1111 9.05523 7.1111 9.05523C7.1111 9.05523 7.04143 8.88447 6.91719 8.79314C6.7664 8.68249 6.55571 8.64723 6.55571 8.64723L4.32037 8.66189C4.32037 8.66189 3.9848 8.67123 3.86162 8.81714C3.75203 8.94691 3.85291 9.21537 3.85291 9.21537C3.85291 9.21537 5.60296 13.3097 7.5845 15.3731C9.40145 17.2648 11.4648 17.1405 11.4648 17.1405Z"
+              fill="white"/>
+      </svg>
+    </a>
+
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5"
+              d="M11.9141 23.8288C18.4942 23.8288 23.8284 18.4945 23.8284 11.9144C23.8284 5.33426 18.4942 -7.99378e-07 11.9141 -5.14968e-07C5.33398 -2.30559e-07 -0.000244406 5.33426 -0.000244734 11.9144C-0.000245062 18.4946 5.33398 23.8288 11.9141 23.8288Z"
+              fill="#2C2C2C"/>
+        <path
+          d="M19.8805 8.53531C19.3699 8.76171 18.8207 8.91484 18.2447 8.98323C18.8328 8.63088 19.2841 8.07337 19.4972 7.40797C18.9469 7.7344 18.3371 7.97121 17.6887 8.09886C17.1692 7.54559 16.4291 7.19983 15.6095 7.19983C14.037 7.19983 12.7616 8.4752 12.7616 10.0477C12.7616 10.2709 12.7869 10.4882 12.8357 10.6968C10.4689 10.578 8.37036 9.44432 6.96565 7.72081C6.72056 8.14133 6.57996 8.63088 6.57996 9.15271C6.57996 10.1405 7.0831 11.0126 7.84683 11.5232C7.38022 11.5085 6.9408 11.3804 6.55702 11.1666C6.55681 11.1787 6.55681 11.1908 6.55681 11.2027C6.55681 12.5825 7.53887 13.7334 8.84142 13.9949C8.6027 14.0603 8.3506 14.0949 8.09128 14.0949C7.90736 14.0949 7.72917 14.0773 7.55544 14.0442C7.91776 15.1753 8.96928 15.9988 10.2158 16.0219C9.24092 16.7859 8.01313 17.241 6.6785 17.241C6.44913 17.241 6.22188 17.2276 5.99951 17.2011C7.25916 18.0094 8.75647 18.4807 10.3646 18.4807C15.6029 18.4807 18.4675 14.1412 18.4675 10.3775C18.4675 10.2541 18.4648 10.1312 18.4592 10.0093C19.0161 9.60786 19.4989 9.10641 19.8805 8.53531Z"
+          fill="white"/>
+      </svg>
+    </a>
+
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.5"
+              d="M11.9143 23.8294C18.4944 23.8294 23.8286 18.4952 23.8286 11.915C23.8286 5.33487 18.4944 0.000609552 11.9143 0.000609837C5.33422 0.000610121 -2.6586e-07 5.33487 -5.93814e-07 11.915C-9.21768e-07 18.4952 5.33422 23.8294 11.9143 23.8294Z"
+              fill="#2C2C2C"/>
+        <path
+          d="M14.9097 12.3813L12.7837 12.3813L12.7837 20.1699L9.56269 20.1699L9.56269 12.3813L8.03076 12.3813L8.03076 9.64411L9.56269 9.64411L9.56269 7.87282C9.56269 6.60615 10.1644 4.62268 12.8124 4.62268L15.1983 4.63266L15.1983 7.28961L13.4672 7.28961C13.1832 7.28961 12.7839 7.43148 12.7839 8.03572L12.7839 9.64666L15.1911 9.64666L14.9097 12.3813Z"
+          fill="white"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
