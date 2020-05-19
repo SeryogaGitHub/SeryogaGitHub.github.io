@@ -1,0 +1,47 @@
+@import "../utils/vars";
+
+.btn {
+  font-size: 16px;
+  height: 48px;
+  min-width: 198px;
+  border-radius: 50px;
+  @include m-font-7;
+
+  &.gold{
+    background: $gold;
+  }
+  &.transparent{
+    background: transparent;
+    border: 1px solid $black;
+    color: $black;
+  }
+  &.gray{
+    background: $black;
+    @include m-font-6;
+    font-size: 22px;
+    color: $gold;
+    min-width: 260px;
+
+    &:hover{
+      background: $white;
+      color: $black;
+    }
+  }
+  &:hover{
+    background: $black;
+    color: $white;
+  }
+}
+a.btn {
+  @extend .btn;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    color: #FFFFFF;
+  }
+  &.gold{
+    line-height: 34px;
+  }
+}

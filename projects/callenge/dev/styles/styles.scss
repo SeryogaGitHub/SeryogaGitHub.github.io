@@ -1,0 +1,265 @@
+@import "utils/utils";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content { flex: 1 0 auto; }
+
+.max-width-750{
+  max-width: 750px;
+  margin: 0 auto;
+}
+.logos{
+  margin-top: 100px;
+
+  svg,img{
+    margin-bottom: 15px;
+  }
+}
+
+.line-progress{
+  height: 10px;
+  width: 100%;
+  position: relative;
+  background: $gray;
+
+  &.progress-10{
+    .line-progress__progress{
+      width: 10%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background: $black;
+    }
+  }
+}
+
+.section{
+  overflow: hidden;
+
+  h2{
+    z-index: 2;
+  }
+  &.gray-section{
+    background: $gray-light;
+
+    .section__triangl-line{
+      &:after{
+        background: $gray-light;
+      }
+    }
+  }
+  &__text{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &__triangl-line{
+    overflow: hidden;
+    padding: 40px 40px 40px 177px;
+    position: relative;
+    height: 100%;
+
+    &.left{
+      padding: 40px 177px 40px 40px;
+
+      &:after{
+        width: 180px;
+        right: -110px;
+        left: initial;
+        transform: rotate(-12deg);
+      }
+      .section__image{
+        left: initial;
+        right: 0;
+      }
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      height: 150%;
+      width: 180px;
+      background: $white;
+      left: -110px;
+      top: -25%;
+      transform: rotate(12deg);
+    }
+    &.image{
+      overflow: initial;
+    }
+    &.gold{
+      height: 100%;
+      @include gradient(0, #F9B205, #FBC90B);
+
+      &:before{
+        content: "";
+        width: 5000px;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        height: 100%;
+        margin-left: -15px;
+        @include gradient(0, #F9B205, #FBC90B);
+      }
+    }
+
+    .section__image{
+      @include bg-cover;
+      width: 750px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__under{
+    position: relative;
+    z-index: 2;
+  }
+}
+.list{
+  margin-top: 30px;
+
+  h4{
+    color: #7D7D7D;
+    @include m-font-6;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  li{
+    position: relative;
+    padding-left: 35px;
+    color: #7D7D7D;
+
+    & + li{
+      margin-top: 10px;
+    }
+  }
+  .number{
+    @include m-font-6;
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    color: $black;
+  }
+}
+.welcome-board{
+  background: url(../images/welcome-board.jpg) repeat center;
+  padding: 6.8vw 7.5vw;
+  color: $black;
+  border-radius: $radius-8 $radius-8 0 0;
+  margin-top: 50px;
+
+  .welcome-board__list{
+    margin-top: 25px;
+    overflow: hidden;
+
+    li{
+      position: relative;
+      padding-left: 28px;
+
+      & + li{
+        margin-top: 35px;
+      }
+    }
+    .number{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $black;
+      color: $white;
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      font-size: 12px;
+      text-align: center;
+      border-radius: 50%;
+      @include m-font-5;
+
+      &:after{
+        content: "";
+        width: 2px;
+        height: 5000px;
+        background: $black;
+        @include pos-center;
+        bottom: 100%;
+        top: auto;
+        z-index: 1;
+      }
+      span{
+        position: relative;
+        z-index: 3;
+      }
+    }
+  }
+  .btn-down{
+    margin-top: 45px;
+
+    button{
+      background: transparent;
+      border: none;
+
+      img{
+        display: block;
+      }
+    }
+  }
+}
+.container-for-btns{
+  min-height: 418px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 50px;
+  background: #EEEEEE;
+
+  .btn{
+    height: 36px;
+    min-width: 164px;
+
+    & + .btn{
+      margin-left: 30px;
+    }
+  }
+}
+.mobile-menu-btn{
+  height: 30px;
+  background: transparent;
+  border: none;
+  display: none;
+
+  svg{
+    display: block;
+  }
+}
+@media screen and (max-width: 769px){
+  .mobile-menu-btn{
+    display: block;
+  }
+  .hide-tab{
+    display: none!important;
+  }
+}
+@media screen and (max-width: 576px){
+  .container-for-btns{
+    .btns{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      .btn{
+        margin: 0 auto;
+
+        & + .btn{
+          margin-top: 15px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+@import "pages/index";

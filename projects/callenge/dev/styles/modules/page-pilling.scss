@@ -1,0 +1,30 @@
+.page-pilling{
+  position: fixed;
+  top: 0;
+  right: 30px;
+  width: 15px;
+  margin: auto;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+
+  a{
+    width: 15px;
+    height: 15px;
+    background: #CBC8BC;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.21);
+
+    &:hover, &.active{
+      background: $gold;
+      box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.31);
+    }
+  }
+}
+@media screen and (max-width: 769px){
+  .page-pilling{
+    display: none;
+  }
+}

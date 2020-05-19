@@ -1,0 +1,42 @@
+extends layout/main
+
+block variables
+  -var title = 'apply here'
+
+block content
+  .container
+    .max-width-750
+      .welcome-board
+        h3 Welcome on board!
+        p We hope you are as e xcited as we are about this. <br>The submission form <strong>is divided into three categories</strong> that will help us to choose the best candidates.
+
+        ul.welcome-board__list
+          li
+            .number
+              span 1
+            h6 REGISTER
+            p Basic info about you and your project
+          li
+            .number
+              span 2
+            h6 PROJECT DESCRIPTION
+            p Tell us about your project, the hows and whys.
+          li
+            .number
+              span 3
+            h6 YOUR EXPECTATIONS
+            p Which results are you looking for when applying?
+
+        .btn-down.text-center
+          a(href="#down").anchor
+            img(src="images/icons/icon-arrow.svg" alt="image")
+
+
+      .line-progress.progress-10
+        .line-progress__progress
+
+      .container-for-btns#down
+        .btns
+          button.btn.transparent Cancel
+          button.btn.gold Submit
+

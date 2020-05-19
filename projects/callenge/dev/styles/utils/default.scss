@@ -1,0 +1,163 @@
+html {
+  font-size: 16px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  @include r-font-4;
+  height: 100%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+
+  &.show{
+    overflow: hidden;
+  }
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+*::selection {
+  background: #e8334d;
+  color: #fff;
+}
+*{
+  outline: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: $black;
+}
+h1{
+  font-size: 50px;
+}
+h2.main-title{
+  font-size: 42px;
+  @include m-font-7;
+  position: relative;
+  padding-bottom: 39px;
+  margin-bottom: 70px;
+
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    height: 4px;
+    left: 0;
+    background: $gold;
+  }
+}
+h3{
+  @include m-font-6;
+  font-size: 32px;
+  margin-bottom: 18px;
+
+  &.small-title{
+    font-size: 28px;
+    @include m-font-7;
+
+    span{
+      @include m-font-4;
+    }
+  }
+  &.medium{
+    @include m-font-5;
+  }
+}
+h4{
+  font-size: 22px;
+}
+h5{
+  font-size: 20px;
+  @include m-font-7;
+
+}
+h6{
+  font-size: 16px;
+  @include r-font-7;
+  margin-bottom: 5px;
+}
+p{
+  & + p{
+    margin-top: 20px;
+  }
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+svg{
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select { font: inherit; }
+
+input,
+select,
+button { outline: none; appearance: none;}
+
+a{
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  @include transition;
+
+  &:hover{
+    color: #e8334d;
+  }
+}
+input:not([type="submit"]){
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+}
+textarea{
+  max-width: 100%;
+  outline: none;
+  display: block;
+  padding: 15px;
+  min-height: 175px;
+  font-size: 16px;
+  width: 100%;
+  resize: none;
+}
+address{
+  font-style: normal;
+}
+strong{
+  @include r-font-7;
+}
+::-webkit-input-placeholder {color:#000;opacity:1;}
+::-moz-placeholder          {color:#000;opacity:1;}
+:-moz-placeholder           {color:#000;opacity:1;}
+:-ms-input-placeholder      {color:#000;opacity:1;}
+@media screen and (max-width: 567px){
+  h2.main-title{
+    font-size: 22px;
+    margin-bottom: 53px;
+    padding-bottom: 23px;
+  }
+  h3.small-title{
+    font-size: 22px;
+  }
+  h3.medium{
+    font-size: 22px;
+  }
+}

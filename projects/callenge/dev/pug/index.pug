@@ -1,0 +1,313 @@
+extends layout/main
+
+block variables
+  -var title = 'Гловна стрінка'
+
+block content
+  ul.page-pilling
+
+  section.video-placeholder.position-element#video-placeholder
+    .video-placeholder__video VIDEO PLACEHOLDER
+
+  section.test-challenge.section.position-element#content-1
+    .container
+      .row.align-items-stretch
+        .col-lg-5.section__under
+          h3.small-title <span>Why</span> #Test <br> Challenge
+          p The beginning of 2020 has brought upon us difficult and uncertain times that are challenging our capabilities and testing our resilience.​
+          p Yet, it has also given us the opportunity to reignite our sense of community and rethink a new tomorrow.
+          p We want to support our society, strengthen our resilience and help the economy, to have a quick return to a new and better normality for millions of citizens globally affected by the COVID-19 crisis.
+        .col-lg-7.left
+          .section__triangl-line.gold
+            h5 #test
+            p Let's team up in this global challenge to support our society, help the economy, and reinvent the world together.
+      .row.justify-content-around.align-items-center.text-center.logos
+        .col-lg-2
+          img(src="images/default/1.png" alt="alt")
+        .col-lg-2
+          img(src="images/default/2.png" alt="alt")
+        .col-lg-2
+          img(src="images/default/3.png" alt="alt")
+        .col-lg-2
+          img(src="images/default/4.png" alt="alt")
+        .col-lg-2
+          img(src="images/default/5.png" alt="alt")
+
+  section.section.our-purpose.gray-section.position-element#content-2
+    .container
+      h2.main-title Our purpose
+      p.our-purpose__text Calling for initiatives to boost the world’s recovery
+
+      .row.items
+        .col-lg-4
+          .item
+            h4 SHORTEN THE <br>IMPACT
+            .image
+              img(src="images/icons/ico-1.png")
+            p Mitigate  the impact of this crisis in the short term focusing on the most affected
+
+        .col-lg-4
+          .item
+            h4 RAMP-UP OUR <br>ECONOMY
+            .image
+              img(src="images/icons/ico-2.png")
+            p Help rebound  the core  socio-economic systems  recover activity levels in an innovative and safe manner
+        .col-lg-4
+          .item
+            h4 STRENGHEN OUR <br>RESILIENCE
+            .image
+              img(src="images/icons/ico-3.png")
+            p Develop resilient societies,  cities and living systems, to better face future challenges
+
+      p.our-purpose__text-big.text-center Let’s reinvent the world together
+
+  section.section.position-element#content-3
+    .container
+      h2.main-title We are looking for startups to
+
+      .row.align-items-stretch
+        .col-lg-6.section__under.section__text
+          h3.medium Revamp the economy through sustainable growth
+          p Support workers, entrepreneurs and employer's recovery, promoting sustainable initiatives and living standards.
+
+          .list
+            h4 EXAMPLES
+
+            ul
+              li
+                span.number 01 /
+                | Employment recovery
+              li
+                span.number 02 /
+                | SMEs business activity
+              li
+                span.number 03 /
+                | Liquidity schemes
+              li
+                span.number 04 /
+                | Pandemic / Crisis preparedness
+              li
+                span.number 05 /
+                | Leverage newly-created sustenaible levels
+        .col-lg-6.image-top-order
+          .section__triangl-line.image
+            .section__image(style="background-image: url(images/revamp.jpg)")
+
+  section.section.gray-section.position-element#content-4
+    .container
+      .row.align-items-stretch
+        .col-lg-6.image-top-order
+          .section__triangl-line.image.left
+            .section__image(style="background-image: url(images/enhance.jpg)")
+
+        .col-lg-6.section__under.section__text
+          h3.medium Enhance cities and infrastructure adaptiveness and resilience
+          p Re-design our cities and re-invent infrastructure to better prepare it to prevent and battle against future societal issues and climate challenges.
+
+          .list
+            h4 EXAMPLES
+
+            ul
+              li
+                span.number 01 /
+                | Adaptable cities and spaces
+              li
+                span.number 02 /
+                | Multi-purpose infraestructure
+              li
+                span.number 03 /
+                | Digital ready infraestructure
+              li
+                span.number 04 /
+                | Supply chain continuity & resiliency
+
+
+  section.section.position-element#content-5
+    .container
+      .row.align-items-stretch
+        .col-lg-6.section__under.section__text
+          h3.medium Ensure life continuity & Boost social community
+          p Help society to start again after lockdown period, re-boosting our communities and key sectors in safe and innovative ways (e.g. education, hospitality, social life).
+
+          .list
+            h4 EXAMPLES
+
+            ul
+              li
+                span.number 01 /
+                | Overcome social distancing
+              li
+                span.number 02 /
+                | Community reach schemes
+              li
+                span.number 03 /
+                | Digital education
+              li
+                span.number 04 /
+                | Help society to start again after lockdown period
+        .col-lg-6.image-top-order
+          .section__triangl-line.image
+            .section__image(style="background-image: url(images/ensure.jpg)")
+
+  section.who-should-participate.position-element#content-6
+    .container
+      h2.main-title Who should participate?
+      .row.items
+        .col-lg-4
+          .item
+            h4 Start ups
+            h5 Which type?
+            p Write here type of start up.
+        .col-lg-4
+          .item
+            h4 Social Impact
+            h5 Which type?
+            p Write here type of start up.
+        .col-lg-4
+          .item
+            h4 Economic Impact
+            h5 Which type?
+            p Write here type of start up.
+        .col-lg-4
+          .item
+            h4 Seed to Series B
+            h5 Which type?
+            p Write here type of start up.
+        .col-lg-4
+          .item
+            h4 Quick implementation
+            h5 Which type?
+            p Write here type of start up.
+
+      .row.apply-now.align-items-stretch
+        .col-lg-7
+          .apply-now__text
+            h3 Participate with us
+            p If you match any of this profiles, <strong>you and your project</strong> are eligible for #RESTARTINGTOGETHER
+            .text-center
+              a(href="apply-here.html").btn.gray APPLY NOW
+        .col-lg-5.d-none.d-lg-block
+          .apply-now__image
+            .line
+            img(src="images/christina-wocintechchat.png")
+
+  section.we-come-together.position-element#content-7
+    .container
+      h2.main-title We come together <br>to offer
+
+      .row.align-items-stretch.we-come-together__items
+        .col-lg-4
+          .we-come-together__item
+            .we-come-together__image(style="background-image: url(images/acceleration.jpg)")
+            .we-come-together__text
+              h4 Acceleration
+              p Go beyond borders and by putting our resources and connections at your disposal.
+              h5 Mentoring and resources
+              p All partners to offer mentoring and resources to guarantee a successful implementation​.
+              h5 Winning
+              p Accelerate winning initiatives.
+        .col-lg-4
+          .we-come-together__item
+            .we-come-together__image(style="background-image: url(images/exposure.jpg)")
+            .we-come-together__text
+              h4 Exposure
+              p Showcase your idea directly to industry leading partners and leverage on their expertise and global reach.
+              h5 Press
+              p Press release distribution in global media outlets​.
+              h5 Social Media
+              p Social media mentions in partners’ channels.
+        .col-lg-4
+          .we-come-together__item
+            .we-come-together__image(style="background-image: url(images/access-to-capital.jpg)")
+            .we-come-together__text
+              h4 Access to capital
+              p Expose your solution to the partners and have access to capital to initiate a successful implementation.
+              h5 Award
+              p Economic award to each winning initiative.
+              h5 Financing
+              p Referrals to supporting financing stakeholders.
+  section.how-it-works.position-element#content-8
+    .container
+      h2.main-title How it works
+
+      .row.how-it-works__items
+        .col-lg-4
+          .how-it-works__item
+            h3.how-it-works__title.blue KICK-OFF AND SUBMISSION
+            .row.how-it-works__line-mobile
+              .col-xl-6
+                h3.how-it-works__date-title 15th MAY
+                .how-it-works__text
+                  h6 Start
+                  p Online platform open for submission
+              .col-xl-6
+                h3.how-it-works__date-title JUN
+                .how-it-works__text
+                  h6 Submission phase
+                  p 4 weeks open for startup submission
+        .col-lg-4
+          .how-it-works__item
+            h3.how-it-works__title.green COMPETITION
+            .row.how-it-works__line-mobile
+              .col-xl-6
+                h3.how-it-works__date-title JUL
+                .how-it-works__text
+                  h6 Finalist selection
+                  p Partners select the 9 best proposals based on its social and economic impact, feasibility, and implementation timeline
+              .col-xl-6
+                h3.how-it-works__date-title SEP
+                .how-it-works__text
+                  h6 Digital Pitchday
+                  p Presenting for top-level judges and broadcast live
+        .col-lg-4
+          .how-it-works__item
+            h3.how-it-works__title.yellow DEPLOYMENT
+            .row.how-it-works__line-mobile
+              .col-xl-6
+                h3.how-it-works__date-title SEP
+                .how-it-works__text
+                  h6 Next steps
+                  p Three winners will have access to capital, partners resources, acceleration, media exposure, and partners' network
+              .col-xl-6
+                h3.how-it-works__date-title SEP
+                .how-it-works__text
+                  h6 Implementation
+                  p The winners with the Partners support will deploy their initiatives to make a real impact in our society
+
+  section.our-partners.container.position-element#content-9
+    .row.apply-now.align-items-stretch
+      .col-lg-5.d-none.d-lg-block
+        .apply-now__image.left
+          .line
+          img(src="images/cosmin-serban.png")
+      .col-lg-7
+        .apply-now__text
+          h3 Hurry up! You’re next!
+          p You have until the 15th of May to submit your project or initiative. #TEST
+          .text-center
+            a(href="apply-here.html").btn.gray APPLY NOW
+
+    h2.main-title Our partners
+
+    .row.justify-content-around.align-items-center.text-center.logos
+      .col-lg-2
+        img(src="images/default/1.png" alt="alt")
+      .col-lg-2
+        img(src="images/default/2.png" alt="alt")
+      .col-lg-2
+        img(src="images/default/3.png" alt="alt")
+      .col-lg-2
+        img(src="images/default/4.png" alt="alt")
+      .col-lg-2
+        img(src="images/default/5.png" alt="alt")
+
+  section.our-partners.pink
+    .container
+      h3.our-partners__logos-title Other supporting institutions
+      .row.align-items-center.text-center.logos
+        .col-lg-2
+          img(src="images/default/1.png" alt="alt")
+        .col-lg-2
+          img(src="images/default/2.png" alt="alt")
+        .col-lg-2
+          img(src="images/default/3.png" alt="alt")
