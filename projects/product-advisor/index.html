@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <section id="product-advisor">
+    <div class="center">
+      <h2>PRODUCT ADVISOR</h2>
+      <p>Discover the Clarius scanner that’s ideal for you</p>
+
+      <div class="constructor">
+        <div class="step-1 step active">
+          <div class="title">
+            <h3>Step 1</h3>
+          </div>
+
+          <div id="specialty-list">
+            <button class="toggle">Select your specialty</button>
+
+            <div class="dropdown-container">
+              <input type="text" id="search-product" placeholder="Search" autocomplete="off">
+
+              <ul class="list">
+                <li class="item checkbox-list features-less" data-checked="anesthesia">Anesthesia</li>
+                <li class="item" data-id="pa">Bedside Cardiac</li>
+                <li class="item" data-id="l15">Breast</li>
+                <li class="item" data-id="l15">Breast Surgery</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Chiropractic</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Chronic Pain</li>
+                <li class="item one-checkbox" data-checked="criticalCare">Critical Care</li>
+                <li class="item one-checkbox" data-checked="criticalCare">Emergency Medicine</li>
+                <li class="item one-checkbox" data-checked="criticalCare">EMS</li>
+                <li class="item" data-id="l15">Endocrinology</li>
+                <li class="item" data-id="l15">ENT</li>
+                <li class="item one-checkbox" data-checked="criticalCare">General Practice</li>
+                <li class="item checkbox-list features-less" data-checked="generalSurgery">General Surgery</li>
+                <li class="item one-checkbox" data-checked="criticalCare">Hospitalist</li>
+                <li class="item one-checkbox" data-checked="criticalCare">Internal Medicine</li>
+                <li class="item checkbox-list features-less" data-checked="generalSurgery">Interventional</li>
+                <li class="item" data-id="ec7">IVF / Reproductive Medicine</li>
+                <li class="item" data-id="c3">Midwife</li>
+                <li class="item checkbox-list" data-checked="anesthesia">MSK</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Naturopathy</li>
+                <li class="item one-checkbox" data-checked="criticalCare">Nephrology</li>
+                <li class="item" data-id="c3" data-id-2="ec7">OB/GYN</li>
+                <li class="item checkbox-list features-less" data-checked="generalSurgery">Oncology</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Orthopaedic Surgery</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Pain Management</li>
+                <li class="item" data-id="c3">Palliative Care</li>
+                <li class="item" data-id="c3">Pelvic Rehabilitation</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Physiotherapy</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Plastic Surgery</li>
+                <li class="item features-none" data-id="l15">Podiatry</li>
+                <li class="item" data-id="c3">Pulmonary</li>
+                <li class="item checkbox-list features-less" data-checked="generalSurgery">Radiology</li>
+                <li class="item features-none" data-id="l15">Rheumatology</li>
+                <li class="item one-checkbox" data-checked="criticalCare">Rural Medicine</li>
+                <li class="item checkbox-list" data-checked="anesthesia">Sports Medicine</li>
+                <li class="item" data-id="c3" data-id-2="ec7">Urology</li>
+                <li class="item features-none" data-id="l7">Vascular</li>
+                <li class="item features-none" data-id="l7">Vascular Access</li>
+                <li class="item features-none" data-id="l7">Vascular Surgery</li>
+                <li class="item checkbox-list-vet" data-checked="veterinaryMedicine">Veterinary Medicine</li>
+              </ul><!-- .list -->
+            </div><!-- .dropdown-container -->
+          </div><!-- #specialty-list -->
+        </div><!-- .step-1 -->
+
+        <div class="step-2 step">
+          <div class="title">
+            <h3>Step 2</h3> <span>- Requirements? (Optional)</span>
+          </div>
+
+          <div id="filter-products">
+            <div class="inner">
+              <div class="checkbox active">
+                <input type="checkbox" id="products-1" hidden>
+                <label for="products-1"></label>
+                <label for="products-1" id="label-products-1">Superficial</label>
+              </div>
+
+              <div class="checkbox checkbox-2 active">
+                <input type="checkbox" id="products-2" hidden>
+                <label for="products-2"></label>
+                <label for="products-2" id="label-products-2">Deep (Hip, Facts, Sciatic)</label>
+              </div>
+
+              <div class="checkbox checkbox-3">
+                <input type="checkbox" id="products-3" hidden>
+                <label for="products-3"></label>
+                <label for="products-3" id="label-products-3">Budget for 2 scanners</label>
+              </div>
+            </div>
+          </div>
+        </div><!-- .step-2 -->
+      </div><!-- .constructor -->
+
+      <div id="scanners-container">
+        <div class="scanner-item" data-id="c3">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/c3.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>C3 HD</h2>
+                <span>- Multipurpose</span>
+              </div>
+
+              <p class="description">
+                The C3HD convex array scanner is ideal for abdominal and OB/GYN imaging, as well as FAST exams and deep superficial such as DVT.
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scanner-item" data-id="c3vet">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/c3vet.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>C3 HD Vet</h2>
+                <span>- Convex</span>
+              </div>
+
+              <p class="description">
+                Used for medium animals.
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scanner-item" data-id="l15">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/l15.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>L15 HD</h2>
+                <span> - High Frequency</span>
+              </div>
+
+              <p class="description">
+                The L15HD, with a bandwidth from 5 to 15MHz, provides outstanding detail resolution down to 5cm.
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="preview">
+            <h3>Supported Features</h3>
+
+            <ul class="list">
+              <li>Needle Enhance</li>
+              <li>Elasto</li>
+            </ul>
+          </div>
+
+          <div class="preview less">
+            <h3>Supported Features</h3>
+
+            <ul class="list">
+              <li>Needle Enhance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="scanner-item" data-id="pa">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/pa.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>PA HD</h2>
+                <span> - Phased Array</span>
+              </div>
+
+              <p class="description">
+                The PAHD phased array scanner, with pulse inversion harmonics, provides crystal-clear cardiac images and excellent abdominal resolution down to XX
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scanner-item" data-id="l7">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/l7.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>L7 HD</h2>
+                <span> - Linear</span>
+              </div>
+
+              <p class="description">
+                Used to scan equine tendon.
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="preview">
+            <h3>Supported Features</h3>
+
+            <ul class="list">
+              <li>Needle Enhance</li>
+              <li>Elasto</li>
+            </ul>
+          </div>
+
+          <div class="preview less">
+            <h3>Supported Features</h3>
+
+            <ul class="list">
+              <li>Needle Enhance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="scanner-item" data-id="l7vet">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/l7vet.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>L7 HD Vet</h2>
+                <span> - Linear</span>
+              </div>
+
+              <p class="description">
+                The L7HD, with a bandwidth from 4 to 14MHz, provides outstanding detail resolution down to XX
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scanner-item" data-id="ec7">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/ec7.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>EC7 HD</h2>
+                <span> - Endocavity</span>
+              </div>
+
+              <p class="description">
+                The EC7HD microconvex array scanner is for use in endovaginal and endorectal examinations
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scanner-item" data-id="c7vet">
+          <div class="wrap">
+            <div class="image" style="background-image: url(img/scanners/c7vet.png);"></div>
+
+            <div class="info">
+              <div class="title">
+                <h2>C7 HD Vet</h2>
+                <span> - Microconvex</span>
+              </div>
+
+              <p class="description">
+                Used for small animals.
+              </p>
+
+              <a href="#" class="link">
+                Learn More
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.976" height="21.381" viewBox="0 0 12.976 21.381">
+                  <path id="chevron-right-solid" d="M40.126,49.179,30.61,58.694a1.175,1.175,0,0,1-1.662,0l-1.11-1.11a1.175,1.175,0,0,1,0-1.66l7.541-7.577-7.541-7.577a1.175,1.175,0,0,1,0-1.66L28.948,38a1.175,1.175,0,0,1,1.662,0l9.516,9.516A1.175,1.175,0,0,1,40.126,49.179Z" transform="translate(-27.495 -37.657)" fill="#fff"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- .center -->
+  </section>
+
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>

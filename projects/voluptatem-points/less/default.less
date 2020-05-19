@@ -1,0 +1,150 @@
+@import url(./mixin.less);
+
+@font-face {
+	font-family: 'Gilroy Regular';
+	src: url('../fonts/Gilroy-Regular.eot');
+	src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gilroy-Regular.woff') format('woff'),
+	url('../fonts/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy Bold';
+	src: url('../fonts/Gilroy-Bold.eot');
+	src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gilroy-Bold.woff') format('woff'),
+	url('../fonts/Gilroy-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-4{
+	font-family: 'Gilroy Regular', sans-serif;
+}
+.font-7{
+	font-family: 'Gilroy Bold', sans-serif;
+}
+
+html{
+	height: 100%;
+}
+html, body{
+	margin: 0;
+	overflow-x: hidden;
+}
+body{
+	position: relative;
+	font-size: 16px;
+	min-height: 100%;
+	.font-4;
+}
+*{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	padding: 0;
+	margin: 0;
+
+	&::selection {
+		background: #e8334d;
+		color: #fff;
+	}
+}
+img{
+	max-width: 100%;
+	display: inline-block;
+}
+a{
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	.transition;
+
+	&:hover{
+		color: #e8334d;
+	}
+}
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	font-weight: normal;
+}
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 40px;
+}
+h3{
+	font-size: 30px;
+	margin-bottom: 20px;
+	.font-4;
+}
+h4{
+	font-size: 25px;
+}
+h5{
+	font-size: 20px;
+}
+h6{
+	font-size: 16px;
+}
+p{
+	& + p{
+		margin-top: 20px;
+	}
+}
+ul{
+	list-style: none;
+}
+button{
+	border: none;
+	cursor: pointer;
+	border-radius: 0;
+	appearance: none;
+}
+input{
+	appearance: none;
+	font-size: 16px;
+	.font-4;
+}
+input:not([type="submit"]){
+	width: 100%;
+	height: 50px;
+	padding: 0 15px;
+	background: #f9f9f9;
+	border: none;
+	color:@gray;
+}
+textarea{
+	max-width: 100%;
+	outline: none;
+	display: block;
+	padding: 12px;
+	min-height: 125px;
+	font-size: 16px;
+	width: 100%;
+	resize: none;
+	background: #f9f9f9;
+	border: none;
+	margin-bottom: 20px;
+	color:@gray;
+	.font-4;
+}
+input, textarea{
+	.transition();
+
+	&:focus{
+		color: black;
+	}
+}
+address{
+	font-style: normal;
+}
+strong{
+	.font-7;
+}
+::-webkit-input-placeholder {color:@gray;}
+::-moz-placeholder          {color:@gray;}
+:-moz-placeholder           {color:@gray;}
+:-ms-input-placeholder      {color:@gray;}

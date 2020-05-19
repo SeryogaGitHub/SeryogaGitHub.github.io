@@ -1,0 +1,143 @@
+@import url(./default.less);
+@import url(./mixin.less);
+@import url(./elements.less);
+
+.mobile-menu {
+  display: none;
+  background: transparent;
+
+  svg {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: flex !important;
+  }
+}
+.svg{
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  filter: url(../img/sprite.svg#icons--slider);
+
+}
+.voluptatem-points{
+  color: @gray;
+
+  .container{
+    display: flex;
+    margin: 0 -15px;
+
+    & > *{
+      flex: 1;
+      margin: 0 15px;
+
+      &:last-child{
+        max-width: 300px;
+        text-align: right;
+      }
+    }
+    & + .container{
+      margin-top: 15px;
+    }
+  }
+  .title{
+    color: #98989d;
+    .font-7;
+  }
+  #slider-value-1, #slider-value-2, .point{
+    font-size: 35px;
+    .font-7;
+    color: #323a45;
+  }
+  .info{
+    color: #525c69;
+
+    p{
+      position: relative;
+      padding-left: 15px;
+
+      .star{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.form-section{
+  input{
+    margin-bottom: 20px;
+  }
+  .btn{
+    max-width: initial;
+  }
+  .input-dropdown{
+    display: flex;
+
+    .dropdown{
+      margin-right: 10px;
+      text-align: center;
+
+      .dropdown-container{
+        padding: 10px;
+      }
+    }
+    .item, .toggle{
+      img{
+        max-width: 16px;
+        max-height: 11px;
+      }
+    }
+    .toggle{
+      height: 50px;
+    }
+    .item{
+      padding: 5px 15px;
+      cursor: pointer;
+    }
+  }
+  .file-label{
+    margin-bottom: 20px;
+  }
+  #file-list{
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 980px){
+  .center{
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 767px){
+  .voluptatem-points .container{
+      display: block;
+
+    &.sliders{
+      max-width: 95%;
+      margin: 0 auto;
+
+      .wrap-slider-range{
+        margin-bottom: 25px;
+      }
+      .point{
+        font-size: 30px;
+      }
+    }
+    & > *{
+          &:last-child{
+              text-align: initial;
+              margin-top: 25px;
+            }
+        }
+    }
+  }
+@media screen and (max-width: 540px){
+  br{
+    display: none;
+  }
+}

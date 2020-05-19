@@ -1,0 +1,230 @@
+@import url(./mixin.less);
+
+.btn {
+  width: 100%;
+  padding: 0 15px;
+  height: 50px;
+  max-width: 217px;
+  font-size: 18px;
+  border-radius: 2px;
+  background: @gold;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  .transition;
+
+  &:hover {
+    background: #27282d;
+    color: #fff;
+  }
+
+  a& {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.center {
+  position: relative;
+  max-width: 990px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.star{
+  color: @red;
+}
+
+.ui-slider.ui-widget.ui-widget-content{
+  &.ui-widget.ui-widget-content{
+    margin: 15px 0 10px 0;
+    border: none;
+    height: 5px;
+    position: relative;
+    background: #ececec;
+  }
+  .ui-widget-header{
+    border: none;
+    border-radius: 3px;
+    height: 5px;
+    background: @gold;
+  }
+  .ui-state-default{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: block;
+    background: @gold url(../img/icons/slider.svg) no-repeat center!important;
+    background-size: 10px;
+    border: none!important;
+    cursor: pointer;
+    position: relative;
+  }
+  .ui-slider-handle{
+    top: -11px;
+  }
+}
+.section{
+  padding-top: 30px;
+}
+
+.dropdown{
+  margin-bottom: 15px;
+  position: relative;
+
+  .toggle{
+    border: none;
+    padding: 10px 49px 10px 15px;
+    background: #f9f9f9 url(../img/icons/arrow.svg) no-repeat right 15px center;
+  }
+
+  .dropdown-container{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f9f9f9;
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.44);
+    display: none;
+    z-index: 3;
+  }
+}
+
+.input-info{
+  position: relative;
+  display: flex;
+
+  &, input{
+    flex: 1;
+  }
+  input{
+    width: initial;
+  }
+  &.active{
+    .info-text{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .info-btn{
+    min-width: 45px;
+    width: 45px;
+    height: 50px;
+    border-left: 1px solid #ececec;
+    background: #f9f9f9 url(../img/icons/i.svg) no-repeat center;
+    cursor: pointer;
+  }
+  .info-text{
+    position: absolute;
+    left: 100%;
+    width: 300px;
+    background: #f9eeb8;
+    border: 1px solid #dfcb98;
+    color: #525c69;
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    visibility: hidden;
+    opacity: 0;
+    min-height: 50px;
+    z-index: 2;
+    .transition();
+
+    &:after{
+      content: '';
+      width: 14px;
+      height: 14px;
+      border-left: 1px solid #dfcb98;
+      border-top: 1px solid #dfcb98;
+      background: #f9eeb8;
+      transform: rotate(-45deg);
+      top: 17px;
+      position: absolute;
+      right: auto;
+      left: -9px;
+    }
+    &.active{
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+.selectmenu{
+  & + .ui-selectmenu-button{
+    flex: 1;
+    width: initial;
+    margin-right: 0;
+    padding-right: 50px;
+    background: #f9f9f9 url(../img/icons/arrow.svg) no-repeat right 15px center;
+    border: none;
+    border-radius: 0;
+    color: @gray;
+    height: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    .font-4;
+
+    .ui-selectmenu-icon{
+      background: red;
+      display: none;
+    }
+  }
+}
+.ui-selectmenu-menu{
+  .ui-menu{
+    background: #f9f9f9;
+  }
+  .ui-button.ui-state-active:hover, .ui-button:active, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active{
+    background: @gold;
+    border: none;
+  }
+}
+.file-label{
+  flex: 1;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 2px dashed #ececec;
+  color:@gray;
+  height: 50px;
+  cursor: pointer;
+  .font-7;
+
+  img{
+    margin-right: 10px;
+  }
+}
+input.datepicker{
+  padding-right: 40px;
+  background-image: url(../img/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+.ui-state-hover .ui-icon, .ui-icon, .ui-widget-content .ui-icon, .ui-widget-header .ui-icon{
+  background: gold;
+}
+
+@media screen and (max-width: 1580px) {
+  .input-info .info-text{
+    left: auto;
+    bottom: 100%;
+    right: 0;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &:after{
+      bottom: -8px;
+      top: auto;
+      position: absolute;
+      right: 15px;
+      left: auto;
+      transform: rotate(-135deg);
+    }
+  }
+}
