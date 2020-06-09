@@ -26,11 +26,11 @@
       url: mail,
       data: msg,
       success: function(data) {
-        if (data == "mail error") {
+        if (data === "mail error") {
           alert('Ошибка отправки!');
         }
 
-        else if (data == "mail success") {
+        else if (data === "mail success") {
           $(form)[0].reset();
           $(".message-send").show();
         }
