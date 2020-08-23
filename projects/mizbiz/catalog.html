@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body class="catalog-page">
+    <div class="popup-container mfp-hide mfp-with-anim" id="search-filter">
+      <div class="d-flex justify-content-between align-items-center header mb-32"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <form class="main-filter">
+        <div class="shadow"></div>
+        <div class="scroll-horizontal">
+          <div class="d-flex align-items-center">
+            <ul class="nav-tabs">
+              <li><a class="nav-item active" href="#filter-residential-popup">Residential</a></li>
+              <li><a class="nav-item" href="#filter-comercial-popup">Comercial</a></li>
+              <li><a class="nav-item" href="#filter-yachts-popup">Yachts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="active" id="filter-residential-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio-popup" checked id="radiobox-1-popup">
+                      <label for="radiobox-1-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio-popup" id="radiobox-2-popup">
+                      <label for="radiobox-2-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-1-popup">
+                    <label for="checkbox-1-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" checked id="property-type-1-popup">
+                    <label for="property-type-1-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-2-popup">
+                    <label for="property-type-2-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type-popup" type="radio" id="property-type-3-popup">
+                    <label for="property-type-3-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                <ul class="dropdown-menu rooms-amount inner">
+                  <label class="description">Rooms amount</label>
+                  <div class="wrap">
+                    <div class="items-line checked-item">
+                      <input name="property-type-popup" type="checkbox" id="rooms-amount-1-popup">
+                      <label for="rooms-amount-1-popup">1</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-2-popup">
+                      <label for="rooms-amount-2-popup">2</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-3-popup">
+                      <label for="rooms-amount-3-popup">3</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-4-popup">
+                      <label for="rooms-amount-4-popup">4</label>
+                    </div>
+                    <div class="items-line checked-item">
+                      <input name="rooms-amount-popup" type="checkbox" id="rooms-amount-5-popup">
+                      <label for="rooms-amount-5-popup">5+</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="dropdown price-value">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location-popup"></label>
+                <input class="location-autocomplete-4" type="text" placeholder="Location" id="location-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-comercial-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" checked id="radiobox-12-popup">
+                      <label for="radiobox-12-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio2-popup" id="radiobox-22-popup">
+                      <label for="radiobox-22-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox2-popup" id="checkbox-12-popup">
+                    <label for="checkbox-12-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" checked id="property-type-12-popup">
+                    <label for="property-type-12-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-22-popup">
+                    <label for="property-type-22-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type2-popup" type="radio" id="property-type-32-popup">
+                    <label for="property-type-32-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="area">
+                <input type="number" placeholder="Area">m<sup>2</sup>
+              </div>
+              <div class="dropdown price-value mt-16">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start2-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end2-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start2-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end2-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location2-popup"></label>
+                <input class="location-autocomplete-5" type="text" placeholder="Location" id="location2-popup">
+              </div>
+            </div>
+          </div>
+          <div id="filter-yachts-popup">
+            <div class="filter-line">
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                <div class="dropdown-menu inner">
+                  <div class="d-flex">
+                    <div class="radiobox mr-3 checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" checked id="radiobox-13-popup">
+                      <label for="radiobox-13-popup">Sale</label>
+                    </div>
+                    <div class="radiobox checked-item">
+                      <input type="radio" name="deal-type-radio3-popup" id="radiobox-23-popup">
+                      <label for="radiobox-23-popup">Rent</label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="chekcbox checked-item">
+                    <input type="checkbox" name="deal-type-checkbox-popup" id="checkbox-13-popup">
+                    <label for="checkbox-13-popup">From the owner</label>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown search-checked-input">
+                <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                <div class="dropdown-menu">
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" checked id="property-type-13-popup">
+                    <label for="property-type-13-popup">Type 1</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-23-popup">
+                    <label for="property-type-23-popup">Type 2</label>
+                  </div>
+                  <div class="items-line checked-item">
+                    <input name="property-type3-popup" type="radio" id="property-type-33-popup">
+                    <label for="property-type-33-popup">Type 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="area">
+                <input type="number" placeholder="Long">m
+              </div>
+              <div class="dropdown price-value mt-16">
+                <div class="dropdown-toggle d-flex align-items-center">
+                  <div class="strong input-default" id="price-start3-popup" data-default="20 000">20 000</div>
+                  <div class="line">-</div>
+                  <div class="strong input-default" id="price-end3-popup" data-default="4 000 000">4 000 000</div>
+                </div>
+                <div class="dropdown-menu inner">
+                  <label class="description">Price, € EUR</label>
+                  <div class="d-flex align-items-center">
+                    <input class="price-start" value="20 000" data-id="#price-start3-popup">
+                    <div class="line">-</div>
+                    <input class="price-end" value="4 000 000" data-id="#price-end3-popup">
+                  </div>
+                </div>
+              </div>
+              <div class="google-location">
+                <label for="location3-popup"></label>
+                <input class="location-autocomplete-6" type="text" placeholder="Location" id="location3-popup">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn" type="reset">Search</button>
+        </div>
+        <div class="text-center mt-16">
+          <button class="reset-form" type="reset">Reset form</button>
+        </div>
+      </form>
+    </div>
+    <div class="popup-container mfp-hide mfp-with-anim" id="mobile-menu">
+      <div class="d-flex justify-content-between align-items-center header"><a class="logo"><img src="img/logo.svg" alt="logo"/></a><a class="btn outline small login" href="#">Login</a></div>
+      <ul class="main-nav">
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Closed base</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="dropdown language">
+        <button class="dropdown-toggle" type="button">EN</button>
+        <ul class="dropdown-menu">
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-1-popup">
+            <label class="text" for="language-1-popup">EN</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-2-popup">
+            <label class="text" for="language-2-popup">FR</label>
+          </li>
+          <li class="items-line">
+            <input type="radio" name="language-popup" id="language-3-popup">
+            <label class="text" for="language-3-popup">IT</label>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center"><a class="btn book" herf="#">Place an offer</a></div>
+    </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="d-flex align-items-center"><a class="popup mobile-menu mr-3" href="#mobile-menu"></a>
+              <div class="wrap-logo"><a class="logo" href="/"><img src="img/logo.svg" alt="logo"/></a></div>
+              <div><a class="btn book" herf="#">Place an offer</a></div>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center"><a class="mobile-search popup btn search" href="#search-filter"></a>
+            <nav>
+              <ul class="main-nav">
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Closed base</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="dropdown user-dropdown">
+              <button class="dropdown-toggle" type="button">
+                <div class="person" style="background-image: url(img/person.jpg)"></div>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="link-icon" href="#">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Favorite</a></li>
+                <li><a class="link-icon active" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.33334 2H5.33334C6.04059 2 6.71886 2.28095 7.21896 2.78105C7.71906 3.28115 8.00001 3.95942 8.00001 4.66667V14C8.00001 13.4696 7.7893 12.9609 7.41422 12.5858C7.03915 12.2107 6.53044 12 6.00001 12H1.33334V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6667 2H10.6667C9.95942 2 9.28115 2.28095 8.78105 2.78105C8.28095 3.28115 8 3.95942 8 4.66667V14C8 13.4696 8.21071 12.9609 8.58579 12.5858C8.96086 12.2107 9.46957 12 10 12H14.6667V2Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    My offers</a></li>
+                <li><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3333 14V12.6667C13.3333 11.9594 13.0524 11.2811 12.5523 10.781C12.0522 10.281 11.3739 10 10.6667 10H5.33332C4.62608 10 3.9478 10.281 3.4477 10.781C2.94761 11.2811 2.66666 11.9594 2.66666 12.6667V14" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.00001 7.33333C9.47277 7.33333 10.6667 6.13943 10.6667 4.66667C10.6667 3.19391 9.47277 2 8.00001 2C6.52725 2 5.33334 3.19391 5.33334 4.66667C5.33334 6.13943 6.52725 7.33333 8.00001 7.33333Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Profile</a></li>
+                <li class="profile"><a class="link-icon" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.6667 11.3333L14 8L10.6667 4.66666" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 8H6" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    Log out</a></li>
+              </ul>
+            </div>
+            <div class="dropdown language">
+              <button class="dropdown-toggle" type="button">EN</button>
+              <ul class="dropdown-menu">
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-1">
+                  <label class="text" for="language-1">EN</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-2">
+                  <label class="text" for="language-2">FR</label>
+                </li>
+                <li class="items-line">
+                  <input type="radio" name="language" id="language-3">
+                  <label class="text" for="language-3">IT</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <section>
+          <form class="main-filter">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <ul class="nav-tabs">
+                  <li><a class="nav-item active" href="#filter-residential">Residential</a></li>
+                  <li><a class="nav-item" href="#filter-comercial">Comercial</a></li>
+                  <li><a class="nav-item" href="#filter-yachts">Yachts</a></li>
+                </ul>
+              </div>
+              <div class="col-3 d-flex justify-content-end">
+                <button class="reset-form" type="reset">Reset form</button>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="active" id="filter-residential">
+                <div class="filter-line">
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                    <div class="dropdown-menu inner">
+                      <div class="d-flex">
+                        <div class="radiobox mr-3 checked-item">
+                          <input type="radio" name="deal-type-radio" checked id="radiobox-1">
+                          <label for="radiobox-1">Sale</label>
+                        </div>
+                        <div class="radiobox checked-item">
+                          <input type="radio" name="deal-type-radio" id="radiobox-2">
+                          <label for="radiobox-2">Rent</label>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="chekcbox checked-item">
+                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-1">
+                        <label for="checkbox-1">From the owner</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                    <div class="dropdown-menu">
+                      <div class="items-line checked-item">
+                        <input name="property-type" type="radio" checked id="property-type-1">
+                        <label for="property-type-1">Type 1</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type" type="radio" id="property-type-2">
+                        <label for="property-type-2">Type 2</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type" type="radio" id="property-type-3">
+                        <label for="property-type-3">Type 3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Rooms amount</span><strong class="selected"></strong></button>
+                    <ul class="dropdown-menu rooms-amount inner">
+                      <label class="description">Rooms amount</label>
+                      <div class="wrap">
+                        <div class="items-line checked-item">
+                          <input name="property-type" type="checkbox" id="rooms-amount-1">
+                          <label for="rooms-amount-1">1</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-2">
+                          <label for="rooms-amount-2">2</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-3">
+                          <label for="rooms-amount-3">3</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-4">
+                          <label for="rooms-amount-4">4</label>
+                        </div>
+                        <div class="items-line checked-item">
+                          <input name="rooms-amount" type="checkbox" id="rooms-amount-5">
+                          <label for="rooms-amount-5">5+</label>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="dropdown price-value">
+                    <div class="dropdown-toggle d-flex align-items-center">
+                      <div class="strong input-default" id="price-start" data-default="20 000">20 000</div>
+                      <div class="line">-</div>
+                      <div class="strong input-default" id="price-end" data-default="4 000 000">4 000 000</div>
+                    </div>
+                    <div class="dropdown-menu inner">
+                      <label class="description">Price, € EUR</label>
+                      <div class="d-flex align-items-center">
+                        <input class="price-start" value="20 000" data-id="#price-start">
+                        <div class="line">-</div>
+                        <input class="price-end" value="4 000 000" data-id="#price-end">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="google-location">
+                    <label for="location"></label>
+                    <input class="location-autocomplete" type="text" placeholder="Location" id="location">
+                  </div>
+                </div>
+              </div>
+              <div id="filter-comercial">
+                <div class="filter-line">
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                    <div class="dropdown-menu inner">
+                      <div class="d-flex">
+                        <div class="radiobox mr-3 checked-item">
+                          <input type="radio" name="deal-type-radio2" checked id="radiobox-12">
+                          <label for="radiobox-12">Sale</label>
+                        </div>
+                        <div class="radiobox checked-item">
+                          <input type="radio" name="deal-type-radio2" id="radiobox-22">
+                          <label for="radiobox-22">Rent</label>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="chekcbox checked-item">
+                        <input type="checkbox" name="deal-type-checkbox2" id="checkbox-12">
+                        <label for="checkbox-12">From the owner</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                    <div class="dropdown-menu">
+                      <div class="items-line checked-item">
+                        <input name="property-type2" type="radio" checked id="property-type-12">
+                        <label for="property-type-12">Type 1</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type2" type="radio" id="property-type-22">
+                        <label for="property-type-22">Type 2</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type2" type="radio" id="property-type-32">
+                        <label for="property-type-32">Type 3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="area">
+                    <input type="number" placeholder="Area">m<sup>2</sup>
+                  </div>
+                  <div class="dropdown price-value">
+                    <div class="dropdown-toggle d-flex align-items-center">
+                      <div class="strong input-default" id="price-start2" data-default="20 000">20 000</div>
+                      <div class="line">-</div>
+                      <div class="strong input-default" id="price-end2" data-default="4 000 000">4 000 000</div>
+                    </div>
+                    <div class="dropdown-menu inner">
+                      <label class="description">Price, € EUR</label>
+                      <div class="d-flex align-items-center">
+                        <input class="price-start" value="20 000" data-id="#price-start2">
+                        <div class="line">-</div>
+                        <input class="price-end" value="4 000 000" data-id="#price-end2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="google-location">
+                    <label for="location2"></label>
+                    <input class="location-autocomplete-2" type="text" placeholder="Location" id="location2">
+                  </div>
+                </div>
+              </div>
+              <div id="filter-yachts">
+                <div class="filter-line">
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><strong class="default">Sale</strong><strong class="selected"></strong></button>
+                    <div class="dropdown-menu inner">
+                      <div class="d-flex">
+                        <div class="radiobox mr-3 checked-item">
+                          <input type="radio" name="deal-type-radio3" checked id="radiobox-13">
+                          <label for="radiobox-13">Sale</label>
+                        </div>
+                        <div class="radiobox checked-item">
+                          <input type="radio" name="deal-type-radio3" id="radiobox-23">
+                          <label for="radiobox-23">Rent</label>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="chekcbox checked-item">
+                        <input type="checkbox" name="deal-type-checkbox" id="checkbox-13">
+                        <label for="checkbox-13">From the owner</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown search-checked-input">
+                    <button class="dropdown-toggle" type="button"><span class="default">Property type</span><strong class="selected"></strong></button>
+                    <div class="dropdown-menu">
+                      <div class="items-line checked-item">
+                        <input name="property-type3" type="radio" checked id="property-type-13">
+                        <label for="property-type-13">Type 1</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type3" type="radio" id="property-type-23">
+                        <label for="property-type-23">Type 2</label>
+                      </div>
+                      <div class="items-line checked-item">
+                        <input name="property-type3" type="radio" id="property-type-33">
+                        <label for="property-type-33">Type 3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="area">
+                    <input type="number" placeholder="Long">m
+                  </div>
+                  <div class="dropdown price-value">
+                    <div class="dropdown-toggle d-flex align-items-center">
+                      <div class="strong input-default" id="price-start3" data-default="20 000">20 000</div>
+                      <div class="line">-</div>
+                      <div class="strong input-default" id="price-end3" data-default="4 000 000">4 000 000</div>
+                    </div>
+                    <div class="dropdown-menu inner">
+                      <label class="description">Price, € EUR</label>
+                      <div class="d-flex align-items-center">
+                        <input class="price-start" value="20 000" data-id="#price-start3">
+                        <div class="line">-</div>
+                        <input class="price-end" value="4 000 000" data-id="#price-end3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="google-location">
+                    <label for="location3"></label>
+                    <input class="location-autocomplete-3" type="text" placeholder="Location" id="location3">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn">Search</button>
+            </div>
+          </form>
+          <div class="text-center"><a class="btn search popup" href="#search-filter">Search options</a></div>
+        </section>
+      </div>
+      <section>
+        <div class="container text-center">
+          <ul class="list-map-nav nav-tabs">
+            <li><a class="nav-item active" href="#filter-list">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.6665 12.3333H14.6665" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 7H14.6667" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.33325 1.66666H14.6666" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                List</a></li>
+            <li><a class="nav-item" href="#filter-map">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.3334 6.78789C13.3334 11.0303 8.00008 14.6667 8.00008 14.6667C8.00008 14.6667 2.66675 11.0303 2.66675 6.78789C2.66675 5.34125 3.22865 3.95387 4.22884 2.93094C5.22904 1.90802 6.58559 1.33334 8.00008 1.33334C9.41457 1.33334 10.7711 1.90802 11.7713 2.93094C12.7715 3.95387 13.3334 5.34125 13.3334 6.78789Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 8.66666C9.10457 8.66666 10 7.77123 10 6.66666C10 5.56209 9.10457 4.66666 8 4.66666C6.89543 4.66666 6 5.56209 6 6.66666C6 7.77123 6.89543 8.66666 8 8.66666Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                Map</a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div class="active" id="filter-list">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-12 mb-32"><a href="#" target="_blank"><img src="img/banners/1.jpg" alt="banner 1"/></a></div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-12 mb-32"><a href="#" target="_blank"><img src="img/banners/1.jpg" alt="banner 1"/></a></div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+                <div class="col-md-6 col-lg-4"><a class="object-item" href="#">
+                    <div class="image-numbers">
+                      <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                        <div class="overlay"></div>
+                        <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+                      </div>
+                      <div class="numbers">
+                        <div class="item door">4</div>
+                        <div class="item bed">2</div>
+                        <div class="item size">52</div>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="inner">
+                        <h6>Apa sale &quot;Calypso&quot;</h6>
+                        <div class="d-flex justify-content-between flex-wrap">
+                          <div class="price">€ 4 000
+                            <div class="month">/ month</div>
+                          </div>
+                          <div class="tags">
+                            <div class="tag">Pars</div>
+                            <div class="tag">Place du</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a>
+                </div>
+              </div>
+              <div class="pagination"><a class="arrow prev disabled" href="#"></a>
+                <div class="number"><a href="#">1</a><a class="active" href="#">2</a><a class="hide" href="#">3</a><a class="dots" href="#">...</a><a href="#">14</a><a href="#">15</a></div><a class="arrow" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div id="filter-map">
+            <div class="map" id="map-location"></div>
+            <div id="map-content">
+              <div class="object-item" data-lat="25.771162" data-lng="-80.224623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/5.jpg)">
+                    <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    </button>
+                  </div>
+                  <div class="numbers">
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 200 000</div>
+                      <div class="tags">
+                        <div class="tag">Two</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.680682" data-lng="-80.232623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/4.jpg)">
+                    <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    </button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 99 000</div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.550682" data-lng="-80.152623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/3.jpg)">
+                    <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    </button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 99 000</div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.490682" data-lng="-80.012623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/2.jpg)">
+                    <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    </button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">10</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 99 000</div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="object-item" data-lat="25.730162" data-lng="-80.111623">
+                <div class="image-numbers">
+                  <div class="image" style="background-image: url(img/object-item/3.jpg)">
+                    <button class="like"><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.84 2.60999C20.3292 2.099 19.7228 1.69364 19.0554 1.41708C18.3879 1.14052 17.6725 0.998169 16.95 0.998169C16.2275 0.998169 15.5121 1.14052 14.8446 1.41708C14.1772 1.69364 13.5708 2.099 13.06 2.60999L12 3.66999L10.94 2.60999C9.9083 1.5783 8.50903 0.998704 7.05 0.998704C5.59096 0.998704 4.19169 1.5783 3.16 2.60999C2.1283 3.64169 1.54871 5.04096 1.54871 6.49999C1.54871 7.95903 2.1283 9.3583 3.16 10.39L4.22 11.45L12 19.23L19.78 11.45L20.84 10.39C21.351 9.87924 21.7563 9.27281 22.0329 8.60535C22.3095 7.93789 22.4518 7.22248 22.4518 6.49999C22.4518 5.77751 22.3095 5.0621 22.0329 4.39464C21.7563 3.72718 21.351 3.12075 20.84 2.60999V2.60999Z" stroke="#13AD89" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    </button>
+                  </div>
+                  <div class="numbers">
+                    <button class="item close"></button>
+                    <div class="item door">2</div>
+                    <div class="item bed">9</div>
+                    <div class="item size">25</div>
+                  </div>
+                </div>
+                <div class="footer">
+                  <div class="inner">
+                    <div class="d-flex justify-content-between flex-wrap align-items-start">
+                      <h6>1 Apa sale "Calypso"</h6><a class="link-underline" href="#">Details</a>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div class="price">€ 4000</div>
+                      <div class="month">/ month</div>
+                      <div class="tags">
+                        <div class="tag">One</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row banners mt-96">
+                <div class="col-sm-6">
+                  <div class="item"><a href="#" target="_blank"><img src="img/banners/2.jpg" alt="banner  2"/></a></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="item"><a href="#" target="_blank"><img src="img/banners/2.jpg" alt="banner  2"/></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/maps.js"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&amp;callback=initMap&amp;libraries=&amp;v=weekly&amp;libraries=places" type="text/javascript"></script>
+    <footer class="main-footer mt-96">
+      <div class="container">
+        <div class="top-footer d-flex"><a class="logo" href="#"><img src="img/logo-full.svg" alt="logo-footer"/></a>
+          <div class="flex-grow-1">
+            <div class="group-links"><a href="#">Sale</a><a href="#">Rent</a><a href="#">Rating</a><a href="#">Order a photographer</a><a href="#">Contact a specialist</a><a href="#">Legal advice</a><a href="#">Package of documents</a><a href="#">Closed database</a></div>
+            <div class="group-links"><a href="#">About us</a><a href="#">Contact us</a></div>
+            <div class="group-links mobile-top-line"><a href="#">Ad policies</a><a href="#">Privacy policy</a><a href="#">Terms of use</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="copyright-meta">
+            <div class="copyright">Amizbiz &copy; 2020</div>
+            <div class="meta-language">
+              <div class="d-flex">
+                <div>Разработка сайта</div>
+                <div class="ml-2"><a href="#"><img src="img/meta.svg" alt="meta logo"/></a></div>
+              </div>
+              <div class="dropdown language ml-4">
+                <button class="dropdown-toggle" type="button">English</button>
+                <ul class="dropdown-menu top">
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-1">
+                    <label class="text" for="language-footer-1">English</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-2">
+                    <label class="text" for="language-footer-2">France</label>
+                  </li>
+                  <li class="items-line">
+                    <input type="radio" name="language" id="language-footer-3">
+                    <label class="text" for="language-footer-3">Italian</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
